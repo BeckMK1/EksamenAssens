@@ -2,15 +2,73 @@
 /*---------------My variables*---------------*/
 /*---------------My Inheritances-------------*/
 /*---------------My Inheritances-------------*/
-/* line 26, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/eksamen/sass/style.scss */
+/* line 27, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 * {
-  margin: auto;
-  padding: 0px;
-}
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; }
 
-/* line 31, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/eksamen/sass/style.scss */
+/* line 33, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 h1 {
-  font-size: 14px;
-}
+  font-size: 14px; }
+
+/* line 37, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+header {
+  height: 6vh;
+  width: 100%;
+  background-color: #FAFAFA; }
+
+/* line 43, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+.border-img {
+  border-bottom: 5px solid #163f70;
+  border-image-source: url(//images/logo-border.svg);
+  border-image-slice: 100;
+  border-image-repeat: repeat;
+  padding-bottom: 15px; }
+
+/* line 53, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+header a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px; }
+
+/* line 63, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+#logo {
+  height: 8vh; }
+
+/* line 67, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+.logo-flex {
+  display: flex;
+  justify-content: flex-start; }
+
+/* line 71, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+.menu-grid {
+  display: grid;
+  grid-template-columns: 50% 10% 10% 10% 20%; }
+
+/* line 76, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+#contact-btn {
+  color: #FAFAFA;
+  border: 7px solid #CE3233;
+  border-radius: 100px;
+  background-color: #CE3233; }
+
+/* line 83, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+.forside {
+  height: 500px; }
+
+/* line 87, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+footer {
+  height: 500px;
+  background-color: #163f70; }
+
+/* line 92, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+#footer-img {
+  width: 100%;
+  margin-bottom: -10px; }
 
 /*# sourceMappingURL=style.css.map */

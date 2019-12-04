@@ -1,9 +1,10 @@
 /*---------------My variables*---------------*/
-$red: #BF1B24;
-$btn-red: #480000;
-$white: #E4E4E4;
-$h-color: #CEF249;
-$dark: #222625;
+$red: #CE3233;
+$white: #FAFAFA;
+$light-blue: #E9F6FF;
+$dark-blue: #163f70;
+$black: #000000;
+
 /*---------------My variables*---------------*/
 
 /*---------------My Inheritances-------------*/
@@ -24,10 +25,71 @@ $dark: #222625;
 
 
 *{
-  margin: auto;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1{
   font-size: 14px;
+}
+
+header{
+height: 6vh;
+width: 100%;
+background-color: #FAFAFA;
+}
+
+.border-img{
+border-bottom: 5px solid $dark-blue;
+border-image-source: url(//images/logo-border.svg);
+border-image-slice: 100;
+border-image-repeat: repeat;
+padding-bottom: 15px;
+
+
+
+}
+header a{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+#logo{
+  height: 8vh;
+}
+
+.logo-flex{
+  display: flex;
+  justify-content: flex-start;
+}
+.menu-grid{
+display: grid;
+grid-template-columns: 50% 10% 10% 10% 20%
+}
+
+#contact-btn{
+  color: #FAFAFA;
+  border: 7px solid $red;
+  border-radius: 100px;
+  background-color: $red;
+}
+
+.forside{
+  height: 500px;
+}
+
+footer{
+  height: 500px;
+  background-color: $dark-blue
+}
+
+#footer-img{
+  width: 100%;
+  margin-bottom: -10px;
 }
