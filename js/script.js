@@ -1,18 +1,11 @@
   $(document).ready(function(){
-    //display number on sign
-    i = 0;
-    var player = $("#player");
-    $(".up").click(function(){
-      if (player.attr("src") == "images/armNed.svg") {
-      $(".score").text(i += 1);
-      $("#player").attr('src',"images/armOp.svg");
-    }});
-$(".down").click(function(){
-    $("#player").attr('src',"images/armNed.svg");
-})
-  });
 
-
-  $("#button-del").click(function(){
-  $(".popup").addClass("hide");
-  });
+    $('.burger-btn').click(function(){
+      //Her tilføjer vi classen active, der åbner
+      //burgermenuen
+      $('.burgerbar').toggleClass('active');
+      //burgermenu bliver til kryds når den åbner ved at tilføje
+      // classen "open"
+		$(this).toggleClass('open');
+    })
+  })

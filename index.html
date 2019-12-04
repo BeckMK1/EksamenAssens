@@ -2,31 +2,59 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Assens Skibsværft A/S</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/script.js"></script>
   </head>
   <body>
-    <header class="border-img">
-      <div class="menu-grid">
-      <div class="logo-flex"><a href="index.html"><img src="images/logo.svg" id="logo" alt="Assens Skibsværft Logo"></a></div>
-      <a href="#"><p>SERVICES</p></a>
-      <a href="#">FACILITIES</a>
-      <a href="#">JOB</a>
-      <a href="#"><p><span id="contact-btn">Contact</span></p></a>
-      </div>
+    <!-- Menu til stor skærm -->
+<header>
+<nav class="navbox">
+<div class="navbar">
 
-    </header>
+  <div class="logobox">
+      <div class="logo"><a href="index.html"><img src="images/Assens-Shipyard-Logo.svg" alt="Assens Skibsværft Logo"></a></div>
+    </div>
+
+  <div class="menubox">
+      <a href="#"><p>Services</p></a>
+      <a href="#"><p>Facilities</p></a>
+      <a href="#"><p>Job</p></a>
+    </div>
+
+  <div class="contactbox">
+    <a href="#"><p><span id="contact-btn">Contact</span></p></a>
+    </div>
+  </div>
+</nav>
+
+<!-- Burgermenu til mobile -->
+
+<nav class="burgerbar">
+    <ul>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Facilities</a></li>
+      <li><a href="#">Job</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+  </nav>
+  <button class="burger-btn">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+</header>
     <section class="forside"> <!-- Big photo og most wanted --></section>
     <div id="footer-img"><img src="images/assens-footer.svg" alt=""></div>
     <footer>
 
     </footer>
 
-<!---AOS ANIMATION PLUGIN END---->
-<script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/script.js"></script>
   </body>
 </html>
