@@ -21,6 +21,8 @@ $black: #000000;
   box-shadow: -6px 3px 6px 0px rgba(0,0,0,0.16);
 }
 
+
+
 /*---------------My Inheritances-------------*/
 
 
@@ -304,3 +306,73 @@ footer{
     width: 250px;
   }
 }
+
+// SERVICE page
+
+#service-bigpicture{
+position: relative;
+height: 700px;
+width: 1903px;
+background: url(/images/service-big.jpg);
+background-repeat: no-repeat;
+margin-bottom: 100px;
+h1{
+position: relative;
+color: white;
+font-size: 80px;
+@extend %center;
+top:300px;
+}
+}
+
+// SERVICE content
+#conversion{
+position: relative;
+height: 500px;
+width: 1900px;
+
+}
+#repair{
+
+  height: 500px;
+  width: 1900px;
+}
+#newbuilding{
+  height: 500px;
+  width: 1900px;
+}
+.ser-box{
+  float: right;
+  height: 300px;
+  width: 600px;
+}
+.ser-textbox{
+  background: black;
+  height: 300px;
+  width: 600px;
+  opacity: 30%;
+}
+.ser-title{
+font-size: 30px;
+margin-bottom: 10px;
+}
+.ser-text{
+margin-bottom: 10px;
+}
+.mostwanted{
+  background: $red;
+  border: solid $red;
+  border-radius: 20px;
+  padding:2px;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.ser-title, .mostwanted, .ser-text{
+  color: white;
+  position: relative;
+  bottom: 280px;
+  margin-left: 5px;
+}
+
+//SERVICE conversion
