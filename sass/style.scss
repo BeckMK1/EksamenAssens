@@ -36,7 +36,7 @@ h1{
 
 body{
   background-color: $white;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 // Vores menu på store skærme
 .logo{
@@ -56,6 +56,8 @@ body{
   background-color: #FAFAFA;
   font-size: 20px;
   font-weight: bold;
+  z-index: 10000;
+position: fixed;
 
   border-bottom: 1.5vh solid transparent;
   border-image-source: url(../images/logo-border.svg);
@@ -64,6 +66,7 @@ body{
 }
 .navbox a{
   text-decoration: none;
+
 }
 .navbar{
   display: flex;
@@ -101,6 +104,7 @@ body{
   height: 100%;
   transition: .4s;
   @extend %shadow;
+  z-index: 10000
 }
 .active{
   right: 0;
@@ -120,9 +124,9 @@ ul li a{
   text-decoration: none;
   border-bottom: 1px solid rgba(0,0,0,.2);
 }
-
+// her laver vi den fysise burgerknap
 .burger-btn{
-  position: absolute;
+  position: fixed;
   top: 10px;
   right: 10px;
   width: 50px;
@@ -131,6 +135,7 @@ ul li a{
   border: none;
   outline: none;
   background: transparent;
+  z-index: 10001
 }
 
 .burger-btn span{
@@ -143,7 +148,12 @@ ul li a{
   border-radius: 3px;
 }
 
-
+// Her koder vi så burgeren bliver til et kryds
+// til at lukke for menuen igen.
+// dette gør vi ved at animere vores Span elementer
+// vi har 4 streger i alt. 2 ovenpå hinanden
+// de to ydre strejer forsvinder med opacity 0 transition
+// krydset kommer af det 2 streger i midten roterer.
 .burger-btn span:nth-child(1) {
   top: 10px;
   -webkit-transform-origin: left center;
@@ -170,7 +180,6 @@ ul li a{
 }
 
 .burger-btn.open span:nth-child(1) {
-
   opacity: 0;
 }
 
@@ -190,17 +199,82 @@ ul li a{
 }
 
 .burger-btn.open span:nth-child(4) {
-
   opacity: 0;
 }
+//   Facilities content
+.facilitiesheader{
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  img{
+    width: 100%;
+    height: 400px;
+}}
+
+.headercontainer{
+  position: relative;
+  z-index: -1;
+}
+.textblock{
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+background-color: rgba(0, 0, 0, 0.6);
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.facilitiesh1{
+    font-size: 50px;
+  }
+//facilities textboks
+
+.facilitiestext{
+  width: 100%;
+  height: 400px;
+
+}
+  // mapbox
+  .sidebar {
+  width: 33.3333%;
+}
+.mapbox{
+  background: #404040;
+  color: #f8f8f8;
+  height: 300px;
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+}
+.map {
+  border-left: 1px solid #fff;
+  position: absolute;
+  left: 33.3333%;
+  width: 66.6666%;
+  top: 0;
+  bottom: 0;
+}
+
+.pad2 {
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 
 //   FORSIDE content
-
 
 .forside{
   height: 500px;
 }
-
+//footer
 footer{
   height: 500px;
   background-color: $dark-blue
@@ -210,7 +284,7 @@ footer{
   width: 100%;
   margin-bottom: -10px;
 }
-
+//responsive media query
 @media only screen and (max-width: 768px){
   .menubox{
     display: none;
