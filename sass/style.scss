@@ -315,7 +315,6 @@ height: 700px;
 width: 1903px;
 background: url(/images/service-big.jpg);
 background-repeat: no-repeat;
-margin-bottom: 100px;
 h1{
 position: relative;
 color: white;
@@ -328,29 +327,42 @@ top:300px;
 // SERVICE content
 #conversion{
 position: relative;
+display:flex;
+flex-direction: column;
 height: 500px;
-width: 1900px;
-
+width: 1905px;
+background:url(/images/service-conersion.jpg)
 }
 #repair{
-
+  position: relative;
   height: 500px;
-  width: 1900px;
+  width: 1905px;
+background:url(/images/service-repair.jpg)
 }
 #newbuilding{
+  position: relative;
   height: 500px;
-  width: 1900px;
+  width: 1905px;
+  background:url(/images/service-newbuildings.jpg);
 }
-.ser-box{
+#re-box,#con-box,#new-box{
+  position: relative;
   float: right;
   height: 300px;
   width: 600px;
+  top:100px;
+}
+#re-box,#new-box{
+margin-right: 50px;
+}
+#con-box{
+margin-left:50px;
 }
 .ser-textbox{
   background: black;
   height: 300px;
   width: 600px;
-  opacity: 30%;
+  opacity: 70%;
 }
 .ser-title{
 font-size: 30px;
@@ -367,12 +379,13 @@ margin-bottom: 10px;
   font-size: 20px;
   padding-left: 20px;
   padding-right: 20px;
+  text-decoration: none;
 }
 .ser-title, .mostwanted, .ser-text{
   color: white;
   position: relative;
   bottom: 280px;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 //SERVICE conversion
