@@ -222,14 +222,32 @@ ul li a {
 
 /* line 240, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
 .facilitiestext {
+  margin-top: 100px;
   width: 100%;
-  height: 400px; }
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
-/* line 246, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+/* line 248, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+.tekstboks {
+  width: 70%;
+  max-width: 1000px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/* line 258, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+.facilities-tekst {
+  width: 60%;
+  font-size: 20px; }
+
+/* line 264, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
 .sidebar {
   width: 33.3333%; }
 
-/* line 249, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+/* line 267, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
 .mapbox {
   background: #404040;
   color: #f8f8f8;
@@ -238,7 +256,7 @@ ul li a {
   width: 100%;
   max-width: 700px; }
 
-/* line 257, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+/* line 275, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
 .map {
   border-left: 1px solid #fff;
   position: absolute;
@@ -247,46 +265,46 @@ ul li a {
   top: 0;
   bottom: 0; }
 
-/* line 266, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+/* line 284, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
 .pad2 {
   padding: 20px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 276, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+/* line 294, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
 .forside {
   height: 500px; }
 
-/* line 280, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+/* line 298, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
 footer {
   height: 500px;
   background-color: #163f70; }
 
-/* line 285, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+/* line 303, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
 #footer-img {
   width: 100%;
   margin-bottom: -10px; }
 
 @media only screen and (max-width: 768px) {
-  /* line 291, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+  /* line 309, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
   .menubox {
     display: none; }
-  /* line 294, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+  /* line 312, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
   .contactbox {
     display: none; } }
 
 @media only screen and (min-width: 769px) {
-  /* line 299, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+  /* line 317, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
   .burgerbar, .burger-btn {
     display: none; } }
 
 @media only screen and (max-width: 550px) {
-  /* line 305, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+  /* line 323, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
   .logo {
     width: 250px; } }
 
-/* line 312, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+/* line 330, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
 #service-bigpicture {
   position: relative;
   height: 700px;
@@ -294,52 +312,52 @@ footer {
   background: url(/images/service-big.jpg);
   background-repeat: no-repeat;
   margin-bottom: 100px; }
-  /* line 319, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+  /* line 337, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
   #service-bigpicture h1 {
     position: relative;
     color: white;
     font-size: 80px;
     top: 300px; }
 
-/* line 329, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+/* line 347, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
 #conversion {
   position: relative;
   height: 500px;
   width: 1900px; }
 
-/* line 335, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+/* line 353, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
 #repair {
   height: 500px;
   width: 1900px; }
 
-/* line 340, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+/* line 358, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
 #newbuilding {
   height: 500px;
   width: 1900px; }
 
-/* line 344, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+/* line 362, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
 .ser-box {
   float: right;
   height: 300px;
   width: 600px; }
 
-/* line 349, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+/* line 367, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
 .ser-textbox {
   background: black;
   height: 300px;
   width: 600px;
   opacity: 30%; }
 
-/* line 355, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+/* line 373, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
 .ser-title {
   font-size: 30px;
   margin-bottom: 10px; }
 
-/* line 359, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+/* line 377, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
 .ser-text {
   margin-bottom: 10px; }
 
-/* line 362, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+/* line 380, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
 .mostwanted {
   background: #CE3233;
   border: solid #CE3233;
@@ -349,7 +367,7 @@ footer {
   padding-left: 20px;
   padding-right: 20px; }
 
-/* line 371, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+/* line 389, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
 .ser-title, .mostwanted, .ser-text {
   color: white;
   position: relative;

@@ -238,10 +238,28 @@ justify-content: center;
 //facilities textboks
 
 .facilitiestext{
+  margin-top: 100px;
   width: 100%;
-  height: 400px;
-
+height: 500px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
+.tekstboks {
+  width: 70%;
+  max-width: 1000px;
+  height: 400px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.facilities-tekst{
+width: 60%;
+font-size: 20px;
+}
+
   // mapbox
   .sidebar {
   width: 33.3333%;
