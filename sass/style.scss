@@ -428,4 +428,39 @@ footer {
   margin-left: 10px;
 }
 
-//SERVICE conversion
+//REPAIR page
+#repair-bigpicture{
+  position: relative;
+  height: 700px;
+  width: 1920px;
+  background: url(/images/service-big.jpg);
+  background-repeat: no-repeat;
+  h1 {
+    position: relative;
+    color: white;
+    font-size: 80px;
+    @extend %center;
+    top: 300px;
+  }
+}
+// Repair content
+#repair-content{
+height: 3000px;
+}
+
+#repair-box{
+position: relative;
+@extend %center;
+top:300px;
+background:lightblue;
+height: 300px;
+width: 600px;
+left:35%;
+color:black;
+text-align: center;
+}
+#galarri{
+position: relative;
+@extend %center;
+top:500px;
+}
