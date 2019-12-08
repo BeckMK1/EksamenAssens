@@ -481,3 +481,20 @@ position: relative;
 @extend %center;
 top:500px;
 }
+//Repair gallery
+#pictuees{
+padding-top: 10px; overflow:hidden;
+}
+#picture img, #fullImg{
+border: 1px solid gray;
+padding:4px;
+background: white;
+cursor:pointer;
+}
+#pictures img{
+float:left;
+margin-right:6px;
+}
+#view{
+position: relative;
+}
