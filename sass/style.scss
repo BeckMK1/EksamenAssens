@@ -717,13 +717,30 @@ footer {
   .burger-btn {
     display: none;
   }
-
+  // SERVICE page
+  #service-bigpicture{
+    height: 225px;
+    width: 550px;
+    }
+   #repair,#conversion,#newbuilding{
+   height: 125px;
+   width: 550px; 
+   }
+   .ser-textbox{
+   height: 10px;
+   width: 20px;
+   }
+   #re-box,#con-box,#new-box{
+   height: 10px;
+   width: 20px;
+   }
 }
 
 @media only screen and (max-width: 550px) {
   .logo {
     width: 250px;
   }
+}
     //contact//
 .reakke1 {
         display: flex;
@@ -915,4 +932,4 @@ position: relative;
 @extend %center;
 top:500px;
 }
-
+//Repair gallery
