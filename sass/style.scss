@@ -628,6 +628,126 @@ footer {
 }
 
 
+
+// SERVICE page
+#service{
+width: 1920px;
+}
+
+
+// SERVICE content
+#repair {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  background: url(../images/service-repair.jpg)
+}
+
+#conversion {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 100%;
+  background: url(../images/service-conersion.jpg);
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#newbuilding {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  background: url(../images/service-newbuildings.jpg);
+}
+
+#re-box,#con-box,#new-box {
+  position: relative;
+  float: right;
+  height: 300px;
+  width: 600px;
+  top: 100px;
+}
+
+#re-box,#new-box {
+  margin-right: 50px;
+}
+
+#con-box {
+  margin-left: 50px;
+}
+
+.ser-textbox {
+  background-color: black;
+  height: 300px;
+  width: 600px;
+  opacity: 70%;
+}
+
+.ser-title {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.ser-text {
+  margin-bottom: 10px;
+}
+
+.mostwanted{
+  background: $red;
+  border: solid $red;
+  border-radius: 20px;
+  font-size: 20px;
+  padding-left:20px;
+  padding-right: 20px;
+  text-decoration: none;
+}
+
+.ser-title,
+.mostwanted,
+.ser-text {
+  color: white;
+  position: relative;
+  bottom: 280px;
+  margin-left: 10px;
+}
+
+//REPAIR page
+#repair-bigpicture{
+  position: relative;
+  height: 700px;
+  width: 1920px;
+  background: url(../images/service-big.jpg);
+  background-repeat: no-repeat;
+  h1 {
+    position: relative;
+    color: white;
+    font-size: 80px;
+    @extend %center;
+    top: 300px;
+  }
+}
+// Repair content
+#repair-content{
+height: 3000px;
+}
+
+#repair-box{
+position: relative;
+@extend %center;
+top:300px;
+background:url(../images/tb.svg);
+height: 600px;
+width: 1920px;
+color:black;
+text-align: center;
+}
+#galarri{
+position: relative;
+@extend %center;
+top:500px;
+}
+
 @media only screen and (max-width: 768px){
 
   .most-wanted-btns{
@@ -725,6 +845,42 @@ footer {
     }
 
     // SERVICE page
+    #service{
+    width: 768px;
+    }
+
+    .ser-textbox{
+    width: 100%;
+    height: 100%;
+    }
+    #re-box,#con-box,#new-box{
+    position: relative;
+    width: 768px;
+    height: 500px;
+    display: block;
+    float: none;
+    top:0;
+    margin-left: 0;
+    margin-right: 0;
+    }
+    .ser-text{
+    text-align: center;
+    }
+    .ser-title{
+    text-align: center;
+    }
+    .mostwanted{
+    display: flex;
+    justify-content: center;
+    padding:0;
+    margin-right: 340px;
+    margin-left: 340px;
+    }
+    #conversion,#repair,#newbuilding{
+    width: 768px;
+    height: 500px;
+    }
+
 }
 @media only screen and (min-width: 769px) {
 
@@ -799,118 +955,4 @@ margin-left: 25%;
    margin-bottom: 50px;
     margin-top: -70px;
     }
-}
-
-// SERVICE page
-
-// SERVICE content
-#repair {
-  position: relative;
-  height: 500px;
-  width: 100%;
-  background: url(/images/service-repair.jpg)
-}
-
-#conversion {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  height: 500px;
-  width: 100%;
-  background: url(/images/service-conersion.jpg)
-}
-
-#newbuilding {
-  position: relative;
-  height: 500px;
-  width: 100%;
-  background: url(/images/service-newbuildings.jpg);
-}
-
-#re-box,#con-box,#new-box {
-  position: relative;
-  float: right;
-  height: 300px;
-  width: 600px;
-  top: 100px;
-}
-
-#re-box,#new-box {
-  margin-right: 50px;
-}
-
-#con-box {
-  margin-left: 50px;
-}
-
-.ser-textbox {
-  background: black;
-  height: 300px;
-  width: 600px;
-  opacity: 70%;
-}
-
-.ser-title {
-  font-size: 30px;
-  margin-bottom: 10px;
-}
-
-.ser-text {
-  margin-bottom: 10px;
-}
-
-.mostwanted {
-  background: $red;
-  border: solid $red;
-  border-radius: 20px;
-  padding: 2px;
-  font-size: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  text-decoration: none;
-}
-
-.ser-title,
-.mostwanted,
-.ser-text {
-  color: white;
-  position: relative;
-  bottom: 280px;
-  margin-left: 10px;
-}
-
-//REPAIR page
-#repair-bigpicture{
-  position: relative;
-  height: 700px;
-  width: 1920px;
-  background: url(/images/service-big.jpg);
-  background-repeat: no-repeat;
-  h1 {
-    position: relative;
-    color: white;
-    font-size: 80px;
-    @extend %center;
-    top: 300px;
-  }
-}
-// Repair content
-#repair-content{
-height: 3000px;
-}
-
-#repair-box{
-position: relative;
-@extend %center;
-top:300px;
-background:url(/images/tb.svg);
-height: 600px;
-width: 1920px;
-color:black;
-text-align: center;
-}
-#galarri{
-position: relative;
-@extend %center;
-top:500px;
 }
