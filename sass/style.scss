@@ -474,6 +474,131 @@ max-width: 200px;
   height: 500px;
 }
 
+
+//contakt content
+
+.herobillede {
+    background-image: url(../images/kontaktsidehero.png);
+    position: relative;
+    z-index: -1;
+    background-size: cover;
+    height: 450px;
+    width: 100%;
+    
+    h1{
+    
+    display: flex;
+        flex-direction: row;
+justify-content: center;
+ padding-top: 200px;
+    color: $white;
+        font-size: 50px;
+    
+    }
+
+ 
+    
+
+}
+ 
+.reakke1 {display: flex;
+flex-direction: row;
+justify-content: center;
+    margin-top: 50px;
+    margin-left: 35px;
+    
+}
+.reakke2 {display: flex;
+flex-direction: row;
+justify-content: center;
+    margin-top: 100px;
+}
+
+.reakke3 {display: flex;
+flex-direction: row;
+justify-content: center;
+    margin-top: 100px;
+}
+.reakke4 {display: flex;
+flex-direction: row;
+justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.reakke5 {display: flex;
+flex-direction: row;
+justify-content: center;
+    margin-top: 100px;
+}
+
+.billederkontakt {
+    display: flex;
+flex-direction: row;
+    margin-left: 10px;
+    
+    
+    img {height: auto;
+    width: 100px;
+    margin-right: 20px;}
+}
+.tekstboxcontact {
+    display: flex;
+    flex-direction: row;
+ z-index: -1;
+   justify-content: center;
+    align-content: space-between;
+    margin-top:75px;
+    margin-bottom: 100px;
+ 
+
+   
+    
+}
+
+.tekstkontakt{
+    display: flex;
+flex-direction: row;
+    justify-content: space-around;
+    
+}
+.tekst{
+    display: flex;
+flex-direction: column;
+    justify-content: center;
+    margin-left: 75px;
+    padding-right: 50px;
+    
+}
+
+.billedemap {height: 100px;
+    width: auto;
+   display: flex;
+    flex-direction: row;
+justify-content: center;
+    margin-top: 140px;
+    margin-right: -50px;
+   
+    img{height: 400px;
+        width: auto}
+}
+
+
+.listen { list-style: none;
+padding-top: 30px;}
+
+.mobilmap{
+        display: none;
+    }
+footer{
+  height: 400px;
+  background-color: $dark-blue
+}
+
+#footer-img{
+  width: 100%;
+  margin-bottom: -10px;
+}
+
 //footer
 footer {
   height: 500px;
@@ -524,6 +649,64 @@ footer {
     'help-text'
     'help-img';
   }
+
+//contact content// 
+ .reakke1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+         img {
+              margin-bottom: 15px;
+          }
+    }
+    
+      .reakke2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+          img {
+              margin-bottom: 15px;
+              margin-top: 0;
+          }
+    }
+      .reakke3 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+           img {
+              margin-bottom: 15px;
+          }
+    }
+      .reakke4 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+           img {
+              margin-bottom: 15px;
+          }
+    }
+      .reakke5 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+           img {
+              margin-bottom: 15px;
+          }
+    }
+    .billedemap img {
+       width: auto;
+        height: 225px;
+        margin-top: -50px;
+    }
+    .tekstbox {
+        height: 450px;
+    }
+    .tekst{
+        text-align: center;
+    }
+    .mobilmap{
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 769px) {
@@ -556,6 +739,66 @@ footer {
     width: 250px;
   }
 
+    //contact//
+.reakke1 {
+        display: flex;
+        flex-direction: column;
+         padding-left: 15%;
+        
+    }
+    .herobillede {
+        width: 100%;;
+        height: auto;
+    }
+      .reakke2 {
+        display: flex;
+        flex-direction: column;
+        padding-left: 22%;
+    }
+      .reakke3 {
+        display: flex;
+        flex-direction: column;
+       padding-left: 22%;
+    }
+      .reakke4 {
+        display: flex;
+        flex-direction: column;
+        padding-left: 22%;
+    }
+    
+    
+     .billedemap img {
+       width: auto;
+        height: 100px;
+         margin-top: -85px;
+         display: none;
+         
+         
+        
+    }
+    .tekstbox {
+        height: 200px;
+        width: 100%;
+        
+
+    }
+    .tekst{
+        text-align: center;
+        margin-right: 50px;
+       
+    }
+   
+  .mobilmap  {
+        display: block;
+
+    }
+.mobilmap img {
+        width: 400px;
+height: auto;
+margin-left: 25%;
+   margin-bottom: 50px;
+    margin-top: -70px;
+    }
 }
 
 // SERVICE page
