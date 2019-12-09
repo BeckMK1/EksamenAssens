@@ -49,6 +49,12 @@ header{
   height: auto;
   width: 400px;
   align-items: flex-end;
+  font-family: LogoFont;
+}
+
+@font-face {
+  font-family: LogoFont;
+  src: url(../font/logofont.ttf);
 }
 
 .navbox{
@@ -259,19 +265,18 @@ ul li a {
 
 
 .facilitiestext{
-  margin-top: 100px;
-  margin-bottom: 100px;
+  position: relative;
+  margin: 100px 0 100px;
   width: 100%;
-height: 500px;
-@extend %center;
-  max-width: 1000px;
-  background-color: grey;
+  height: 500px;
+  @extend %center;
 }
+
 .tekstboks {
   background-color: $light-blue;
   width: 70%;
   height: 400px;
-@extend %center;
+  @extend %center;
 }
 
 
@@ -280,19 +285,39 @@ width: 60%;
 font-size: 20px;
 }
 
-  // mapbox
-  /*
-  .sidebar {
-  width: 33.3333%;
+
+#mapbody{
+
+  img {
+    position: relative;
+    @extend %center;
+    z-index: 9;
+  }
+}
+#map{
+  position: absolute;
+  height: 650px;
+  width: 80%;
+  left: 10%;
+  right: 10%;
 }
 
-.mapbox {
-  background: #404040;
-  color: #f8f8f8;
-  height: 300px;
-  position: relative;
-  width: 100%;
-  max-width: 700px;
+#marker, #marker2, #marker3, #marker4, #marker5, #marker6, #marker7, #marker8, #marker9, #marker10, #marker11, #marker12 {
+background-image: url(../images/logo-small.svg);
+background-size: cover;
+width: 30px;
+height: 30px;
+cursor: pointer;
+}
+
+.mapboxgl-popup {
+max-width: 200px;
+}
+
+//   FORSIDE content
+
+.forside {
+  height: 500px;
 }
 
 #frontpage-hero-img{
@@ -305,12 +330,12 @@ font-size: 20px;
   width: 100%;
   height: 300px;
   display: grid;
-  grid-template-columns: 25% 25% 25%;
+  grid-template-columns: 22% 22% 22%;
   grid-gap: 5%;
   justify-content: center;
   align-self: center;
 
-  margin: 30px 0;
+  margin: 100px 0;
   a{
     display: flex;
     justify-content: center;
@@ -366,19 +391,20 @@ font-size: 20px;
 
 #textbox-margin{
   position: relative;
-  margin: -20px 0px;
-  z-index: -10;
+  z-index: 10;
 }
 .frontpage-about{
   background-color: $light-blue;
+  margin-top: -10px;
 
     h1{
+    padding: 10px 0px;
     text-align: center;
     }
 }
 .about-grid{
   display: grid;
-  margin: 20px 7.5%;
+  margin: 0px 7.5%;
   grid-template-columns: 47.5% 47.5%;
   grid-gap: 5%;
   grid-template-areas: 'about-text intro-video';
@@ -390,6 +416,7 @@ font-size: 20px;
   grid-template-columns: 47.5% 47.5%;
   grid-gap: 5%;
   grid-template-areas: 'help-img help-text';
+  margin: 100px 0;
 }
 
 #help-img{
@@ -425,92 +452,30 @@ img{
   justify-self: center;
 }
 }
-// mapbox
-  /*
-  .sidebar {
-  width: 33.3333%;
-}
-
-.mapbox {
-  background: #404040;
-  color: #f8f8f8;
-  height: 300px;
-  position: relative;
-  width: 100%;
-  max-width: 700px;
-}
-
-.map {
-  border-left: 1px solid #fff;
-  position: absolute;
-  left: 33.3333%;
-  width: 66.6666%;
-  top: 0;
-  bottom: 0;
-}
-
-.pad2 {
-  padding: 20px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-*/
-#mapbody{
-
-  img {
-    position: relative;
-    @extend %center;
-    z-index: 9;
-  }
-}
-#map{
-  position: absolute;
-  height: 650px;
-  width: 80%;
-  left: 10%;
-  right: 10%;
-}
-
-#marker, #marker2, #marker3, #marker4, #marker5, #marker6, #marker7, #marker8, #marker9, #marker10, #marker11, #marker12 {
-background-image: url(../images/logo-small.svg);
-background-size: cover;
-width: 30px;
-height: 30px;
-cursor: pointer;
-}
-
-.mapboxgl-popup {
-max-width: 200px;
-}
-
-//   FORSIDE content
-
-.forside {
-  height: 500px;
-}
 
 
 //contakt content
 
 .herobillede {
     background-image: url(../images/kontaktsidehero.png);
+    background-position: left top;
     position: relative;
     z-index: -1;
     background-size: cover;
     height: 450px;
     width: 100%;
-
+    margin-top: 60px;
     h1{
 
     display: flex;
         flex-direction: row;
-justify-content: center;
- padding-top: 200px;
-    color: $white;
+        justify-content: center;
+padding-top: 200px;
+        color: $white;
         font-size: 50px;
 
     }
+    
 
 
 
@@ -540,6 +505,7 @@ flex-direction: row;
 justify-content: center;
     margin-top: 100px;
     margin-bottom: 50px;
+
 }
 .reakke5 {display: flex;
 flex-direction: row;
@@ -560,30 +526,32 @@ flex-direction: row;
 .tekstboxcontact {
     display: flex;
     flex-direction: row;
- z-index: -1;
    justify-content: center;
     align-content: space-between;
     margin-top:75px;
     margin-bottom: 100px;
 
+}
 
-
-
+.contact-background{
+    background-color: $light-blue;
+    height: 400px;
 }
 
 .tekstkontakt{
     display: flex;
-flex-direction: row;
+    flex-direction: row;
     justify-content: space-around;
 
 }
 .tekst{
     display: flex;
-flex-direction: column;
+    flex-direction: column;
     justify-content: center;
     margin-left: 75px;
     padding-right: 50px;
-
+    margin-top: 60px;
+    
 }
 
 .billedemap {height: 100px;
@@ -591,7 +559,7 @@ flex-direction: column;
    display: flex;
     flex-direction: row;
 justify-content: center;
-    margin-top: 140px;
+    margin-top: -90px;
     margin-right: -50px;
 
     img{height: 400px;
@@ -603,6 +571,7 @@ justify-content: center;
 padding-top: 30px;}
 
 .mobilmap{
+    
         display: none;
     }
 footer{
@@ -831,19 +800,21 @@ top:500px;
     }
     .billedemap img {
        width: auto;
-        height: 225px;
-        margin-top: -50px;
+        height: 230px;
+        margin-top: 75px;
     }
     .tekstbox {
         height: 450px;
     }
     .tekst{
         text-align: center;
+        margin-top: -10px;
     }
     .mobilmap{
         display: none;
     }
-
+    
+        
     // SERVICE page
     #service{
     width: 768px;
@@ -905,6 +876,10 @@ top:500px;
     .herobillede {
         width: 100%;;
         height: auto;
+        h1{
+            padding-top: -100px;
+        }
+        
     }
       .reakke2 {
         display: flex;
@@ -941,11 +916,13 @@ top:500px;
     .tekst{
         text-align: center;
         margin-right: 50px;
-
+        margin-top: -50px;
+       
     }
 
   .mobilmap  {
         display: block;
+      padding-top: 125px;
 
     }
 .mobilmap img {
@@ -955,4 +932,6 @@ margin-left: 25%;
    margin-bottom: 50px;
     margin-top: -70px;
     }
+    .contact-background{ height: 200px;
+    margin-top: 10px;}
 }
