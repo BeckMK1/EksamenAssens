@@ -1,7 +1,7 @@
 /*---------------My variables*---------------*/
 /*---------------My variables*---------------*/
 /*---------------My Inheritances-------------*/
-.facilitiestext, .tekstboks, #mapbody img, #repair-bigpicture h1, #repair-box, #galarri {
+.facilitiestext, .tekstboks, #mapbody img, .herobillede #repair-bigpicture h1, .herobillede #repair-box, .herobillede #galarri {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -382,356 +382,320 @@ ul li a {
     padding-top: 200px;
     color: #FAFAFA;
     font-size: 50px; }
-
-.reakke1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 50px;
-  margin-left: 20px; }
-
-.reakke2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 100px; }
-
-.reakke3 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 100px; }
-
-.reakke4 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 100px;
-  margin-bottom: 50px; }
-
-.reakke5 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 100px; }
-
-.billederkontakt {
-  display: flex;
-  flex-direction: row;
-  margin-left: 10px; }
-  .billederkontakt img {
-    height: auto;
-    width: 100px;
-    margin-right: 20px; }
-
-.tekstboxcontact {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: space-between;
-  margin-top: 75px;
-  margin-bottom: 100px; }
-
-.contact-background {
-  background-color: #E9F6FF;
-  height: 400px; }
-
-.contact-grid {
-  display: grid;
-  grid-template-columns: 25% 25% 25%;
-  grid-gap: 5%;
-  grid-template-areas: 'col1 col2 col3'; }
-  .contact-grid img {
-    width: 200px; }
-  .contact-grid a {
-    text-decoration: none; }
-
-.tekstkontakt {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around; }
-
-.tekst {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 75px;
-  padding-right: 50px;
-  margin-top: 60px; }
-
-.billedemap {
-  height: 100px;
-  width: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: -90px;
-  margin-right: -50px; }
-  .billedemap img {
-    height: 400px;
-    width: auto; }
-
-.listen {
-  list-style: none;
-  padding-top: 30px; }
-
-.mobilmap {
-  display: none; }
-
-footer {
-  height: 400px;
-  background-color: #163f70; }
-
-#footer-img {
-  width: 100%;
-  margin-bottom: -10px; }
-
-footer {
-  height: 500px;
-  background-color: #163f70; }
-
-#footer-img {
-  width: 100%;
-  margin-bottom: -10px;
-  margin-top: 10vh; }
-
-#service {
-  width: 1920px; }
-
-#repair {
-  position: relative;
-  height: 500px;
-  width: 100%;
-  background: url(../images/service-repair.jpg); }
-
-#conversion {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  height: 500px;
-  width: 100%;
-  background: url(../images/service-conersion.jpg);
-  margin-bottom: 20px;
-  margin-top: 20px; }
-
-#newbuilding {
-  position: relative;
-  height: 500px;
-  width: 100%;
-  background: url(../images/service-newbuildings.jpg); }
-
-#re-box, #con-box, #new-box {
-  position: relative;
-  float: right;
-  height: 300px;
-  width: 600px;
-  top: 100px; }
-
-#re-box, #new-box {
-  margin-right: 50px; }
-
-#con-box {
-  margin-left: 50px; }
-
-.ser-textbox {
-  background-color: black;
-  height: 300px;
-  width: 600px;
-  opacity: 70%; }
-
-.ser-title {
-  font-size: 30px;
-  margin-bottom: 10px; }
-
-.ser-text {
-  margin-bottom: 10px; }
-
-.mostwanted {
-  background: #CE3233;
-  border: solid #CE3233;
-  border-radius: 20px;
-  font-size: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  text-decoration: none; }
-
-.ser-title,
-.mostwanted,
-.ser-text {
-  color: white;
-  position: relative;
-  bottom: 280px;
-  margin-left: 10px; }
-
-#repair-bigpicture {
-  position: relative;
-  height: 700px;
-  width: 1920px;
-  background: url(../images/service-big.jpg);
-  background-repeat: no-repeat; }
-  #repair-bigpicture h1 {
-    position: relative;
-    color: white;
-    font-size: 80px;
-    top: 300px; }
-
-#repair-content {
-  height: 3000px; }
-
-#repair-box {
-  position: relative;
-  top: 300px;
-  background: url(../images/tb.svg);
-  height: 600px;
-  width: 1920px;
-  color: black;
-  text-align: center; }
-
-#galarri {
-  position: relative;
-  top: 500px; }
-
-@media only screen and (max-width: 768px) {
-  .most-wanted-btns {
-    height: 150px; }
-  .most-wanted-btns a:nth-child(1) {
-    height: 150px; }
-  .most-wanted-btns a:nth-child(2) {
-    height: 150px; }
-  .most-wanted-btns a:nth-child(3) {
-    height: 150px; }
-  .most-wanted-btns a h1 {
-    font-size: 18px; }
-  .menubox {
-    display: none; }
-  .contactbox {
-    display: none; }
-  .about-grid {
-    grid-template-columns: 100%;
-    grid-template-areas: 'intro-video' 'about-text'; }
-  .frontpage-help {
-    grid-template-columns: 100%;
-    grid-template-areas: 'help-text' 'help-img'; }
-  .reakke1 {
+  .herobillede .reakke1 {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; }
-    .reakke1 img {
-      margin-bottom: 15px; }
-  .reakke2 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; }
-    .reakke2 img {
-      margin-bottom: 15px;
-      margin-top: 0; }
-  .reakke3 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; }
-    .reakke3 img {
-      margin-bottom: 15px; }
-  .reakke4 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; }
-    .reakke4 img {
-      margin-bottom: 15px; }
-  .reakke5 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; }
-    .reakke5 img {
-      margin-bottom: 15px; }
-  .billedemap img {
-    width: auto;
-    height: 230px;
-    margin-top: 75px; }
-  .tekstbox {
-    height: 450px; }
-  .tekst {
-    text-align: center;
-    margin-top: -10px; }
-  .mobilmap {
-    display: none; }
-  #service {
-    width: 768px; }
-  .ser-textbox {
-    width: 100%;
-    height: 100%; }
-  #re-box, #con-box, #new-box {
-    position: relative;
-    width: 768px;
-    height: 500px;
-    display: block;
-    float: none;
-    top: 0;
-    margin-left: 0;
-    margin-right: 0; }
-  .ser-text {
-    text-align: center; }
-  .ser-title {
-    text-align: center; }
-  .mostwanted {
-    display: flex;
     justify-content: center;
-    padding: 0;
-    margin-right: 340px;
-    margin-left: 340px; }
-  #conversion, #repair, #newbuilding {
-    width: 768px;
-    height: 500px; } }
-
-@media only screen and (min-width: 769px) {
-  .burgerbar,
-  .burger-btn {
-    display: none; } }
-
-@media only screen and (max-width: 550px) {
-  .logo {
-    width: 250px; }
-  .reakke1 {
+    margin-top: 50px; }
+  .herobillede .reakke2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px; }
+  .herobillede .reakke3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px; }
+  .herobillede .reakke4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 50px; }
+  .herobillede .reakke5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px; }
+  .herobillede .billederkontakt {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px; }
+    .herobillede .billederkontakt img {
+      height: auto;
+      width: 100px;
+      margin-right: 20px; }
+  .herobillede .tekstboxcontact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
+    margin-top: 75px;
+    margin-bottom: 100px; }
+  .herobillede .contact-background {
+    background-color: #E9F6FF;
+    height: 400px; }
+  .herobillede .contact-grid {
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-gap: 5%;
+    grid-template-areas: 'col1 col2 col3'; }
+    .herobillede .contact-grid img {
+      width: 200px; }
+    .herobillede .contact-grid a {
+      text-decoration: none; }
+  .herobillede .tekstkontakt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 500px; }
+  .herobillede .tekst {
     display: flex;
     flex-direction: column;
-    padding-left: 15%; }
-  .herobillede {
-    width: 100%;
-    height: auto; }
-    .herobillede h1 {
-      padding-top: -100px; }
-  .reakke2 {
-    display: flex;
-    flex-direction: column;
-    padding-left: 22%; }
-  .reakke3 {
-    display: flex;
-    flex-direction: column;
-    padding-left: 22%; }
-  .reakke4 {
-    display: flex;
-    flex-direction: column;
-    padding-left: 22%; }
-  .billedemap img {
-    width: auto;
+    justify-content: center;
+    margin-left: 75px;
+    padding-right: 50px;
+    margin-top: 60px; }
+  .herobillede .billedemap {
     height: 100px;
-    margin-top: -85px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -70px;
+    margin-right: -50px; }
+    .herobillede .billedemap img {
+      height: 400px;
+      width: auto; }
+  .herobillede .listen {
+    list-style: none;
+    padding-top: 30px;
+    width: 200px; }
+  .herobillede .mobilmap {
     display: none; }
-  .tekstbox {
-    height: 200px;
-    width: 100%; }
-  .tekst {
-    text-align: center;
-    margin-right: 50px;
-    margin-top: -50px; }
-  .mobilmap {
-    display: block;
-    padding-top: 125px; }
-  .mobilmap img {
-    width: 400px;
-    height: auto;
-    margin-left: 25%;
-    margin-bottom: 50px;
-    margin-top: -70px; }
-  .contact-background {
-    height: 200px;
-    margin-top: 10px; } }
+  .herobillede footer {
+    height: 400px;
+    background-color: #163f70; }
+  .herobillede #footer-img {
+    width: 100%;
+    margin-bottom: -10px; }
+  .herobillede footer {
+    height: 500px;
+    background-color: #163f70; }
+  .herobillede #footer-img {
+    width: 100%;
+    margin-bottom: -10px;
+    margin-top: 10vh; }
+  .herobillede #service {
+    width: 1920px; }
+  .herobillede #repair {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    background: url(../images/service-repair.jpg); }
+  .herobillede #conversion {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 100%;
+    background: url(../images/service-conersion.jpg);
+    margin-bottom: 20px;
+    margin-top: 20px; }
+  .herobillede #newbuilding {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    background: url(../images/service-newbuildings.jpg); }
+  .herobillede #re-box, .herobillede #con-box, .herobillede #new-box {
+    position: relative;
+    float: right;
+    height: 300px;
+    width: 600px;
+    top: 100px; }
+  .herobillede #re-box, .herobillede #new-box {
+    margin-right: 50px; }
+  .herobillede #con-box {
+    margin-left: 50px; }
+  .herobillede .ser-textbox {
+    background-color: black;
+    height: 300px;
+    width: 600px;
+    opacity: 70%; }
+  .herobillede .ser-title {
+    font-size: 30px;
+    margin-bottom: 10px; }
+  .herobillede .ser-text {
+    margin-bottom: 10px; }
+  .herobillede .mostwanted {
+    background: #CE3233;
+    border: solid #CE3233;
+    border-radius: 20px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none; }
+  .herobillede .ser-title,
+  .herobillede .mostwanted,
+  .herobillede .ser-text {
+    color: white;
+    position: relative;
+    bottom: 280px;
+    margin-left: 10px; }
+  .herobillede #repair-bigpicture {
+    position: relative;
+    height: 700px;
+    width: 1920px;
+    background: url(../images/service-big.jpg);
+    background-repeat: no-repeat; }
+    .herobillede #repair-bigpicture h1 {
+      position: relative;
+      color: white;
+      font-size: 80px;
+      top: 300px; }
+  .herobillede #repair-content {
+    height: 3000px; }
+  .herobillede #repair-box {
+    position: relative;
+    top: 300px;
+    background: url(../images/tb.svg);
+    height: 600px;
+    width: 1920px;
+    color: black;
+    text-align: center; }
+  .herobillede #galarri {
+    position: relative;
+    top: 500px; }
+  @media only screen and (max-width: 768px) {
+    .herobillede .most-wanted-btns {
+      height: 150px; }
+    .herobillede .most-wanted-btns a:nth-child(1) {
+      height: 150px; }
+    .herobillede .most-wanted-btns a:nth-child(2) {
+      height: 150px; }
+    .herobillede .most-wanted-btns a:nth-child(3) {
+      height: 150px; }
+    .herobillede .most-wanted-btns a h1 {
+      font-size: 18px; }
+    .herobillede .menubox {
+      display: none; }
+    .herobillede .contactbox {
+      display: none; }
+    .herobillede .about-grid {
+      grid-template-columns: 100%;
+      grid-template-areas: 'intro-video' 'about-text'; }
+    .herobillede .frontpage-help {
+      grid-template-columns: 100%;
+      grid-template-areas: 'help-text' 'help-img'; }
+    .herobillede .reakke1 {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+      .herobillede .reakke1 img {
+        margin-bottom: 15px; }
+    .herobillede .reakke2 {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+      .herobillede .reakke2 img {
+        margin-bottom: 15px;
+        margin-top: 0; }
+    .herobillede .reakke3 {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+      .herobillede .reakke3 img {
+        margin-bottom: 15px; }
+    .herobillede .reakke4 {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+      .herobillede .reakke4 img {
+        margin-bottom: 15px; }
+    .herobillede .reakke5 {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+      .herobillede .reakke5 img {
+        margin-bottom: 15px; }
+    .herobillede .billedemap img {
+      width: auto;
+      height: 230px;
+      margin-top: 60px; }
+    .herobillede .tekstbox {
+      height: 450px; }
+    .herobillede .tekst {
+      text-align: center;
+      margin-top: -10px; }
+    .herobillede .mobilmap {
+      display: none; }
+    .herobillede #service {
+      width: 768px; }
+    .herobillede .ser-textbox {
+      width: 100%;
+      height: 100%; }
+    .herobillede #re-box, .herobillede #con-box, .herobillede #new-box {
+      position: relative;
+      width: 768px;
+      height: 500px;
+      display: block;
+      float: none;
+      top: 0;
+      margin-left: 0;
+      margin-right: 0; }
+    .herobillede .ser-text {
+      text-align: center; }
+    .herobillede .ser-title {
+      text-align: center; }
+    .herobillede .mostwanted {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin-right: 340px;
+      margin-left: 340px; }
+    .herobillede #conversion, .herobillede #repair, .herobillede #newbuilding {
+      width: 768px;
+      height: 500px; } }
+  @media only screen and (min-width: 769px) {
+    .herobillede .burgerbar,
+    .herobillede .burger-btn {
+      display: none; } }
+  @media only screen and (max-width: 550px) {
+    .herobillede .logo {
+      width: 250px; }
+    .herobillede .reakke1 {
+      display: flex;
+      flex-direction: column;
+      padding-left: 15%; }
+    .herobillede .herobillede {
+      width: 100%;
+      height: auto; }
+      .herobillede .herobillede h1 {
+        padding-top: -100px; }
+    .herobillede .reakke2 {
+      display: flex;
+      flex-direction: column;
+      padding-left: 22%; }
+    .herobillede .reakke3 {
+      display: flex;
+      flex-direction: column;
+      padding-left: 22%; }
+    .herobillede .reakke4 {
+      display: flex;
+      flex-direction: column;
+      padding-left: 22%; }
+    .herobillede .billedemap img {
+      width: auto;
+      height: 100px;
+      margin-top: -85px;
+      display: none; }
+    .herobillede .tekstbox {
+      height: 200px;
+      width: 100%; }
+    .herobillede .tekst {
+      text-align: center;
+      margin-right: 50px;
+      margin-top: -50px; }
+    .herobillede .mobilmap {
+      display: block;
+      padding-top: 125px; }
+    .herobillede .mobilmap img {
+      width: 400px;
+      height: auto;
+      margin-left: 25%;
+      margin-bottom: 50px;
+      margin-top: -70px; }
+    .herobillede .contact-background {
+      height: 200px;
+      margin-top: 10px; } }

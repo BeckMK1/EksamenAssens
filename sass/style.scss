@@ -508,13 +508,12 @@ padding-top: 200px;
 
 
 
-}
 
 .reakke1 {display: flex;
 flex-direction: row;
 justify-content: center;
     margin-top: 50px;
-  margin-left: 20px;
+  
 
 }
 .reakke2 {display: flex;
@@ -558,12 +557,15 @@ flex-direction: row;
     align-content: space-between;
     margin-top:75px;
     margin-bottom: 100px;
+  
+    
 
 }
 
 .contact-background{
     background-color: $light-blue;
     height: 400px;
+    
 }
 
 
@@ -584,6 +586,7 @@ flex-direction: row;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    height: 500px;
 
 }
 .tekst{
@@ -601,8 +604,9 @@ flex-direction: row;
    display: flex;
     flex-direction: row;
 justify-content: center;
-    margin-top: -90px;
+    margin-top: -70px;
     margin-right: -50px;
+    
 
     img{height: 400px;
         width: auto}
@@ -610,7 +614,9 @@ justify-content: center;
 
 
 .listen { list-style: none;
-padding-top: 30px;}
+padding-top: 30px;
+width: 200px;
+}
 
 .mobilmap{
 
@@ -843,7 +849,7 @@ top:500px;
     .billedemap img {
        width: auto;
         height: 230px;
-        margin-top: 75px;
+        margin-top: 60px;
     }
     .tekstbox {
         height: 450px;
@@ -976,4 +982,5 @@ margin-left: 25%;
     }
     .contact-background{ height: 200px;
     margin-top: 10px;}
+}
 }
