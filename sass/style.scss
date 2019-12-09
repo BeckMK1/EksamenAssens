@@ -532,13 +532,30 @@ footer {
   .burger-btn {
     display: none;
   }
-
+  // SERVICE page
+  #service-bigpicture{
+    height: 225px;
+    width: 550px;
+    }
+   #repair,#conversion,#newbuilding{
+   height: 125px;
+   width: 550px; 
+   }
+   .ser-textbox{
+   height: 10px;
+   width: 20px;
+   }
+   #re-box,#con-box,#new-box{
+   height: 10px;
+   width: 20px;
+   }
 }
 
 @media only screen and (max-width: 550px) {
   .logo {
     width: 250px;
   }
+
 }
 
 // SERVICE page
@@ -671,19 +688,3 @@ position: relative;
 top:500px;
 }
 //Repair gallery
-#pictuees{
-padding-top: 10px; overflow:hidden;
-}
-#picture img, #fullImg{
-border: 1px solid gray;
-padding:4px;
-background: white;
-cursor:pointer;
-}
-#pictures img{
-float:left;
-margin-right:6px;
-}
-#view{
-position: relative;
-}
