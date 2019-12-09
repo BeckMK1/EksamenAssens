@@ -30,15 +30,16 @@ $black: #000000;
   font-family: 'Roboto', sans-serif;
 }
 
-h1{
-  font-size: 14px;
-}
 
 body{
   background-color: $white;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 // Vores menu på store skærme
+
+header{
+  z-index: 20;
+}
 .logo{
   margin-top: 30px;
   height: auto;
@@ -47,7 +48,8 @@ body{
 }
 
 .navbox{
-
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -196,9 +198,135 @@ ul li a{
 
 //   FORSIDE content
 
+#frontpage-hero-img{
+  width: 100%;
+  height: auto;
+}
 
-.forside{
-  height: 500px;
+
+.most-wanted-btns{
+  width: 100%;
+  height: 300px;
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  grid-gap: 5%;
+  justify-content: center;
+  align-self: center;
+  
+  margin: 30px 0;
+  a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: $white;
+    width: 100%;
+    height: 300px;
+    h1{
+      font-size: 32px;
+    }
+  }
+}
+.most-wanted-btns a:nth-child(1){
+  background-image:url(../images/repair-btn.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 75% 50%;
+  width: 100%;
+
+
+}
+.most-wanted-btns a:nth-child(2){
+  background-image:url(../images/conversion-btn.jpg);
+  background-repeat: no-repeat;
+  background-position: 75% 50%;
+  background-size: cover;
+  width: 100%;
+}
+.most-wanted-btns a:nth-child(3){
+  background-image:url(../images/newbuilding-btn.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 75% 50%;
+  height: 300px;
+
+}
+
+#intro-video{
+  grid-area: intro-video;
+  width: 100%;
+  margin-bottom: 5vh;
+}
+
+#about-text{
+  grid-area: about-text;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  margin-bottom: 40px;
+    
+}
+
+#textbox-margin{
+  position: relative;
+  margin: -20px 0px;
+  z-index: -10;
+}
+.frontpage-about{
+  background-color: $light-blue;
+
+    h1{
+    text-align: center;
+    }
+}
+.about-grid{
+  display: grid;
+  margin: 20px 7.5%;
+  grid-template-columns: 47.5% 47.5%;
+  grid-gap: 5%;
+  grid-template-areas: 'about-text intro-video';
+}
+
+.frontpage-help{
+  display: grid;
+  margin: 40px 7.5%;
+  grid-template-columns: 47.5% 47.5%;
+  grid-gap: 5%;
+  grid-template-areas: 'help-img help-text';
+}
+
+#help-img{
+  grid-area: help-img;
+  width: 100%;
+}
+
+#help-text{
+  text-align: center;
+  grid-area: help-text;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+h1{
+  font-size: 30px;
+}
+.call-btn{
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 26px;
+  background-color: $red;
+  border-radius: 100px;
+  padding: 5px 20px;
+}
+p{
+  width: 70%;
+}
+img{
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+}
 }
 
 footer{
@@ -209,14 +337,45 @@ footer{
 #footer-img{
   width: 100%;
   margin-bottom: -10px;
+  margin-top: 10vh;
 }
 
+
 @media only screen and (max-width: 768px){
+
+  .most-wanted-btns{
+    height: 150px;
+  }
+  .most-wanted-btns a:nth-child(1){
+    height: 150px;
+  }
+  .most-wanted-btns a:nth-child(2){
+    height: 150px;
+  }
+  .most-wanted-btns a:nth-child(3){
+    height: 150px;
+  }
+  .most-wanted-btns a h1{
+    font-size: 18px
+  }
   .menubox{
     display: none;
   }
   .contactbox{
     display: none;
+  }
+  .about-grid{
+    grid-template-columns: 100%;
+    grid-template-areas:
+    'intro-video'
+    'about-text' ;
+  }
+
+  .frontpage-help{
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    'help-text'
+    'help-img';
   }
 }
 @media only screen and (min-width: 769px){

@@ -1,37 +1,39 @@
 /*---------------My variables*---------------*/
 /*---------------My variables*---------------*/
 /*---------------My Inheritances-------------*/
-/* line 18, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+/* line 18, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .burgerbar {
   -webkit-box-shadow: -6px 3px 6px 0px rgba(0, 0, 0, 0.16);
   -moz-box-shadow: -6px 3px 6px 0px rgba(0, 0, 0, 0.16);
   box-shadow: -6px 3px 6px 0px rgba(0, 0, 0, 0.16); }
 
 /*---------------My Inheritances-------------*/
-/* line 27, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+/* line 27, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 * {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif; }
 
-/* line 33, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
-h1 {
-  font-size: 14px; }
-
-/* line 37, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+/* line 34, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 body {
   background-color: #FAFAFA;
-  overflow: hidden; }
+  overflow-x: hidden; }
 
-/* line 42, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+/* line 40, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+header {
+  z-index: 20; }
+
+/* line 43, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .logo {
   margin-top: 30px;
   height: auto;
   width: 400px;
   align-items: flex-end; }
 
-/* line 49, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+/* line 50, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .navbox {
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,11 +47,11 @@ body {
   border-image-slice: 100;
   border-image-repeat: repeat; }
 
-/* line 65, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+/* line 67, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .navbox a {
   text-decoration: none; }
 
-/* line 68, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+/* line 70, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .navbar {
   display: flex;
   justify-content: space-around;
@@ -57,7 +59,7 @@ body {
   max-width: 1000px;
   align-items: center; }
 
-/* line 76, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+/* line 78, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .menubox {
   display: flex;
   justify-content: space-around;
@@ -65,18 +67,18 @@ body {
   flex-direction: row;
   width: 40%;
   max-width: 300px; }
-  /* line 83, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+  /* line 85, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .menubox p {
     color: #000000; }
 
-/* line 87, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+/* line 89, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 #contact-btn {
   color: #FAFAFA;
   border: 7px solid #CE3233;
   border-radius: 100px;
   background-color: #CE3233; }
 
-/* line 95, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+/* line 97, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .burgerbar {
   position: fixed;
   top: 0;
@@ -86,20 +88,20 @@ body {
   height: 100%;
   transition: .4s; }
 
-/* line 105, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+/* line 107, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .active {
   right: 0; }
 
-/* line 108, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+/* line 110, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 ul {
   margin: 0;
   padding: 20px 0; }
 
-/* line 112, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+/* line 114, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 ul li {
   list-style: none; }
 
-/* line 115, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+/* line 117, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 ul li a {
   padding: 10px 20px;
   color: #000000;
@@ -108,7 +110,7 @@ ul li a {
   text-decoration: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
 
-/* line 124, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+/* line 126, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .burger-btn {
   position: absolute;
   top: 10px;
@@ -120,7 +122,7 @@ ul li a {
   outline: none;
   background: transparent; }
 
-/* line 136, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+/* line 138, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .burger-btn span {
   display: block;
   width: 35px;
@@ -130,7 +132,7 @@ ul li a {
   transition: .4s;
   border-radius: 3px; }
 
-/* line 147, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+/* line 149, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .burger-btn span:nth-child(1) {
   top: 10px;
   -webkit-transform-origin: left center;
@@ -138,15 +140,15 @@ ul li a {
   -o-transform-origin: left center;
   transform-origin: left center; }
 
-/* line 155, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+/* line 157, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .burger-btn span:nth-child(2) {
   top: 20px; }
 
-/* line 159, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+/* line 161, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .burger-btn span:nth-child(3) {
   top: 20px; }
 
-/* line 164, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+/* line 166, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .burger-btn span:nth-child(4) {
   top: 30px;
   -webkit-transform-origin: right center;
@@ -154,57 +156,205 @@ ul li a {
   -o-transform-origin: right center;
   transform-origin: right center; }
 
-/* line 172, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+/* line 174, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .burger-btn.open span:nth-child(1) {
   opacity: 0; }
 
-/* line 177, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+/* line 179, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .burger-btn.open span:nth-child(2) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg); }
 
-/* line 184, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+/* line 186, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .burger-btn.open span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg); }
 
-/* line 192, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+/* line 194, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .burger-btn.open span:nth-child(4) {
   opacity: 0; }
 
-/* line 200, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
-.forside {
-  height: 500px; }
+/* line 201, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+#frontpage-hero-img {
+  width: 100%;
+  height: auto; }
 
-/* line 204, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+/* line 207, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+.most-wanted-btns {
+  width: 100%;
+  height: 300px;
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  grid-gap: 5%;
+  justify-content: center;
+  align-self: center;
+  margin: 30px 0; }
+  /* line 217, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  .most-wanted-btns a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #FAFAFA;
+    width: 100%;
+    height: 300px; }
+    /* line 225, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+    .most-wanted-btns a h1 {
+      font-size: 32px; }
+
+/* line 230, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+.most-wanted-btns a:nth-child(1) {
+  background-image: url(../images/repair-btn.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 75% 50%;
+  width: 100%; }
+
+/* line 239, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+.most-wanted-btns a:nth-child(2) {
+  background-image: url(../images/conversion-btn.jpg);
+  background-repeat: no-repeat;
+  background-position: 75% 50%;
+  background-size: cover;
+  width: 100%; }
+
+/* line 246, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+.most-wanted-btns a:nth-child(3) {
+  background-image: url(../images/newbuilding-btn.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 75% 50%;
+  height: 300px; }
+
+/* line 255, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+#intro-video {
+  grid-area: intro-video;
+  width: 100%;
+  margin-bottom: 5vh; }
+
+/* line 261, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+#about-text {
+  grid-area: about-text;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  margin-bottom: 40px; }
+
+/* line 270, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+#textbox-margin {
+  position: relative;
+  margin: -20px 0px;
+  z-index: -10; }
+
+/* line 275, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+.frontpage-about {
+  background-color: #E9F6FF; }
+  /* line 278, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  .frontpage-about h1 {
+    text-align: center; }
+
+/* line 282, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+.about-grid {
+  display: grid;
+  margin: 20px 7.5%;
+  grid-template-columns: 47.5% 47.5%;
+  grid-gap: 5%;
+  grid-template-areas: 'about-text intro-video'; }
+
+/* line 290, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+.frontpage-help {
+  display: grid;
+  margin: 40px 7.5%;
+  grid-template-columns: 47.5% 47.5%;
+  grid-gap: 5%;
+  grid-template-areas: 'help-img help-text'; }
+
+/* line 298, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+#help-img {
+  grid-area: help-img;
+  width: 100%; }
+
+/* line 303, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+#help-text {
+  text-align: center;
+  grid-area: help-text;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  /* line 311, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  #help-text h1 {
+    font-size: 30px; }
+  /* line 314, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  #help-text .call-btn {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 26px;
+    background-color: #CE3233;
+    border-radius: 100px;
+    padding: 5px 20px; }
+  /* line 322, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  #help-text p {
+    width: 70%; }
+  /* line 325, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  #help-text img {
+    justify-content: center;
+    justify-items: center;
+    justify-self: center; }
+
+/* line 332, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 footer {
   height: 500px;
   background-color: #163f70; }
 
-/* line 209, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+/* line 337, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 #footer-img {
   width: 100%;
-  margin-bottom: -10px; }
+  margin-bottom: -10px;
+  margin-top: 10vh; }
 
 @media only screen and (max-width: 768px) {
-  /* line 215, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+  /* line 346, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  .most-wanted-btns {
+    height: 150px; }
+  /* line 349, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  .most-wanted-btns a:nth-child(1) {
+    height: 150px; }
+  /* line 352, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  .most-wanted-btns a:nth-child(2) {
+    height: 150px; }
+  /* line 355, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  .most-wanted-btns a:nth-child(3) {
+    height: 150px; }
+  /* line 358, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  .most-wanted-btns a h1 {
+    font-size: 18px; }
+  /* line 361, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .menubox {
     display: none; }
-  /* line 218, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+  /* line 364, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .contactbox {
-    display: none; } }
+    display: none; }
+  /* line 367, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  .about-grid {
+    grid-template-columns: 100%;
+    grid-template-areas: 'intro-video' 'about-text'; }
+  /* line 374, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  .frontpage-help {
+    grid-template-columns: 100%;
+    grid-template-areas: 'help-text' 'help-img'; } }
 
 @media only screen and (min-width: 769px) {
-  /* line 223, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+  /* line 382, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .burgerbar, .burger-btn {
     display: none; } }
 
 @media only screen and (max-width: 550px) {
-  /* line 229, ../../../../../Dropbox/Multimediedesign/Projekter/2 sem eksamen/EksamenAssens/sass/style.scss */
+  /* line 388, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .logo {
     width: 250px; } }
 
