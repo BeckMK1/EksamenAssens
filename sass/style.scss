@@ -280,21 +280,7 @@ width: 60%;
 font-size: 20px;
 }
 
-  // mapbox
-  /*
-  .sidebar {
-  width: 33.3333%;
-}
-
-.mapbox {
-  background: #404040;
-  color: #f8f8f8;
-  height: 300px;
-  position: relative;
-  width: 100%;
-  max-width: 700px;
-}
-
+  
 #frontpage-hero-img{
   width: 100%;
   height: auto;
@@ -424,6 +410,21 @@ img{
   justify-items: center;
   justify-self: center;
 }
+// mapbox
+  /*
+  .sidebar {
+  width: 33.3333%;
+}
+
+.mapbox {
+  background: #404040;
+  color: #f8f8f8;
+  height: 300px;
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+}
+
 .map {
   border-left: 1px solid #fff;
   position: absolute;
@@ -439,7 +440,7 @@ img{
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-*/
+
 #mapbody{
 
   img {
@@ -467,7 +468,7 @@ cursor: pointer;
 .mapboxgl-popup {
 max-width: 200px;
 }
-
+*/
 //   FORSIDE content
 
 .forside {
@@ -556,6 +557,7 @@ flex-direction: row;
 }
 
 .tekstkontakt{
+    background-color: $light-blue;
     display: flex;
 flex-direction: row;
     justify-content: space-around;
@@ -913,20 +915,4 @@ position: relative;
 @extend %center;
 top:500px;
 }
-//Repair gallery
-#pictuees{
-padding-top: 10px; overflow:hidden;
-}
-#picture img, #fullImg{
-border: 1px solid gray;
-padding:4px;
-background: white;
-cursor:pointer;
-}
-#pictures img{
-float:left;
-margin-right:6px;
-}
-#view{
-position: relative;
-}
+
