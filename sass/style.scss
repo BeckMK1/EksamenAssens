@@ -49,6 +49,12 @@ header{
   height: auto;
   width: 400px;
   align-items: flex-end;
+  font-family: LogoFont;
+}
+
+@font-face {
+  font-family: LogoFont;
+  src: url(../font/logofont.ttf);
 }
 
 .navbox{
@@ -335,7 +341,7 @@ max-width: 200px;
   width: 100%;
   height: 300px;
   display: grid;
-  grid-template-columns: 25% 25% 25%;
+  grid-template-columns: 22% 22% 22%;
   grid-gap: 5%;
   justify-content: center;
   align-self: center;
@@ -396,19 +402,20 @@ max-width: 200px;
 
 #textbox-margin{
   position: relative;
-  margin: -20px 0px;
-  z-index: -10;
+  z-index: 10;
 }
 .frontpage-about{
   background-color: $light-blue;
+  margin-top: -10px;
 
     h1{
+    padding: 10px 0px;
     text-align: center;
     }
 }
 .about-grid{
   display: grid;
-  margin: 20px 7.5%;
+  margin: 0px 7.5%;
   grid-template-columns: 47.5% 47.5%;
   grid-gap: 5%;
   grid-template-areas: 'about-text intro-video';
@@ -462,24 +469,26 @@ img{
 
 .herobillede {
     background-image: url(../images/kontaktsidehero.png);
+    background-position: left top;
     position: relative;
     z-index: -1;
     background-size: cover;
     height: 450px;
     width: 100%;
-
+    margin-top: 60px;
     h1{
 
     display: flex;
         flex-direction: row;
-justify-content: center;
- padding-top: 200px;
-    color: $white;
+        justify-content: center;
+padding-top: 200px;
+        color: $white;
         font-size: 50px;
 
     }
+    
 
-
+    
 
 
 }
@@ -488,7 +497,7 @@ justify-content: center;
 flex-direction: row;
 justify-content: center;
     margin-top: 50px;
-    margin-left: 35px;
+  margin-left: 20px;
 
 }
 .reakke2 {display: flex;
@@ -507,6 +516,7 @@ flex-direction: row;
 justify-content: center;
     margin-top: 100px;
     margin-bottom: 50px;
+
 }
 .reakke5 {display: flex;
 flex-direction: row;
@@ -527,30 +537,32 @@ flex-direction: row;
 .tekstboxcontact {
     display: flex;
     flex-direction: row;
- z-index: -1;
    justify-content: center;
     align-content: space-between;
     margin-top:75px;
     margin-bottom: 100px;
 
+}
 
-
-
+.contact-background{
+    background-color: $light-blue;
+    height: 400px;
 }
 
 .tekstkontakt{
     display: flex;
-flex-direction: row;
+    flex-direction: row;
     justify-content: space-around;
 
 }
 .tekst{
     display: flex;
-flex-direction: column;
+    flex-direction: column;
     justify-content: center;
     margin-left: 75px;
     padding-right: 50px;
-
+    margin-top: 60px;
+    
 }
 
 .billedemap {height: 100px;
@@ -558,7 +570,7 @@ flex-direction: column;
    display: flex;
     flex-direction: row;
 justify-content: center;
-    margin-top: 140px;
+    margin-top: -90px;
     margin-right: -50px;
 
     img{height: 400px;
@@ -570,6 +582,7 @@ justify-content: center;
 padding-top: 30px;}
 
 .mobilmap{
+    
         display: none;
     }
 footer{
@@ -594,6 +607,126 @@ footer {
   margin-top: 10vh;
 }
 
+
+
+// SERVICE page
+#service{
+width: 1920px;
+}
+
+
+// SERVICE content
+#repair {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  background: url(../images/service-repair.jpg)
+}
+
+#conversion {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 100%;
+  background: url(../images/service-conersion.jpg);
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#newbuilding {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  background: url(../images/service-newbuildings.jpg);
+}
+
+#re-box,#con-box,#new-box {
+  position: relative;
+  float: right;
+  height: 300px;
+  width: 600px;
+  top: 100px;
+}
+
+#re-box,#new-box {
+  margin-right: 50px;
+}
+
+#con-box {
+  margin-left: 50px;
+}
+
+.ser-textbox {
+  background-color: black;
+  height: 300px;
+  width: 600px;
+  opacity: 70%;
+}
+
+.ser-title {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.ser-text {
+  margin-bottom: 10px;
+}
+
+.mostwanted{
+  background: $red;
+  border: solid $red;
+  border-radius: 20px;
+  font-size: 20px;
+  padding-left:20px;
+  padding-right: 20px;
+  text-decoration: none;
+}
+
+.ser-title,
+.mostwanted,
+.ser-text {
+  color: white;
+  position: relative;
+  bottom: 280px;
+  margin-left: 10px;
+}
+
+//REPAIR page
+#repair-bigpicture{
+  position: relative;
+  height: 700px;
+  width: 1920px;
+  background: url(../images/service-big.jpg);
+  background-repeat: no-repeat;
+  h1 {
+    position: relative;
+    color: white;
+    font-size: 80px;
+    @extend %center;
+    top: 300px;
+  }
+}
+// Repair content
+#repair-content{
+height: 3000px;
+}
+
+#repair-box{
+position: relative;
+@extend %center;
+top:300px;
+background:url(../images/tb.svg);
+height: 600px;
+width: 1920px;
+color:black;
+text-align: center;
+}
+#galarri{
+position: relative;
+@extend %center;
+top:500px;
+}
 
 @media only screen and (max-width: 768px){
 
@@ -678,20 +811,58 @@ footer {
     }
     .billedemap img {
        width: auto;
-        height: 225px;
-        margin-top: -50px;
+        height: 230px;
+        margin-top: 75px;
     }
     .tekstbox {
         height: 450px;
     }
     .tekst{
         text-align: center;
+        margin-top: -10px;
     }
     .mobilmap{
         display: none;
     }
-
+    
+        
     // SERVICE page
+    #service{
+    width: 768px;
+    }
+
+    .ser-textbox{
+    width: 100%;
+    height: 100%;
+    }
+    #re-box,#con-box,#new-box{
+    position: relative;
+    width: 768px;
+    height: 500px;
+    display: block;
+    float: none;
+    top:0;
+    margin-left: 0;
+    margin-right: 0;
+    }
+    .ser-text{
+    text-align: center;
+    }
+    .ser-title{
+    text-align: center;
+    }
+    .mostwanted{
+    display: flex;
+    justify-content: center;
+    padding:0;
+    margin-right: 340px;
+    margin-left: 340px;
+    }
+    #conversion,#repair,#newbuilding{
+    width: 768px;
+    height: 500px;
+    }
+
 }
 @media only screen and (min-width: 769px) {
 
@@ -716,6 +887,10 @@ footer {
     .herobillede {
         width: 100%;;
         height: auto;
+        h1{
+            padding-top: -100px;
+        }
+        
     }
       .reakke2 {
         display: flex;
@@ -752,11 +927,13 @@ footer {
     .tekst{
         text-align: center;
         margin-right: 50px;
-
+        margin-top: -50px;
+       
     }
 
   .mobilmap  {
         display: block;
+      padding-top: 125px;
 
     }
 .mobilmap img {
@@ -766,118 +943,6 @@ margin-left: 25%;
    margin-bottom: 50px;
     margin-top: -70px;
     }
-}
-
-// SERVICE page
-
-// SERVICE content
-#repair {
-  position: relative;
-  height: 500px;
-  width: 100%;
-  background: url(/images/service-repair.jpg)
-}
-
-#conversion {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  height: 500px;
-  width: 100%;
-  background: url(/images/service-conersion.jpg)
-}
-
-#newbuilding {
-  position: relative;
-  height: 500px;
-  width: 100%;
-  background: url(/images/service-newbuildings.jpg);
-}
-
-#re-box,#con-box,#new-box {
-  position: relative;
-  float: right;
-  height: 300px;
-  width: 600px;
-  top: 100px;
-}
-
-#re-box,#new-box {
-  margin-right: 50px;
-}
-
-#con-box {
-  margin-left: 50px;
-}
-
-.ser-textbox {
-  background: black;
-  height: 300px;
-  width: 600px;
-  opacity: 70%;
-}
-
-.ser-title {
-  font-size: 30px;
-  margin-bottom: 10px;
-}
-
-.ser-text {
-  margin-bottom: 10px;
-}
-
-.mostwanted {
-  background: $red;
-  border: solid $red;
-  border-radius: 20px;
-  padding: 2px;
-  font-size: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  text-decoration: none;
-}
-
-.ser-title,
-.mostwanted,
-.ser-text {
-  color: white;
-  position: relative;
-  bottom: 280px;
-  margin-left: 10px;
-}
-
-//REPAIR page
-#repair-bigpicture{
-  position: relative;
-  height: 700px;
-  width: 1920px;
-  background: url(/images/service-big.jpg);
-  background-repeat: no-repeat;
-  h1 {
-    position: relative;
-    color: white;
-    font-size: 80px;
-    @extend %center;
-    top: 300px;
-  }
-}
-// Repair content
-#repair-content{
-height: 3000px;
-}
-
-#repair-box{
-position: relative;
-@extend %center;
-top:300px;
-background:url(/images/tb.svg);
-height: 600px;
-width: 1920px;
-color:black;
-text-align: center;
-}
-#galarri{
-position: relative;
-@extend %center;
-top:500px;
+    .contact-background{ height: 200px;
+    margin-top: 10px;}
 }
