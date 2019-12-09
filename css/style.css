@@ -192,25 +192,33 @@ ul li a {
 
 .facilitiestext {
   position: relative;
-  margin: 100px 0 100px;
+  margin: 100px 0;
   width: 100%;
-  height: 500px; }
+  flex-direction: column; }
 
 .tekstboks {
   background-color: #E9F6FF;
   width: 70%;
-  height: 400px; }
+  padding: 50px 0; }
 
 .facilities-tekst {
   width: 60%;
   font-size: 20px; }
 
-#mapbody img {
+#textbox-margin2 {
   position: relative;
-  z-index: 9; }
+  z-index: -10;
+  width: 70%;
+  height: auto; }
+
+#mapbody {
+  margin-bottom: 100px; }
+  #mapbody img {
+    position: relative;
+    z-index: 9; }
 
 #map {
-  position: absolute;
+  position: relative;
   height: 650px;
   width: 80%;
   left: 10%;
@@ -225,6 +233,10 @@ ul li a {
 
 .mapboxgl-popup {
   max-width: 200px; }
+
+.mapwrap {
+  position: relative;
+  margin: 200px 0; }
 
 .forside {
   height: 500px; }
