@@ -451,19 +451,20 @@ img{
 
 .herobillede {
     background-image: url(../images/kontaktsidehero.png);
+    background-position: left top;
     position: relative;
     z-index: -1;
     background-size: cover;
     height: 450px;
     width: 100%;
-
+    margin-top: 60px;
     h1{
 
     display: flex;
         flex-direction: row;
-justify-content: center;
- padding-top: 200px;
-    color: $white;
+        justify-content: center;
+padding-top: 200px;
+        color: $white;
         font-size: 50px;
 
     }
@@ -497,6 +498,7 @@ flex-direction: row;
 justify-content: center;
     margin-top: 100px;
     margin-bottom: 50px;
+
 }
 .reakke5 {display: flex;
 flex-direction: row;
@@ -684,7 +686,8 @@ footer {
     .mobilmap{
         display: none;
     }
-
+    
+        
     // SERVICE page
 }
 @media only screen and (min-width: 769px) {
@@ -701,7 +704,6 @@ footer {
     width: 250px;
   }
     //contact//
-  
 .reakke1 {
         display: flex;
         flex-direction: column;
@@ -711,6 +713,10 @@ footer {
     .herobillede {
         width: 100%;;
         height: auto;
+        h1{
+            padding-top: -100px;
+        }
+        
     }
       .reakke2 {
         display: flex;
