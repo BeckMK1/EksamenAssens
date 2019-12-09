@@ -9,13 +9,13 @@
 		$(this).toggleClass('open');
     })
 
-    $('.facilitiesheader').hover(function() {
-    $(".facilitiesheader").addClass('transition');
+    $('.facilitiesheader1').hover(function() {
+    $(".facilitiesheader1").addClass('transition');
 
 }, function() {
-    $(".facilitiesheader").removeClass('transition');
+    $(".facilitiesheader1").removeClass('transition');
 });
-      
+
     })
 
 // Zoom on hover til hero-images
