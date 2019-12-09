@@ -436,6 +436,16 @@ ul li a {
   background-color: #E9F6FF;
   height: 400px; }
 
+.contact-grid {
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  grid-gap: 5%;
+  grid-template-areas: 'col1 col2 col3'; }
+  .contact-grid img {
+    width: 200px; }
+  .contact-grid a {
+    text-decoration: none; }
+
 .tekstkontakt {
   display: flex;
   flex-direction: row;
