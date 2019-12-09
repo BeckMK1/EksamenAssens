@@ -1,7 +1,7 @@
 /*---------------My variables*---------------*/
 /*---------------My variables*---------------*/
 /*---------------My Inheritances-------------*/
-.facilitiestext, .tekstboks, #mapbody img, #service-bigpicture h1, #repair-bigpicture h1, #repair-box, #galarri {
+.facilitiestext, .tekstboks, #mapbody img, #repair-bigpicture h1, #repair-box, #galarri {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -561,22 +561,10 @@ footer {
     margin-bottom: 50px;
     margin-top: -70px; } }
 
-#service-bigpicture {
-  position: relative;
-  height: 700px;
-  width: 1903px;
-  background: url(/images/service-big.jpg);
-  background-repeat: no-repeat; }
-  #service-bigpicture h1 {
-    position: relative;
-    color: white;
-    font-size: 80px;
-    top: 300px; }
-
 #repair {
   position: relative;
   height: 500px;
-  width: 1905px;
+  width: 100%;
   background: url(/images/service-repair.jpg); }
 
 #conversion {
@@ -584,13 +572,13 @@ footer {
   display: flex;
   flex-direction: column;
   height: 500px;
-  width: 1905px;
+  width: 100%;
   background: url(/images/service-conersion.jpg); }
 
 #newbuilding {
   position: relative;
   height: 500px;
-  width: 1905px;
+  width: 100%;
   background: url(/images/service-newbuildings.jpg); }
 
 #re-box, #con-box, #new-box {

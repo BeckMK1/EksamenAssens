@@ -679,14 +679,15 @@ footer {
     .mobilmap{
         display: none;
     }
-}
 
+    // SERVICE page
+}
 @media only screen and (min-width: 769px) {
 
   .burgerbar,
   .burger-btn {
     display: none;
-  }
+   }
 
 }
 
@@ -758,27 +759,11 @@ margin-left: 25%;
 
 // SERVICE page
 
-#service-bigpicture {
-  position: relative;
-  height: 700px;
-  width: 1903px;
-  background: url(/images/service-big.jpg);
-  background-repeat: no-repeat;
-
-  h1 {
-    position: relative;
-    color: white;
-    font-size: 80px;
-    @extend %center;
-    top: 300px;
-  }
-}
-
 // SERVICE content
 #repair {
   position: relative;
   height: 500px;
-  width: 1905px;
+  width: 100%;
   background: url(/images/service-repair.jpg)
 }
 
@@ -787,14 +772,14 @@ margin-left: 25%;
   display: flex;
   flex-direction: column;
   height: 500px;
-  width: 1905px;
+  width: 100%;
   background: url(/images/service-conersion.jpg)
 }
 
 #newbuilding {
   position: relative;
   height: 500px;
-  width: 1905px;
+  width: 100%;
   background: url(/images/service-newbuildings.jpg);
 }
 
