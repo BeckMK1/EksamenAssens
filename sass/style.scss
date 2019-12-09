@@ -49,6 +49,12 @@ header{
   height: auto;
   width: 400px;
   align-items: flex-end;
+  font-family: LogoFont;
+}
+
+@font-face {
+  font-family: LogoFont;
+  src: url(../font/logofont.ttf);
 }
 
 .navbox{
@@ -324,7 +330,7 @@ max-width: 200px;
   width: 100%;
   height: 300px;
   display: grid;
-  grid-template-columns: 25% 25% 25%;
+  grid-template-columns: 22% 22% 22%;
   grid-gap: 5%;
   justify-content: center;
   align-self: center;
@@ -385,19 +391,20 @@ max-width: 200px;
 
 #textbox-margin{
   position: relative;
-  margin: -20px 0px;
-  z-index: -10;
+  z-index: 10;
 }
 .frontpage-about{
   background-color: $light-blue;
+  margin-top: -10px;
 
     h1{
+    padding: 10px 0px;
     text-align: center;
     }
 }
 .about-grid{
   display: grid;
-  margin: 20px 7.5%;
+  margin: 0px 7.5%;
   grid-template-columns: 47.5% 47.5%;
   grid-gap: 5%;
   grid-template-areas: 'about-text intro-video';
