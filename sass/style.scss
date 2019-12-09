@@ -280,7 +280,21 @@ width: 60%;
 font-size: 20px;
 }
 
-  
+  // mapbox
+  /*
+  .sidebar {
+  width: 33.3333%;
+}
+
+.mapbox {
+  background: #404040;
+  color: #f8f8f8;
+  height: 300px;
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+}
+
 #frontpage-hero-img{
   width: 100%;
   height: auto;
@@ -410,21 +424,6 @@ img{
   justify-items: center;
   justify-self: center;
 }
-// mapbox
-  /*
-  .sidebar {
-  width: 33.3333%;
-}
-
-.mapbox {
-  background: #404040;
-  color: #f8f8f8;
-  height: 300px;
-  position: relative;
-  width: 100%;
-  max-width: 700px;
-}
-
 .map {
   border-left: 1px solid #fff;
   position: absolute;
@@ -440,7 +439,7 @@ img{
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
+*/
 #mapbody{
 
   img {
@@ -468,7 +467,7 @@ cursor: pointer;
 .mapboxgl-popup {
 max-width: 200px;
 }
-*/
+
 //   FORSIDE content
 
 .forside {
@@ -557,7 +556,6 @@ flex-direction: row;
 }
 
 .tekstkontakt{
-    background-color: $light-blue;
     display: flex;
 flex-direction: row;
     justify-content: space-around;
@@ -724,6 +722,10 @@ footer {
   .logo {
     width: 250px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> parent of 17fa77d... fixed
     //contact//
 .reakke1 {
         display: flex;
