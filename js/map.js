@@ -61,7 +61,7 @@ var popup12 = new mapboxgl.Popup({ offset: 25 })
 .setText('Carpenter Workshop');
 
 
-// create DOM element for the marker
+// Laver DOM element til marker
 var el = document.createElement('div');
 el.id = 'marker';
 
@@ -99,7 +99,7 @@ var el12 = document.createElement('div');
 el12.id = 'marker12';
 
 
-// create the marker
+// Her laver vi så vores marker
 new mapboxgl.Marker(el)
 .setLngLat(painter)
 .setPopup(popup) // sets a popup on this marker
@@ -159,3 +159,5 @@ new mapboxgl.Marker(el12)
 .setLngLat(carpenter3)
 .setPopup(popup12) // sets a popup on this marker
 .addTo(map);
+
+map.scrollZoom.disable();
