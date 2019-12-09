@@ -10,7 +10,5 @@
     })
   
 // Repair gallery
-$('#pictures img').click(function(){
-  $('#fullImg').attr('src',$(this).attr('src').replace('pictures','fullImg'));
-});
+
 })
