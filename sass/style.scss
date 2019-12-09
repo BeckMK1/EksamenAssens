@@ -16,25 +16,29 @@ $black: #000000;
 }
 
 %shadow {
-  -webkit-box-shadow: -6px 3px 6px 0px rgba(0,0,0,0.16);
-  -moz-box-shadow: -6px 3px 6px 0px rgba(0,0,0,0.16);
-  box-shadow: -6px 3px 6px 0px rgba(0,0,0,0.16);
+  -webkit-box-shadow: -6px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: -6px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: -6px 3px 6px 0px rgba(0, 0, 0, 0.16);
 }
+
+
 
 /*---------------My Inheritances-------------*/
 
 
-*{
+* {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
 }
 
 
-body{
+body {
   background-color: $white;
   overflow-x: hidden;
 }
+
+
 // Vores menu på store skærme
 
 header{
@@ -58,16 +62,21 @@ header{
   background-color: #FAFAFA;
   font-size: 20px;
   font-weight: bold;
+  z-index: 10000;
+  position: fixed;
 
   border-bottom: 1.5vh solid transparent;
   border-image-source: url(../images/logo-border.svg);
   border-image-slice: 100;
   border-image-repeat: repeat;
 }
-.navbox a{
+
+.navbox a {
   text-decoration: none;
+
 }
-.navbar{
+
+.navbar {
   display: flex;
   justify-content: space-around;
   width: 100%;
@@ -82,11 +91,13 @@ header{
   flex-direction: row;
   width: 40%;
   max-width: 300px;
-  p{
-      color: #000000;
+
+  p {
+    color: #000000;
   }
 }
-#contact-btn{
+
+#contact-btn {
   color: #FAFAFA;
   border: 7px solid $red;
   border-radius: 100px;
@@ -94,7 +105,7 @@ header{
 }
 
 //Burgermenu til mobile
-.burgerbar{
+.burgerbar {
   position: fixed;
   top: 0;
   right: -250px;
@@ -103,28 +114,34 @@ header{
   height: 100%;
   transition: .4s;
   @extend %shadow;
+  z-index: 10000
 }
-.active{
+
+.active {
   right: 0;
 }
+
 ul {
   margin: 0;
   padding: 20px 0;
 }
-ul li{
+
+ul li {
   list-style: none;
 }
-ul li a{
+
+ul li a {
   padding: 10px 20px;
   color: #000000;
   font-weight: bold;
   display: block;
   text-decoration: none;
-  border-bottom: 1px solid rgba(0,0,0,.2);
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
 }
 
-.burger-btn{
-  position: absolute;
+// her laver vi den fysise burgerknap
+.burger-btn {
+  position: fixed;
   top: 10px;
   right: 10px;
   width: 50px;
@@ -133,9 +150,10 @@ ul li a{
   border: none;
   outline: none;
   background: transparent;
+  z-index: 10001
 }
 
-.burger-btn span{
+.burger-btn span {
   display: block;
   width: 35px;
   height: 3px;
@@ -145,7 +163,12 @@ ul li a{
   border-radius: 3px;
 }
 
-
+// Her koder vi så burgeren bliver til et kryds
+// til at lukke for menuen igen.
+// dette gør vi ved at animere vores Span elementer
+// vi har 4 streger i alt. 2 ovenpå hinanden
+// de to ydre strejer forsvinder med opacity 0 transition
+// krydset kommer af det 2 streger i midten roterer.
 .burger-btn span:nth-child(1) {
   top: 10px;
   -webkit-transform-origin: left center;
@@ -158,6 +181,7 @@ ul li a{
   top: 20px;
 
 }
+
 .burger-btn span:nth-child(3) {
   top: 20px;
 
@@ -172,7 +196,6 @@ ul li a{
 }
 
 .burger-btn.open span:nth-child(1) {
-
   opacity: 0;
 }
 
@@ -183,6 +206,7 @@ ul li a{
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
 .burger-btn.open span:nth-child(3) {
 
   -webkit-transform: rotate(-45deg);
@@ -192,11 +216,84 @@ ul li a{
 }
 
 .burger-btn.open span:nth-child(4) {
-
   opacity: 0;
 }
 
-//   FORSIDE content
+//   Facilities content
+.facilitiesheader {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  img {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+.headercontainer {
+  position: relative;
+  z-index: -1;
+}
+
+.textblock {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.facilitiesh1 {
+  font-size: 50px;
+}
+
+//facilities textboks
+
+
+.facilitiestext{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 100%;
+height: 500px;
+@extend %center;
+  max-width: 1000px;
+  background-color: grey;
+}
+.tekstboks {
+  background-color: $light-blue;
+  width: 70%;
+  height: 400px;
+@extend %center;
+}
+
+
+.facilities-tekst{
+width: 60%;
+font-size: 20px;
+}
+
+  // mapbox
+  /*
+  .sidebar {
+  width: 33.3333%;
+}
+
+.mapbox {
+  background: #404040;
+  color: #f8f8f8;
+  height: 300px;
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+}
 
 #frontpage-hero-img{
   width: 100%;
@@ -212,7 +309,7 @@ ul li a{
   grid-gap: 5%;
   justify-content: center;
   align-self: center;
-  
+
   margin: 30px 0;
   a{
     display: flex;
@@ -264,7 +361,7 @@ ul li a{
   justify-self: center;
   align-items: center;
   margin-bottom: 40px;
-    
+
 }
 
 #textbox-margin{
@@ -327,14 +424,63 @@ img{
   justify-items: center;
   justify-self: center;
 }
+.map {
+  border-left: 1px solid #fff;
+  position: absolute;
+  left: 33.3333%;
+  width: 66.6666%;
+  top: 0;
+  bottom: 0;
 }
 
-footer{
+.pad2 {
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*/
+#mapbody{
+
+  img {
+    position: relative;
+    @extend %center;
+    z-index: 9;
+  }
+}
+#map{
+  position: absolute;
+  height: 650px;
+  width: 80%;
+  left: 10%;
+  right: 10%;
+}
+
+#marker, #marker2, #marker3, #marker4, #marker5, #marker6, #marker7, #marker8, #marker9, #marker10, #marker11, #marker12 {
+background-image: url(../images/logo-small.svg);
+background-size: cover;
+width: 30px;
+height: 30px;
+cursor: pointer;
+}
+
+.mapboxgl-popup {
+max-width: 200px;
+}
+
+//   FORSIDE content
+
+.forside {
+  height: 500px;
+}
+
+//footer
+footer {
   height: 500px;
   background-color: $dark-blue
 }
 
-#footer-img{
+#footer-img {
   width: 100%;
   margin-bottom: -10px;
   margin-top: 10vh;
@@ -361,7 +507,8 @@ footer{
   .menubox{
     display: none;
   }
-  .contactbox{
+
+  .contactbox {
     display: none;
   }
   .about-grid{
@@ -373,19 +520,171 @@ footer{
 
   .frontpage-help{
     grid-template-columns: 100%;
-    grid-template-areas: 
+    grid-template-areas:
     'help-text'
     'help-img';
   }
 }
-@media only screen and (min-width: 769px){
-  .burgerbar, .burger-btn{
-  display: none;
+
+@media only screen and (min-width: 769px) {
+
+  .burgerbar,
+  .burger-btn {
+    display: none;
   }
 
 }
-@media only screen and (max-width: 550px){
-  .logo{
+
+@media only screen and (max-width: 550px) {
+  .logo {
     width: 250px;
   }
+}
+
+// SERVICE page
+
+#service-bigpicture {
+  position: relative;
+  height: 700px;
+  width: 1903px;
+  background: url(/images/service-big.jpg);
+  background-repeat: no-repeat;
+
+  h1 {
+    position: relative;
+    color: white;
+    font-size: 80px;
+    @extend %center;
+    top: 300px;
+  }
+}
+
+// SERVICE content
+#repair {
+  position: relative;
+  height: 500px;
+  width: 1905px;
+  background: url(/images/service-repair.jpg)
+}
+
+#conversion {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 1905px;
+  background: url(/images/service-conersion.jpg)
+}
+
+#newbuilding {
+  position: relative;
+  height: 500px;
+  width: 1905px;
+  background: url(/images/service-newbuildings.jpg);
+}
+
+#re-box,#con-box,#new-box {
+  position: relative;
+  float: right;
+  height: 300px;
+  width: 600px;
+  top: 100px;
+}
+
+#re-box,#new-box {
+  margin-right: 50px;
+}
+
+#con-box {
+  margin-left: 50px;
+}
+
+.ser-textbox {
+  background: black;
+  height: 300px;
+  width: 600px;
+  opacity: 70%;
+}
+
+.ser-title {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.ser-text {
+  margin-bottom: 10px;
+}
+
+.mostwanted {
+  background: $red;
+  border: solid $red;
+  border-radius: 20px;
+  padding: 2px;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+}
+
+.ser-title,
+.mostwanted,
+.ser-text {
+  color: white;
+  position: relative;
+  bottom: 280px;
+  margin-left: 10px;
+}
+
+//REPAIR page
+#repair-bigpicture{
+  position: relative;
+  height: 700px;
+  width: 1920px;
+  background: url(/images/service-big.jpg);
+  background-repeat: no-repeat;
+  h1 {
+    position: relative;
+    color: white;
+    font-size: 80px;
+    @extend %center;
+    top: 300px;
+  }
+}
+// Repair content
+#repair-content{
+height: 3000px;
+}
+
+#repair-box{
+position: relative;
+@extend %center;
+top:300px;
+background:lightblue;
+height: 300px;
+width: 600px;
+left:35%;
+color:black;
+text-align: center;
+}
+#galarri{
+position: relative;
+@extend %center;
+top:500px;
+}
+//Repair gallery
+#pictuees{
+padding-top: 10px; overflow:hidden;
+}
+#picture img, #fullImg{
+border: 1px solid gray;
+padding:4px;
+background: white;
+cursor:pointer;
+}
+#pictures img{
+float:left;
+margin-right:6px;
+}
+#view{
+position: relative;
 }
