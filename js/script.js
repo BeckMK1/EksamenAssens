@@ -8,7 +8,19 @@
       // classen "open"
 		$(this).toggleClass('open');
     })
-  
-// Repair gallery
 
-})
+    $('.facilitiesheader').hover(function() {
+    $(".facilitiesheader").addClass('transition');
+
+}, function() {
+    $(".facilitiesheader").removeClass('transition');
+});
+      
+    })
+
+// Zoom on hover til hero-images
+
+
+
+
+// Repair gallery
