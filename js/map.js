@@ -18,7 +18,7 @@ var map = new mapboxgl.Map({
 container: 'map',
 style: 'mapbox://styles/owsibowsi/ck3srgqhy0aqe1cqsdlcekcxm',
 center: [9.8885,55.2692],
-zoom: 17.2,
+zoom: 17,
 bearing: 270
 });
 
@@ -159,3 +159,10 @@ new mapboxgl.Marker(el12)
 .setLngLat(carpenter3)
 .setPopup(popup12) // sets a popup on this marker
 .addTo(map);
+
+// fjerner zoom on scroll
+map.scrollZoom.disable();
+
+//tilføjer zoom og rotation. Da jeg har disablet zoom on scroll funktionen
+// kan man sidde fast hvis man kommer til at dobbeltclicke på kortet.
+map.addControl(new mapboxgl.NavigationControl());

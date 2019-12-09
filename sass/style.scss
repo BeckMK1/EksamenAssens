@@ -259,19 +259,18 @@ ul li a {
 
 
 .facilitiestext{
-  margin-top: 100px;
-  margin-bottom: 100px;
+  position: relative;
+  margin: 100px 0 100px;
   width: 100%;
-height: 500px;
-@extend %center;
-  max-width: 1000px;
-  background-color: grey;
+  height: 500px;
+  @extend %center;
 }
+
 .tekstboks {
   background-color: $light-blue;
   width: 70%;
   height: 400px;
-@extend %center;
+  @extend %center;
 }
 
 
@@ -280,7 +279,41 @@ width: 60%;
 font-size: 20px;
 }
 
-  
+
+#mapbody{
+
+  img {
+    position: relative;
+    @extend %center;
+    z-index: 9;
+  }
+}
+#map{
+  position: absolute;
+  height: 650px;
+  width: 80%;
+  left: 10%;
+  right: 10%;
+}
+
+#marker, #marker2, #marker3, #marker4, #marker5, #marker6, #marker7, #marker8, #marker9, #marker10, #marker11, #marker12 {
+background-image: url(../images/logo-small.svg);
+background-size: cover;
+width: 30px;
+height: 30px;
+cursor: pointer;
+}
+
+.mapboxgl-popup {
+max-width: 200px;
+}
+
+//   FORSIDE content
+
+.forside {
+  height: 500px;
+}
+
 #frontpage-hero-img{
   width: 100%;
   height: auto;
@@ -296,7 +329,7 @@ font-size: 20px;
   justify-content: center;
   align-self: center;
 
-  margin: 30px 0;
+  margin: 100px 0;
   a{
     display: flex;
     justify-content: center;
@@ -376,6 +409,7 @@ font-size: 20px;
   grid-template-columns: 47.5% 47.5%;
   grid-gap: 5%;
   grid-template-areas: 'help-img help-text';
+  margin: 100px 0;
 }
 
 #help-img{
@@ -411,70 +445,6 @@ img{
   justify-self: center;
 }
 }
-// mapbox
-  /*
-  .sidebar {
-  width: 33.3333%;
-}
-
-.mapbox {
-  background: #404040;
-  color: #f8f8f8;
-  height: 300px;
-  position: relative;
-  width: 100%;
-  max-width: 700px;
-}
-
-.map {
-  border-left: 1px solid #fff;
-  position: absolute;
-  left: 33.3333%;
-  width: 66.6666%;
-  top: 0;
-  bottom: 0;
-}
-
-.pad2 {
-  padding: 20px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-#mapbody{
-
-  img {
-    position: relative;
-    @extend %center;
-    z-index: 9;
-  }
-}
-#map{
-  position: absolute;
-  height: 650px;
-  width: 80%;
-  left: 10%;
-  right: 10%;
-}
-
-#marker, #marker2, #marker3, #marker4, #marker5, #marker6, #marker7, #marker8, #marker9, #marker10, #marker11, #marker12 {
-background-image: url(../images/logo-small.svg);
-background-size: cover;
-width: 30px;
-height: 30px;
-cursor: pointer;
-}
-
-.mapboxgl-popup {
-max-width: 200px;
-}
-*/
-//   FORSIDE content
-
-.forside {
-  height: 500px;
-}
 
 
 //contakt content
@@ -486,30 +456,30 @@ max-width: 200px;
     background-size: cover;
     height: 450px;
     width: 100%;
-    
+
     h1{
-    
+
     display: flex;
         flex-direction: row;
 justify-content: center;
  padding-top: 200px;
     color: $white;
         font-size: 50px;
-    
+
     }
     
 
- 
-    
+
+
 
 }
- 
+
 .reakke1 {display: flex;
 flex-direction: row;
 justify-content: center;
     margin-top: 50px;
     margin-left: 35px;
-    
+
 }
 .reakke2 {display: flex;
 flex-direction: row;
@@ -538,8 +508,8 @@ justify-content: center;
     display: flex;
 flex-direction: row;
     margin-left: 10px;
-    
-    
+
+
     img {height: auto;
     width: 100px;
     margin-right: 20px;}
@@ -551,7 +521,6 @@ flex-direction: row;
     align-content: space-between;
     margin-top:75px;
     margin-bottom: 100px;
- 
 
 }
 
@@ -564,7 +533,7 @@ flex-direction: row;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    
+
 }
 .tekst{
     display: flex;
@@ -583,7 +552,7 @@ flex-direction: row;
 justify-content: center;
     margin-top: -90px;
     margin-right: -50px;
-   
+
     img{height: 400px;
         width: auto}
 }
@@ -657,7 +626,7 @@ footer {
     'help-img';
   }
 
-//contact content// 
+//contact content//
  .reakke1 {
         display: flex;
         flex-direction: row;
@@ -666,7 +635,7 @@ footer {
               margin-bottom: 15px;
           }
     }
-    
+
       .reakke2 {
         display: flex;
         flex-direction: row;
@@ -715,14 +684,15 @@ footer {
     .mobilmap{
         display: none;
     }
-}
 
+    // SERVICE page
+}
 @media only screen and (min-width: 769px) {
 
   .burgerbar,
   .burger-btn {
     display: none;
-  }
+   }
 
 }
 
@@ -736,7 +706,7 @@ footer {
         display: flex;
         flex-direction: column;
          padding-left: 15%;
-        
+
     }
     .herobillede {
         width: 100%;;
@@ -757,21 +727,21 @@ footer {
         flex-direction: column;
         padding-left: 22%;
     }
-    
-    
+
+
      .billedemap img {
        width: auto;
         height: 100px;
          margin-top: -85px;
          display: none;
-         
-         
-        
+
+
+
     }
     .tekstbox {
         height: 200px;
         width: 100%;
-        
+
 
     }
     .tekst{
@@ -780,7 +750,7 @@ footer {
         margin-top: -50px;
        
     }
-   
+
   .mobilmap  {
         display: block;
       padding-top: 125px;
@@ -796,29 +766,14 @@ margin-left: 25%;
     .contact-background{ height: 200px;
     margin-top: 10px;}
 }
+
 // SERVICE page
-
-#service-bigpicture {
-  position: relative;
-  height: 700px;
-  width: 1903px;
-  background: url(/images/service-big.jpg);
-  background-repeat: no-repeat;
-
-  h1 {
-    position: relative;
-    color: white;
-    font-size: 80px;
-    @extend %center;
-    top: 300px;
-  }
-}
 
 // SERVICE content
 #repair {
   position: relative;
   height: 500px;
-  width: 1905px;
+  width: 100%;
   background: url(/images/service-repair.jpg)
 }
 
@@ -827,14 +782,14 @@ margin-left: 25%;
   display: flex;
   flex-direction: column;
   height: 500px;
-  width: 1905px;
+  width: 100%;
   background: url(/images/service-conersion.jpg)
 }
 
 #newbuilding {
   position: relative;
   height: 500px;
-  width: 1905px;
+  width: 100%;
   background: url(/images/service-newbuildings.jpg);
 }
 
@@ -925,4 +880,3 @@ position: relative;
 @extend %center;
 top:500px;
 }
-
