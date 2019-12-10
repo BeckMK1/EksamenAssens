@@ -644,7 +644,25 @@ footer {
   margin-top: 10vh;
 }
 
+.footer-grid{
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-gap: 5%;
+  justify-content: center;
+  color: $white;
+  div{
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+  }
+  img{
+    width: 30%;
+  }
+}
 
+.footer-right{
+  text-align: center;
+}
 
 // SERVICE page
 #service{
@@ -766,6 +784,7 @@ top:500px;
 }
 
 @media only screen and (max-width: 768px){
+  
 
   .most-wanted-btns{
     height: 150px;
@@ -900,6 +919,12 @@ top:500px;
     height: 500px;
     }
 
+// Footer
+.footer-grid{
+  img{
+    width: 40%;
+  }
+}
 }
 @media only screen and (min-width: 769px) {
 
