@@ -689,7 +689,9 @@ footer {
 #service{
 width: 1920px;
 }
-
+.big-phone{
+display: none;
+}
 
 // SERVICE content
 #repair {
@@ -947,6 +949,12 @@ top:500px;
     #conversion,#repair,#newbuilding{
     width: 768px;
     height: 500px;
+    }
+    .big-phone{
+    display:block;
+    }
+    .big-desktop{
+    display: none;
     }
 
 // Footer
