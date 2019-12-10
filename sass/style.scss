@@ -525,12 +525,11 @@ img{
 
 
 
-
 .reakke1 {display: flex;
 flex-direction: row;
 justify-content: center;
     margin-top: 50px;
-    background-color: $light-blue;
+   
     
 
 
@@ -540,7 +539,7 @@ justify-content: center;
 flex-direction: row;
 justify-content: center;
     margin-top: 100px;
-    background-color: $light-blue;
+   
 }
 
 .reakke3 {display: flex;
@@ -587,10 +586,15 @@ flex-direction: row;
 // Contact background
 .contact-background{
     background-color: $light-blue;
-    height: 50vh;
+    height: 65vh;
     padding: 40px 0px;
     margin-top: -20px;
     padding-bottom: 100px;
+    
+    h2{
+        text-align: center;
+margin-bottom: 40px;
+    }
 
 
 }
