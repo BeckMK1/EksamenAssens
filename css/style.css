@@ -177,7 +177,7 @@ ul li a {
     width: 100%;
     height: 400px; }
 
-#mainpic {
+.mainpic {
   -webkit-transition: all .4s ease-in-out;
   -moz-transition: all .4s ease-in-out;
   -o-transition: all .4s ease-in-out;

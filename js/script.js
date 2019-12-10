@@ -11,10 +11,10 @@
 
 
     $('.facilitiesheader').hover(function() {
-    $("#mainpic").addClass('transition');
+    $(".mainpic").addClass('transition');
 
 }, function() {
-    $("#mainpic").removeClass('transition');
+    $(".mainpic").removeClass('transition');
 });
 
     })
