@@ -227,13 +227,29 @@ ul li a {
 
 //   Facilities content
 .facilitiesheader {
+  overflow: hidden;
+  //tilføjer overflow hidden for at det ikke zoomer ud af kassen ved hover.
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 
+  img {
+    width: 100%;
+    height: 400px;
+  }
+}
 
-  -webkit-transition: all .4s ease-in-out;
-  -moz-transition: all .4s ease-in-out;
-  -o-transition: all .4s ease-in-out;
-  -ms-transition: all .4s ease-in-out;
+.mainpic{
 
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+}
+
+.facilitiesheader {
 
 
   width: 100%;
@@ -511,11 +527,12 @@ img{
 
 
 
-
 .reakke1 {display: flex;
 flex-direction: row;
 justify-content: center;
     margin-top: 50px;
+
+
 
 
 
@@ -524,6 +541,7 @@ justify-content: center;
 flex-direction: row;
 justify-content: center;
     margin-top: 100px;
+
 }
 
 .reakke3 {display: flex;
@@ -560,7 +578,8 @@ flex-direction: row;
    justify-content: center;
     align-content: space-between;
     margin-top:75px;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
+    padding-bottom: 100px;
 
 
 
@@ -569,9 +588,15 @@ flex-direction: row;
 // Contact background
 .contact-background{
     background-color: $light-blue;
-    height: 50vh;
-    padding: 20px 0px;
+    height: 65vh;
+    padding: 40px 0px;
     margin-top: -20px;
+    padding-bottom: 100px;
+
+    h2{
+        text-align: center;
+margin-bottom: 40px;
+    }
 
 
 }
@@ -592,20 +617,21 @@ flex-direction: row;
     justify-content: center;
     margin-left: 75px;
     padding-right: 50px;
-    margin-top: 60px;
+
 
 }
 
-.billedemap {height: 100px;
+.billedemap {height: 300px;
     width: auto;
    display: flex;
     flex-direction: row;
 justify-content: center;
-    margin-top: -70px;
+    margin-top: -75px;;
     margin-right: -50px;
+   padding-bottom: 50px;
 
 
-    img{height: 400px;
+    img{height: 1150px;
         width: auto}
 }
 
@@ -659,7 +685,7 @@ footer {
       margin: 10px 5px 0px 0px;
       width: 15%;
     }
-    
+
   }
 }
 
@@ -685,7 +711,8 @@ width: 1920px;
   position: relative;
   height: 500px;
   width: 100%;
-  background: url(../images/service-repair.jpg)
+  background: url(../images/service-repair.jpg);
+  margin-top: 20px;
 }
 
 #conversion {
@@ -736,6 +763,7 @@ width: 1920px;
 
 .ser-text {
   margin-bottom: 10px;
+  margin-right: 10px;
 }
 
 .mostwanted{
@@ -833,6 +861,8 @@ top:500px;
   }
 
 //contact content//
+
+
  .reakke1 {
         display: flex;
         flex-direction: row;
@@ -867,31 +897,36 @@ top:500px;
               margin-bottom: 15px;
           }
     }
-      .reakke5 {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-           img {
-              margin-bottom: 15px;
-          }
-    }
-    .billedemap img {
+      .billedemap img {
        width: auto;
-        height: 230px;
-        margin-top: 60px;
+        height: 220px;
+        margin-top: 20px;
+
+
     }
+
+  .billedemap img {
+       width: auto;
+        height: 420px;
+      margin-top: -20px;
+}
+
     .tekstbox {
         height: 450px;
     }
     .tekst{
         text-align: center;
-        margin-top: -10px;
+        margin-top: 70px;
+
     }
     .mobilmap{
         display: none;
     }
 
-
+#staff{
+    margin-top: 20px;
+    text-align: center;
+}
     // SERVICE page
     #service{
     width: 768px;
@@ -936,7 +971,7 @@ top:500px;
 }
 
 .footer-icons{
-  margin-left: 20%; 
+  margin-left: 20%;
 }
 
 .footer-grid{
@@ -962,7 +997,7 @@ top:500px;
 
 
 
-   
+
 }
 
 @media only screen and (max-width: 550px) {
@@ -974,6 +1009,7 @@ top:500px;
         display: flex;
         flex-direction: column;
          padding-left: 22%;
+
 
     }
     .herobillede {
@@ -988,16 +1024,19 @@ top:500px;
         display: flex;
         flex-direction: column;
         padding-left: 22%;
+          margin-top: -2px;
     }
       .reakke3 {
         display: flex;
         flex-direction: column;
        padding-left: 22%;
+          margin-top: -2px;
     }
       .reakke4 {
         display: flex;
         flex-direction: column;
         padding-left: 22%;
+          margin-top: -2px;
     }
 
 
@@ -1032,8 +1071,9 @@ top:500px;
         width: 400px;
 height: auto;
 margin-left: 25%;
-   margin-bottom: 50px;
+   margin-bottom: 60px;
     margin-top: -70px;
+
     }
     .contact-background{ height: 200px;
     margin-top: 10px;}
