@@ -458,15 +458,17 @@ max-width: 200px;
 .frontpage-help{
   display: grid;
   margin: 40px 7.5%;
-  grid-template-columns: 47.5% 47.5%;
+  grid-template-columns: 40% 40%;
   grid-gap: 5%;
   grid-template-areas: 'help-img help-text';
   margin: 100px 0;
+  justify-content: center;
 }
 
 #help-img{
   grid-area: help-img;
   width: 80%;
+  justify-self: center;
 }
 
 #help-text{
@@ -529,8 +531,8 @@ img{
 flex-direction: row;
 justify-content: center;
     margin-top: 50px;
-   
-    
+
+
 
 
 
@@ -539,7 +541,7 @@ justify-content: center;
 flex-direction: row;
 justify-content: center;
     margin-top: 100px;
-   
+
 }
 
 .reakke3 {display: flex;
@@ -590,7 +592,7 @@ flex-direction: row;
     padding: 40px 0px;
     margin-top: -20px;
     padding-bottom: 100px;
-    
+
     h2{
         text-align: center;
 margin-bottom: 40px;
@@ -615,7 +617,7 @@ margin-bottom: 40px;
     justify-content: center;
     margin-left: 75px;
     padding-right: 50px;
-    
+
 
 }
 
@@ -643,20 +645,12 @@ width: 200px;
 
         display: none;
     }
-footer{
-  height: 400px;
-  background-color: $dark-blue;
-}
 
-#footer-img{
-  width: 100%;
-  margin-bottom: -10px;
-}
 
 //footer
 footer {
-  height: 500px;
-  background-color: $dark-blue
+  background-color: $dark-blue;
+  padding-bottom: 5vh;
 }
 
 #footer-img {
@@ -666,23 +660,44 @@ footer {
 }
 
 .footer-grid{
+  padding-top: 50px;
   display: grid;
-  grid-template-columns: 50% 30%;
+  grid-template-columns: 45% 37%;
   grid-gap: 5%;
+  grid-template-areas:
+  'footer-left footer-right'
+  'footer-left footer-icons';
   justify-content: center;
   color: $white;
   div{
-    justify-content: center;
-    justify-items: center;
-    justify-self: center;
+    justify-self: flex-start;
   }
-  img{
-    width: 30%;
+  .footer-certificates{
+    img{
+    width: 32%;
+    max-width: 100px;
+    height: auto;
+  }
+  }
+  .footer-icons{
+    grid-area: footer-icons;
+    img{
+      margin: 10px 5px 0px 0px;
+      width: 15%;
+    }
+
   }
 }
 
 .footer-right{
   text-align: center;
+  grid-area: footer-right;
+
+}
+.footer-left{
+  margin-left: 20%;
+  grid-area: footer-left;
+
 }
 
 // SERVICE page
@@ -848,8 +863,8 @@ top:500px;
   }
 
 //contact content//
-    
-    
+
+
  .reakke1 {
         display: flex;
         flex-direction: row;
@@ -888,8 +903,8 @@ top:500px;
        width: auto;
         height: 220px;
         margin-top: 20px;
-        
-       
+
+
     }
 
   .billedemap img {
@@ -904,7 +919,7 @@ top:500px;
     .tekst{
         text-align: center;
         margin-top: 70px;
-        
+
     }
     .mobilmap{
         display: none;
@@ -958,11 +973,28 @@ top:500px;
     }
 
 // Footer
+
 .footer-grid{
-  img{
-    width: 40%;
+  font-size: 12px;
+}
+
+.footer-icons{
+  margin-left: 20%;
+}
+
+.footer-grid{
+  display: grid;
+  grid-template-areas:
+  'footer-left footer-right'
+  'footer-icons footer-right';
+  .footer-certificates{
+    img{
+    width: 50%;
+  }
+
   }
 }
+
 }
 @media only screen and (min-width: 769px) {
 
@@ -970,6 +1002,9 @@ top:500px;
   .burger-btn {
     display: none;
    }
+
+
+
 
 }
 
@@ -1049,5 +1084,11 @@ margin-left: 25%;
 
     }
     .contact-background{ height: 200px;
-    margin-top: -10px;}
+    margin-top: 10px;}
+
+
+
+
+
+
 }
