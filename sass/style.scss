@@ -227,8 +227,6 @@ ul li a {
 
 //   Facilities content
 .facilitiesheader {
-
-
   overflow: hidden;
   //tilføjer overflow hidden for at det ikke zoomer ud af kassen ved hover.
   width: 100%;
@@ -694,7 +692,8 @@ width: 1920px;
   position: relative;
   height: 500px;
   width: 100%;
-  background: url(../images/service-repair.jpg)
+  background: url(../images/service-repair.jpg);
+  margin-top: 20px;
 }
 
 #conversion {
@@ -745,6 +744,7 @@ width: 1920px;
 
 .ser-text {
   margin-bottom: 10px;
+  margin-right: 10px;
 }
 
 .mostwanted{
@@ -886,7 +886,6 @@ top:500px;
        
     }
 
-    }
   .billedemap img {
        width: auto;
         height: 420px;
@@ -952,7 +951,7 @@ top:500px;
     width: 40%;
   }
 }
-
+}
 @media only screen and (min-width: 769px) {
 
   .burgerbar,
