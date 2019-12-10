@@ -929,6 +929,10 @@ top:500px;
     margin-top: 20px;
     text-align: center;
 }
+// facilities
+.mainpic{
+display:none;
+}
     // SERVICE page
     #service{
     width: 768px;
@@ -971,7 +975,15 @@ top:500px;
     .big-desktop{
     display: none;
     }
-
+    #repair{
+    background: url(../images/service-repair-small.jpg);
+    }
+    #newbuilding {
+      background: url(../images/service-newbuildings-small.jpg);
+    }
+      #conversion {
+        background: url(../images/service-conersion-small.jpg);
+      }
 // Footer
 
 .footer-grid{
