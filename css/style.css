@@ -166,14 +166,14 @@ ul li a {
 .burger-btn.open span:nth-child(4) {
   opacity: 0; }
 
-.facilitiesheader1 {
+.facilitiesheader {
   overflow: hidden;
   width: 100%;
   height: 400px;
   display: flex;
   justify-content: center;
   text-align: center; }
-  .facilitiesheader1 img {
+  .facilitiesheader img {
     width: 100%;
     height: 400px; }
 
@@ -442,23 +442,14 @@ ul li a {
   justify-content: center;
   align-content: space-between;
   margin-top: 75px;
-  margin-bottom: 100px; }
+  margin-bottom: 200px;
+  padding-bottom: 100px; }
 
 .contact-background {
   background-color: #E9F6FF;
   height: 50vh;
-  padding: 20px 0px;
+  padding: 40px 0px;
   margin-top: -20px; }
-
-.contact-grid {
-  display: grid;
-  grid-template-columns: 25% 25% 25%;
-  grid-gap: 5%;
-  grid-template-areas: 'col1 col2 col3'; }
-  .contact-grid img {
-    width: 200px; }
-  .contact-grid a {
-    text-decoration: none; }
 
 .tekstkontakt {
   display: flex;
@@ -475,15 +466,16 @@ ul li a {
   margin-top: 60px; }
 
 .billedemap {
-  height: 100px;
+  height: 300px;
   width: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: -70px;
-  margin-right: -50px; }
+  margin-top: -75px;
+  margin-right: -50px;
+  padding-bottom: 50px; }
   .billedemap img {
-    height: 400px;
+    height: 1150px;
     width: auto; }
 
 .listen {
@@ -668,53 +660,59 @@ footer {
     flex-direction: row;
     flex-wrap: wrap; }
     .reakke4 img {
-      margin-bottom: 15px; }
-  .reakke5 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; }
-    .reakke5 img {
-      margin-bottom: 15px; }
-  .billedemap img {
-    width: auto;
-    height: 230px;
-    margin-top: 60px; }
-  .tekstbox {
-    height: 450px; }
-  .tekst {
-    text-align: center;
-    margin-top: -10px; }
-  .mobilmap {
-    display: none; }
-  #service {
-    width: 768px; }
-  .ser-textbox {
-    width: 100%;
-    height: 100%; }
-  #re-box, #con-box, #new-box {
-    position: relative;
-    width: 768px;
-    height: 500px;
-    display: block;
-    float: none;
-    top: 0;
-    margin-left: 0;
-    margin-right: 0; }
-  .ser-text {
-    text-align: center; }
-  .ser-title {
-    text-align: center; }
-  .mostwanted {
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin-right: 340px;
-    margin-left: 340px; }
-  #conversion, #repair, #newbuilding {
-    width: 768px;
-    height: 500px; }
-  .footer-grid img {
-    width: 40%; } }
+      margin-bottom: 15px; } }
+
+.billedemap img {
+  width: auto;
+  height: 230px;
+  margin-top: 60px; }
+
+.tekstbox {
+  height: 450px; }
+
+.tekst {
+  text-align: center;
+  margin-top: -10px; }
+
+.mobilmap {
+  display: none; }
+
+#service {
+  width: 768px; }
+
+.ser-textbox {
+  width: 100%;
+  height: 100%; }
+
+#re-box, #con-box, #new-box {
+  position: relative;
+  width: 768px;
+  height: 500px;
+  display: block;
+  float: none;
+  top: 0;
+  margin-left: 0;
+  margin-right: 0; }
+
+.ser-text {
+  text-align: center; }
+
+.ser-title {
+  text-align: center; }
+
+.mostwanted {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-right: 340px;
+  margin-left: 340px; }
+
+#conversion, #repair, #newbuilding {
+  width: 768px;
+  height: 500px; }
+
+.footer-grid img {
+  width: 40%; }
 
 @media only screen and (min-width: 769px) {
   .burgerbar,
@@ -727,7 +725,7 @@ footer {
   .reakke1 {
     display: flex;
     flex-direction: column;
-    padding-left: 15%; }
+    padding-left: 22%; }
   .herobillede {
     width: 100%;
     height: auto; }
@@ -736,15 +734,18 @@ footer {
   .reakke2 {
     display: flex;
     flex-direction: column;
-    padding-left: 22%; }
+    padding-left: 22%;
+    margin-top: -2px; }
   .reakke3 {
     display: flex;
     flex-direction: column;
-    padding-left: 22%; }
+    padding-left: 22%;
+    margin-top: -2px; }
   .reakke4 {
     display: flex;
     flex-direction: column;
-    padding-left: 22%; }
+    padding-left: 22%;
+    margin-top: -2px; }
   .billedemap img {
     width: auto;
     height: 100px;
@@ -755,8 +756,7 @@ footer {
     width: 100%; }
   .tekst {
     text-align: center;
-    margin-right: 50px;
-    margin-top: -50px; }
+    margin-right: 50px; }
   .mobilmap {
     display: block;
     padding-top: 125px; }
@@ -764,8 +764,8 @@ footer {
     width: 400px;
     height: auto;
     margin-left: 25%;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     margin-top: -70px; }
   .contact-background {
     height: 200px;
-    margin-top: 10px; } }
+    margin-top: -10px; } }
