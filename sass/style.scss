@@ -502,27 +502,8 @@ img{
 
 //contakt content
 
-.herobillede {
-    background-image: url(../images/kontaktsidehero.png);
-    background-position: left top;
-    position: relative;
-    z-index: -1;
-    background-size: cover;
-    height: 450px;
-    width: 100%;
-    margin-top: 60px;
-    h1{
 
-    display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding-top: 200px;
-        color: $white;
-        font-size: 50px;
-
-    }
-
-  }
+  
 
 
 
@@ -555,12 +536,10 @@ justify-content: center;
     margin-bottom: 50px;
 
 }
-.reakke5 {display: flex;
-flex-direction: row;
-justify-content: center;
-    margin-top: 100px;
-}
 
+.wherearewe{
+   text-align: center;
+}
 .billederkontakt {
     display: flex;
 flex-direction: row;
@@ -571,25 +550,35 @@ flex-direction: row;
     width: 100px;
     margin-right: 20px;}
 }
+
+.tekstmedbillede{
+    display: flex;
+flex-direction: row;
+text-align: center;
+}
 .tekstboxcontact {
     display: flex;
     flex-direction: row;
    justify-content: center;
     align-content: space-between;
+    text-align: center;
     margin-top:75px;
-    margin-bottom: 200px;
-    padding-bottom: 100px;
+    h2 {
+        
+        margin-bottom: 25px;
+    }
 
 
 
 }
 
+
 // Contact background
 .contact-background{
-    background-color: $light-blue;
-    height: 65vh;
+    
+   
     padding: 40px 0px;
-    margin-top: -20px;
+    margin-top: 20px;
     padding-bottom: 100px;
     
     h2{
@@ -599,39 +588,33 @@ margin-bottom: 40px;
 
 
 }
-
-
-
-
-.tekstkontakt{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    height: 500px;
-
+.protrat{
+    background-color: $light-blue;
+    margin-top: -30px;
+    h2{text-align: center;}
+    margin-bottom: -50px;
 }
+
+
+.kontaktpolysninger{
+    margin-top: 60px;
+}
+
 .tekst{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     margin-left: 75px;
     padding-right: 50px;
     
+margin-top: 30px;
+    
+    
 
 }
 
-.billedemap {height: 300px;
-    width: auto;
-   display: flex;
-    flex-direction: row;
-justify-content: center;
-    margin-top: -75px;;
-    margin-right: -50px;
-   padding-bottom: 50px;
-
-
-    img{height: 1150px;
-        width: auto}
+.billedemap img {
+    height: 400px;
+        width: auto;
+margin-top: 10px;
 }
 
 
@@ -882,31 +865,39 @@ top:500px;
           }
     }
       .billedemap img {
-       width: auto;
-        height: 220px;
-        margin-top: 20px;
-        
-       
+      display: none;
     }
-
-    }
-  .billedemap img {
-       width: auto;
-        height: 420px;
-      margin-top: -20px;
-}
-
-    .tekstbox {
-        height: 450px;
-    }
+   
     .tekst{
         text-align: center;
-        margin-top: 70px;
+        margin-top: 20px;
+        display: flex;
+flex-direction: column;
+        
+        
         
     }
     .mobilmap{
-        display: none;
+        display: block;
+        
     }
+    
+        .mobilmap img {
+        width: 600px;
+height: auto;
+
+   margin-bottom: 60px;
+            margin-top: 50px;
+            margin-left: 120px;
+            
+            }
+    
+    .tekstboxcontact {display: flex;
+flex-direction: column;} 
+    }
+ 
+
+  
 
 #staff{
     margin-top: 20px;
@@ -977,14 +968,7 @@ top:500px;
 
 
     }
-    .herobillede {
-        width: 100%;;
-        height: auto;
-        h1{
-            padding-top: -100px;
-        }
-
-    }
+    
       .reakke2 {
         display: flex;
         flex-direction: column;
@@ -1006,16 +990,13 @@ top:500px;
 
 
      .billedemap img {
-       width: auto;
-        height: 100px;
-         margin-top: -85px;
          display: none;
 
 
 
     }
     .tekstbox {
-        height: 200px;
+        height: 00px;
         width: 100%;
 
 
@@ -1023,23 +1004,27 @@ top:500px;
     .tekst{
         text-align: center;
         margin-right: 50px;
-        margin-top: -50px;
+        
 
     }
-
+   
   .mobilmap  {
         display: block;
-      padding-top: 125px;
+      
 
     }
 .mobilmap img {
         width: 400px;
 height: auto;
 margin-left: 25%;
-   margin-bottom: 60px;
-    margin-top: -70px;
+   
+   
 
     }
-    .contact-background{ height: 200px;
-    margin-top: -10px;}
+    .tekstboxcontact {
+    display: flex;
+flex-direction: column;
+       
+    }
+        
 }
