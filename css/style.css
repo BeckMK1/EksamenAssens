@@ -195,10 +195,6 @@ ul li a {
 
 /* line 229, ../../github 2/examen/EksamenAssens/sass/style.scss */
 .facilitiesheader1 {
-  -webkit-transition: all .4s ease-in-out;
-  -moz-transition: all .4s ease-in-out;
-  -o-transition: all .4s ease-in-out;
-  -ms-transition: all .4s ease-in-out;
   width: 100%;
   height: 400px;
   display: flex;
