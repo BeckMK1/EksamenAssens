@@ -49,13 +49,8 @@ header{
   height: auto;
   width: 400px;
   align-items: flex-end;
-  font-family: LogoFont;
 }
 
-@font-face {
-  font-family: LogoFont;
-  src: url(../font/logofont.ttf);
-}
 
 .navbox{
   position: sticky;
