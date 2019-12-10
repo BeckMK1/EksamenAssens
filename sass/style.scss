@@ -532,6 +532,8 @@ img{
 flex-direction: row;
 justify-content: center;
     margin-top: 50px;
+    background-color: $light-blue;
+    
 
 
 
@@ -540,6 +542,7 @@ justify-content: center;
 flex-direction: row;
 justify-content: center;
     margin-top: 100px;
+    background-color: $light-blue;
 }
 
 .reakke3 {display: flex;
@@ -589,6 +592,7 @@ flex-direction: row;
     height: 50vh;
     padding: 40px 0px;
     margin-top: -20px;
+    padding-bottom: 100px;
 
 
 }
@@ -609,7 +613,7 @@ flex-direction: row;
     justify-content: center;
     margin-left: 75px;
     padding-right: 50px;
-    margin-top: 60px;
+    
 
 }
 
@@ -874,21 +878,28 @@ top:500px;
               margin-bottom: 15px;
           }
     }
-
-    }
-    .billedemap img {
+      .billedemap img {
        width: auto;
-        height: 370px;
-        margin-top: -20px;
+        height: 220px;
+        margin-top: 20px;
         
        
     }
+
+    }
+  .billedemap img {
+       width: auto;
+        height: 420px;
+      margin-top: -20px;
+}
+
     .tekstbox {
         height: 450px;
     }
     .tekst{
         text-align: center;
-        margin-top: -10px;
+        margin-top: 70px;
+        
     }
     .mobilmap{
         display: none;
