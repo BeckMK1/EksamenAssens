@@ -513,6 +513,7 @@ padding-top: 200px;
 flex-direction: row;
 justify-content: center;
     margin-top: 50px;
+    
   
 
 }
@@ -569,18 +570,7 @@ flex-direction: row;
 }
 
 
-.contact-grid{
-  display: grid;
-  grid-template-columns: 25% 25% 25%;
-  grid-gap: 5%;
-  grid-template-areas: 'col1 col2 col3';
-  img{
-    width: 200px;
-  }
-  a{
-    text-decoration: none;
-  }
-}
+
 
 .tekstkontakt{
     display: flex;
@@ -943,7 +933,7 @@ top:500px;
 .reakke1 {
         display: flex;
         flex-direction: column;
-         padding-left: 15%;
+         padding-left: 22%;
 
     }
     .herobillede {
