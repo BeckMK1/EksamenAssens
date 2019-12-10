@@ -26,7 +26,7 @@
 
 
 // Repair gallery
-$('.popup-gallery').magnificPopup({
+$('.gallery-item').magnificPopup({
   type: 'image',
   gallery:{
     enabled: true, // set to true to enable gallery
