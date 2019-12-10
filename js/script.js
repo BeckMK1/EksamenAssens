@@ -11,6 +11,10 @@
     })
 
 
+    // Zoom on hover til hero-images
+    // Ved hover på containeren 'facilitiesheader' vil
+    // elementet mainpic få / miste classen trnasition som har en zoom effekt.
+
     $('.facilitiesheader').hover(function() {
     $(".mainpic").addClass('transition');
 
@@ -20,7 +24,6 @@
 
  
 
-// Zoom on hover til hero-images
 
 
 

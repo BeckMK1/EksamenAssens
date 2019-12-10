@@ -49,13 +49,8 @@ header{
   height: auto;
   width: 400px;
   align-items: flex-end;
-  font-family: LogoFont;
 }
 
-@font-face {
-  font-family: LogoFont;
-  src: url(../font/logofont.ttf);
-}
 
 .navbox{
   position: sticky;
@@ -227,7 +222,6 @@ ul li a {
 
 //   Facilities content
 .facilitiesheader {
-    margin-top: 60px;
   overflow: hidden;
   //tilføjer overflow hidden for at det ikke zoomer ud af kassen ved hover.
   width: 100%;
@@ -320,6 +314,7 @@ ul li a {
 width: 60%;
 font-size: 20px;
 }
+
 #textbox-margin2 {
   position: relative;
   z-index: -10;
@@ -459,15 +454,17 @@ max-width: 200px;
 .frontpage-help{
   display: grid;
   margin: 40px 7.5%;
-  grid-template-columns: 47.5% 47.5%;
+  grid-template-columns: 40% 40%;
   grid-gap: 5%;
   grid-template-areas: 'help-img help-text';
   margin: 100px 0;
+  justify-content: center;
 }
 
 #help-img{
   grid-area: help-img;
   width: 80%;
+  justify-self: center;
 }
 
 #help-text{
@@ -511,8 +508,8 @@ img{
 flex-direction: row;
 justify-content: center;
     margin-top: 50px;
-   
-    
+
+
 
 
 
@@ -521,7 +518,7 @@ justify-content: center;
 flex-direction: row;
 justify-content: center;
     margin-top: 100px;
-   
+
 }
 
 .reakke3 {display: flex;
@@ -580,7 +577,7 @@ text-align: center;
     padding: 40px 0px;
     margin-top: 20px;
     padding-bottom: 100px;
-    
+
     h2{
         text-align: center;
 margin-bottom: 40px;
@@ -627,20 +624,12 @@ width: 200px;
 
         display: none;
     }
-footer{
-  height: 400px;
-  background-color: $dark-blue;
-}
 
-#footer-img{
-  width: 100%;
-  margin-bottom: -10px;
-}
 
 //footer
 footer {
-  height: 500px;
-  background-color: $dark-blue
+  background-color: $dark-blue;
+  padding-bottom: 5vh;
 }
 
 #footer-img {
@@ -650,37 +639,61 @@ footer {
 }
 
 .footer-grid{
+  padding-top: 50px;
   display: grid;
-  grid-template-columns: 50% 30%;
+  grid-template-columns: 45% 37%;
   grid-gap: 5%;
+  grid-template-areas:
+  'footer-left footer-right'
+  'footer-left footer-icons';
   justify-content: center;
   color: $white;
   div{
-    justify-content: center;
-    justify-items: center;
-    justify-self: center;
+    justify-self: flex-start;
   }
-  img{
-    width: 30%;
+  .footer-certificates{
+    img{
+    width: 32%;
+    max-width: 100px;
+    height: auto;
+  }
+  }
+  .footer-icons{
+    grid-area: footer-icons;
+    img{
+      margin: 10px 5px 0px 0px;
+      width: 15%;
+    }
+
   }
 }
 
 .footer-right{
   text-align: center;
+  grid-area: footer-right;
+
+}
+.footer-left{
+  margin-left: 20%;
+  grid-area: footer-left;
+
 }
 
 // SERVICE page
 #service{
 width: 1920px;
 }
-
+.big-phone{
+display: none;
+}
 
 // SERVICE content
 #repair {
   position: relative;
   height: 500px;
   width: 100%;
-  background: url(../images/service-repair.jpg)
+  background: url(../images/service-repair.jpg);
+  margin-top: 20px;
 }
 
 #conversion {
@@ -731,6 +744,7 @@ width: 1920px;
 
 .ser-text {
   margin-bottom: 10px;
+  margin-right: 10px;
 }
 
 .mostwanted{
@@ -828,8 +842,8 @@ top:500px;
   }
 
 //contact content//
-    
-    
+
+
  .reakke1 {
         display: flex;
         flex-direction: row;
@@ -903,6 +917,10 @@ flex-direction: column;}
     margin-top: 20px;
     text-align: center;
 }
+// facilities
+.mainpic{
+display:none;
+}
     // SERVICE page
     #service{
     width: 768px;
@@ -939,13 +957,41 @@ flex-direction: column;}
     width: 768px;
     height: 500px;
     }
-
+    .big-phone{
+    display:block;
+    }
+    #repair{
+    background: url(../images/service-repair-small.jpg);
+    }
+    #newbuilding {
+      background: url(../images/service-newbuildings-small.jpg);
+    }
+      #conversion {
+        background: url(../images/service-conersion-small.jpg);
+      }
 // Footer
+
 .footer-grid{
-  img{
-    width: 40%;
+  font-size: 12px;
+}
+
+.footer-icons{
+  margin-left: 20%;
+}
+
+.footer-grid{
+  display: grid;
+  grid-template-areas:
+  'footer-left footer-right'
+  'footer-icons footer-right';
+  .footer-certificates{
+    img{
+    width: 50%;
+  }
+
   }
 }
+
 
 @media only screen and (min-width: 769px) {
 
@@ -953,6 +999,9 @@ flex-direction: column;}
   .burger-btn {
     display: none;
    }
+
+
+
 
 }
 
