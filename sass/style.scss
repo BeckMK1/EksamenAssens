@@ -226,7 +226,7 @@ ul li a {
 }
 
 //   Facilities content
-.facilitiesheader1 {
+.facilitiesheader {
 
 
   -webkit-transition: all .4s ease-in-out;
@@ -234,20 +234,6 @@ ul li a {
   -o-transition: all .4s ease-in-out;
   -ms-transition: all .4s ease-in-out;
 
-
-
-  width: 100%;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-
-  img {
-    width: 100%;
-    height: 400px;
-  }
-}
-.facilitiesheader {
 
 
   width: 100%;
@@ -530,6 +516,7 @@ justify-content: center;
     margin-top: 50px;
 
 
+
 }
 .reakke2 {display: flex;
 flex-direction: row;
@@ -583,23 +570,12 @@ flex-direction: row;
     height: 50vh;
     padding: 20px 0px;
     margin-top: -20px;
-  
+
 
 }
 
 
-.contact-grid{
-  display: grid;
-  grid-template-columns: 25% 25% 25%;
-  grid-gap: 5%;
-  grid-template-areas: 'col1 col2 col3';
-  img{
-    width: 200px;
-  }
-  a{
-    text-decoration: none;
-  }
-}
+
 
 .tekstkontakt{
     display: flex;
@@ -962,7 +938,7 @@ top:500px;
 .reakke1 {
         display: flex;
         flex-direction: column;
-         padding-left: 15%;
+         padding-left: 22%;
 
     }
     .herobillede {

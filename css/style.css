@@ -194,7 +194,7 @@ ul li a {
   opacity: 0; }
 
 /* line 229, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
-.facilitiesheader1 {
+.facilitiesheader {
   -webkit-transition: all .4s ease-in-out;
   -moz-transition: all .4s ease-in-out;
   -o-transition: all .4s ease-in-out;
@@ -205,28 +205,16 @@ ul li a {
   justify-content: center;
   text-align: center; }
   /* line 245, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
-  .facilitiesheader1 img {
-    width: 100%;
-    height: 400px; }
-
-/* line 250, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
-.facilitiesheader {
-  width: 100%;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  text-align: center; }
-  /* line 259, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .facilitiesheader img {
     width: 100%;
     height: 400px; }
 
-/* line 265, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 251, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .headercontainer {
   position: relative;
   z-index: -1; }
 
-/* line 271, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 257, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .textblock {
   position: absolute;
   width: 100%;
@@ -239,51 +227,51 @@ ul li a {
   align-items: center;
   justify-content: center; }
 
-/* line 284, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 270, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .facilitiesh1 {
   font-size: 50px; }
 
-/* line 290, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 276, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .transition {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
   transform: scale(1.1); }
 
-/* line 300, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 286, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .facilitiestext {
   position: relative;
   margin: 100px 0;
   width: 100%;
   flex-direction: column; }
 
-/* line 308, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 294, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .tekstboks {
   background-color: #E9F6FF;
   width: 70%;
   padding: 50px 0; }
 
-/* line 316, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 302, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .facilities-tekst {
   width: 60%;
   font-size: 20px; }
 
-/* line 320, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 306, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 #textbox-margin2 {
   position: relative;
   z-index: -10;
   width: 70%;
   height: auto; }
 
-/* line 328, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 314, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 #mapbody {
   margin-bottom: 100px; }
-  /* line 330, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 316, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   #mapbody img {
     position: relative;
     z-index: 9; }
 
-/* line 336, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 322, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 #map {
   position: relative;
   height: 650px;
@@ -291,7 +279,7 @@ ul li a {
   left: 10%;
   right: 10%; }
 
-/* line 344, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 330, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 #marker, #marker2, #marker3, #marker4, #marker5, #marker6, #marker7, #marker8, #marker9, #marker10, #marker11, #marker12 {
   background-image: url(../images/logo-small.svg);
   background-size: cover;
@@ -299,25 +287,25 @@ ul li a {
   height: 30px;
   cursor: pointer; }
 
-/* line 352, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 338, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .mapboxgl-popup {
   max-width: 200px; }
 
-/* line 356, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 342, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .mapwrap {
   position: relative;
   margin: 200px 0; }
 
-/* line 362, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 348, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .forside {
   height: 500px; }
 
-/* line 366, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 352, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 #frontpage-hero-img {
   width: 100%;
   height: auto; }
 
-/* line 372, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 358, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .most-wanted-btns {
   width: 100%;
   height: 300px;
@@ -327,7 +315,7 @@ ul li a {
   justify-content: center;
   align-self: center;
   margin: 100px 0; }
-  /* line 382, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 368, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .most-wanted-btns a {
     display: flex;
     justify-content: center;
@@ -336,11 +324,11 @@ ul li a {
     color: #FAFAFA;
     width: 100%;
     height: 300px; }
-    /* line 390, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+    /* line 376, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
     .most-wanted-btns a h1 {
       font-size: 32px; }
 
-/* line 395, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 381, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .most-wanted-btns a:nth-child(1) {
   background-image: url(../images/repair-btn.jpg);
   background-repeat: no-repeat;
@@ -348,7 +336,7 @@ ul li a {
   background-position: 75% 50%;
   width: 100%; }
 
-/* line 404, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 390, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .most-wanted-btns a:nth-child(2) {
   background-image: url(../images/conversion-btn.jpg);
   background-repeat: no-repeat;
@@ -356,7 +344,7 @@ ul li a {
   background-size: cover;
   width: 100%; }
 
-/* line 411, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 397, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .most-wanted-btns a:nth-child(3) {
   background-image: url(../images/newbuilding-btn.jpg);
   background-repeat: no-repeat;
@@ -364,13 +352,13 @@ ul li a {
   background-position: 75% 50%;
   height: 300px; }
 
-/* line 420, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 406, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 #intro-video {
   grid-area: intro-video;
   width: 100%;
   margin-bottom: 5vh; }
 
-/* line 426, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 412, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 #about-text {
   grid-area: about-text;
   display: flex;
@@ -378,21 +366,21 @@ ul li a {
   align-items: center;
   margin-bottom: 40px; }
 
-/* line 435, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 421, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 #textbox-margin {
   position: relative;
   z-index: 10; }
 
-/* line 439, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 425, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .frontpage-about {
   background-color: #E9F6FF;
   margin-top: -10px; }
-  /* line 443, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 429, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .frontpage-about h1 {
     padding: 10px 0px;
     text-align: center; }
 
-/* line 448, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 434, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .about-grid {
   display: grid;
   margin: 0px 7.5%;
@@ -400,7 +388,7 @@ ul li a {
   grid-gap: 5%;
   grid-template-areas: 'about-text intro-video'; }
 
-/* line 456, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 442, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .frontpage-help {
   display: grid;
   margin: 40px 7.5%;
@@ -409,12 +397,12 @@ ul li a {
   grid-template-areas: 'help-img help-text';
   margin: 100px 0; }
 
-/* line 465, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 451, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 #help-img {
   grid-area: help-img;
   width: 80%; }
 
-/* line 470, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 456, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 #help-text {
   text-align: center;
   grid-area: help-text;
@@ -422,10 +410,10 @@ ul li a {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  /* line 478, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 464, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   #help-text h1 {
     font-size: 30px; }
-  /* line 481, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 467, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   #help-text .call-btn {
     text-decoration: none;
     color: #FFFFFF;
@@ -433,16 +421,16 @@ ul li a {
     background-color: #CE3233;
     border-radius: 100px;
     padding: 5px 20px; }
-  /* line 489, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 475, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   #help-text p {
     width: 70%; }
-  /* line 492, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 478, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   #help-text img {
     justify-content: center;
     justify-items: center;
     justify-self: center; }
 
-/* line 502, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 488, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .herobillede {
   background-image: url(../images/kontaktsidehero.png);
   background-position: left top;
@@ -452,7 +440,7 @@ ul li a {
   height: 450px;
   width: 100%;
   margin-top: 60px; }
-  /* line 511, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 497, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .herobillede h1 {
     display: flex;
     flex-direction: row;
@@ -461,28 +449,28 @@ ul li a {
     color: #FAFAFA;
     font-size: 50px; }
 
-/* line 527, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 513, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .reakke1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: 50px; }
 
-/* line 534, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 521, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .reakke2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: 100px; }
 
-/* line 540, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 527, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .reakke3 {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: 100px; }
 
-/* line 545, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 532, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .reakke4 {
   display: flex;
   flex-direction: row;
@@ -490,25 +478,25 @@ ul li a {
   margin-top: 100px;
   margin-bottom: 50px; }
 
-/* line 552, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 539, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .reakke5 {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: 100px; }
 
-/* line 558, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 545, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .billederkontakt {
   display: flex;
   flex-direction: row;
   margin-left: 10px; }
-  /* line 564, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 551, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .billederkontakt img {
     height: auto;
     width: 100px;
     margin-right: 20px; }
 
-/* line 568, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 555, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .tekstboxcontact {
   display: flex;
   flex-direction: row;
@@ -517,34 +505,21 @@ ul li a {
   margin-top: 75px;
   margin-bottom: 100px; }
 
-/* line 581, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 568, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .contact-background {
   background-color: #E9F6FF;
   height: 50vh;
   padding: 20px 0px;
   margin-top: -20px; }
 
-/* line 591, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
-.contact-grid {
-  display: grid;
-  grid-template-columns: 25% 25% 25%;
-  grid-gap: 5%;
-  grid-template-areas: 'col1 col2 col3'; }
-  /* line 596, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
-  .contact-grid img {
-    width: 200px; }
-  /* line 599, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
-  .contact-grid a {
-    text-decoration: none; }
-
-/* line 604, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 580, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .tekstkontakt {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   height: 500px; }
 
-/* line 611, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 587, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .tekst {
   display: flex;
   flex-direction: column;
@@ -553,7 +528,7 @@ ul li a {
   padding-right: 50px;
   margin-top: 60px; }
 
-/* line 621, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 597, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .billedemap {
   height: 100px;
   width: auto;
@@ -562,74 +537,74 @@ ul li a {
   justify-content: center;
   margin-top: -70px;
   margin-right: -50px; }
-  /* line 630, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 606, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .billedemap img {
     height: 400px;
     width: auto; }
 
-/* line 635, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 611, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .listen {
   list-style: none;
   padding-top: 30px;
   width: 200px; }
 
-/* line 640, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 616, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .mobilmap {
   display: none; }
 
-/* line 644, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 620, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 footer {
   height: 400px;
   background-color: #163f70; }
 
-/* line 649, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 625, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 #footer-img {
   width: 100%;
   margin-bottom: -10px; }
 
-/* line 655, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 631, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 footer {
   height: 500px;
   background-color: #163f70; }
 
-/* line 660, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 636, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 #footer-img {
   width: 100%;
   margin-bottom: -10px;
   margin-top: 10vh; }
 
-/* line 666, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 642, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .footer-grid {
   display: grid;
   grid-template-columns: 50% 30%;
   grid-gap: 5%;
   justify-content: center;
   color: #FAFAFA; }
-  /* line 672, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 648, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .footer-grid div {
     justify-content: center;
     justify-items: center;
     justify-self: center; }
-  /* line 677, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 653, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .footer-grid img {
     width: 30%; }
 
-/* line 682, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 658, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .footer-right {
   text-align: center; }
 
-/* line 687, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 663, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 #service {
   width: 1920px; }
 
-/* line 693, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 669, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 #repair {
   position: relative;
   height: 500px;
   width: 100%;
   background: url(../images/service-repair.jpg); }
 
-/* line 700, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 676, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 #conversion {
   position: relative;
   display: flex;
@@ -640,14 +615,14 @@ footer {
   margin-bottom: 20px;
   margin-top: 20px; }
 
-/* line 711, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 687, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 #newbuilding {
   position: relative;
   height: 500px;
   width: 100%;
   background: url(../images/service-newbuildings.jpg); }
 
-/* line 718, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 694, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 #re-box, #con-box, #new-box {
   position: relative;
   float: right;
@@ -655,31 +630,31 @@ footer {
   width: 600px;
   top: 100px; }
 
-/* line 726, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 702, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 #re-box, #new-box {
   margin-right: 50px; }
 
-/* line 730, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 706, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 #con-box {
   margin-left: 50px; }
 
-/* line 734, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 710, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .ser-textbox {
   background-color: black;
   height: 300px;
   width: 600px;
   opacity: 70%; }
 
-/* line 741, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 717, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .ser-title {
   font-size: 30px;
   margin-bottom: 10px; }
 
-/* line 746, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 722, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .ser-text {
   margin-bottom: 10px; }
 
-/* line 750, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 726, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .mostwanted {
   background: #CE3233;
   border: solid #CE3233;
@@ -689,7 +664,7 @@ footer {
   padding-right: 20px;
   text-decoration: none; }
 
-/* line 760, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 736, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .ser-title,
 .mostwanted,
 .ser-text {
@@ -698,25 +673,25 @@ footer {
   bottom: 280px;
   margin-left: 10px; }
 
-/* line 770, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 746, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 #repair-bigpicture {
   position: relative;
   height: 700px;
   width: 1920px;
   background: url(../images/service-big.jpg);
   background-repeat: no-repeat; }
-  /* line 776, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 752, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   #repair-bigpicture h1 {
     position: relative;
     color: white;
     font-size: 80px;
     top: 300px; }
 
-/* line 785, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 761, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 #repair-content {
   height: 3000px; }
 
-/* line 789, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 765, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 #repair-box {
   position: relative;
   top: 300px;
@@ -726,105 +701,105 @@ footer {
   color: black;
   text-align: center; }
 
-/* line 799, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+/* line 775, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 #galarri {
   position: relative;
   top: 500px; }
 
 @media only screen and (max-width: 768px) {
-  /* line 808, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 784, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .most-wanted-btns {
     height: 150px; }
-  /* line 811, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 787, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .most-wanted-btns a:nth-child(1) {
     height: 150px; }
-  /* line 814, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 790, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .most-wanted-btns a:nth-child(2) {
     height: 150px; }
-  /* line 817, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 793, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .most-wanted-btns a:nth-child(3) {
     height: 150px; }
-  /* line 820, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 796, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .most-wanted-btns a h1 {
     font-size: 18px; }
-  /* line 823, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 799, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .menubox {
     display: none; }
-  /* line 827, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 803, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .contactbox {
     display: none; }
-  /* line 830, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 806, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .about-grid {
     grid-template-columns: 100%;
     grid-template-areas: 'intro-video' 'about-text'; }
-  /* line 837, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 813, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .frontpage-help {
     grid-template-columns: 100%;
     grid-template-areas: 'help-text' 'help-img'; }
-  /* line 845, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 821, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .reakke1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap; }
-    /* line 849, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+    /* line 825, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
     .reakke1 img {
       margin-bottom: 15px; }
-  /* line 854, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 830, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .reakke2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap; }
-    /* line 858, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+    /* line 834, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
     .reakke2 img {
       margin-bottom: 15px;
       margin-top: 0; }
-  /* line 863, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 839, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .reakke3 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap; }
-    /* line 867, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+    /* line 843, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
     .reakke3 img {
       margin-bottom: 15px; }
-  /* line 871, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 847, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .reakke4 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap; }
-    /* line 875, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+    /* line 851, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
     .reakke4 img {
       margin-bottom: 15px; }
-  /* line 879, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 855, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .reakke5 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap; }
-    /* line 883, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+    /* line 859, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
     .reakke5 img {
       margin-bottom: 15px; }
-  /* line 887, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 863, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .billedemap img {
     width: auto;
     height: 230px;
     margin-top: 60px; }
-  /* line 892, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 868, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .tekstbox {
     height: 450px; }
-  /* line 895, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 871, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .tekst {
     text-align: center;
     margin-top: -10px; }
-  /* line 899, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 875, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .mobilmap {
     display: none; }
-  /* line 905, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 881, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   #service {
     width: 768px; }
-  /* line 909, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 885, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .ser-textbox {
     width: 100%;
     height: 100%; }
-  /* line 913, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 889, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   #re-box, #con-box, #new-box {
     position: relative;
     width: 768px;
@@ -834,91 +809,91 @@ footer {
     top: 0;
     margin-left: 0;
     margin-right: 0; }
-  /* line 923, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 899, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .ser-text {
     text-align: center; }
-  /* line 926, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 902, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .ser-title {
     text-align: center; }
-  /* line 929, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 905, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .mostwanted {
     display: flex;
     justify-content: center;
     padding: 0;
     margin-right: 340px;
     margin-left: 340px; }
-  /* line 936, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 912, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   #conversion, #repair, #newbuilding {
     width: 768px;
     height: 500px; }
-  /* line 943, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 919, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .footer-grid img {
     width: 40%; } }
 
 @media only screen and (min-width: 769px) {
-  /* line 950, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 926, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .burgerbar,
   .burger-btn {
     display: none; } }
 
 @media only screen and (max-width: 550px) {
-  /* line 958, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 934, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .logo {
     width: 250px; }
-  /* line 962, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 938, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .reakke1 {
     display: flex;
     flex-direction: column;
-    padding-left: 15%; }
-  /* line 968, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+    padding-left: 22%; }
+  /* line 944, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .herobillede {
     width: 100%;
     height: auto; }
-    /* line 971, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+    /* line 947, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
     .herobillede h1 {
       padding-top: -100px; }
-  /* line 976, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 952, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .reakke2 {
     display: flex;
     flex-direction: column;
     padding-left: 22%; }
-  /* line 981, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 957, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .reakke3 {
     display: flex;
     flex-direction: column;
     padding-left: 22%; }
-  /* line 986, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 962, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .reakke4 {
     display: flex;
     flex-direction: column;
     padding-left: 22%; }
-  /* line 993, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 969, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .billedemap img {
     width: auto;
     height: 100px;
     margin-top: -85px;
     display: none; }
-  /* line 1002, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 978, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .tekstbox {
     height: 200px;
     width: 100%; }
-  /* line 1008, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 984, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .tekst {
     text-align: center;
     margin-right: 50px;
     margin-top: -50px; }
-  /* line 1015, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 991, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .mobilmap {
     display: block;
     padding-top: 125px; }
-  /* line 1020, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 996, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .mobilmap img {
     width: 400px;
     height: auto;
     margin-left: 25%;
     margin-bottom: 50px;
     margin-top: -70px; }
-  /* line 1027, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
+  /* line 1003, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
   .contact-background {
     height: 200px;
     margin-top: 10px; } }
