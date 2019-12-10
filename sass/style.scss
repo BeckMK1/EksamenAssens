@@ -464,7 +464,7 @@ max-width: 200px;
 
 #help-img{
   grid-area: help-img;
-  width: 100%;
+  width: 80%;
 }
 
 #help-text{
@@ -579,7 +579,9 @@ flex-direction: row;
 
 .contact-background{
     background-color: $light-blue;
-    height: 400px;
+    height: 50vh;
+    padding: 20px 0px;
+    margin-top: -20px;
 
 }
 
