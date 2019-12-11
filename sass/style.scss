@@ -796,12 +796,9 @@ width: 1920px;
 color:black;
 text-align: center;
 }
-#galarri{
-position: relative;
-@extend %center;
-top:500px;
+.gallery-text{
+margin-bottom: 20px;
 }
-
 @media only screen and (max-width: 768px){
 
 
