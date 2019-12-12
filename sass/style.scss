@@ -243,6 +243,7 @@ ul li a {
     -moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
     -ms-transition: all .4s ease-in-out;
+
 }
 
 .facilitiesheader {
@@ -346,6 +347,21 @@ background-size: cover;
 width: 30px;
 height: 30px;
 cursor: pointer;
+}
+#marker13, #marker14, #marker15, #marker16, #marker17{
+  background-image: url(../images/logo-hvid.svg);
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+#marker18{
+  background-image: url(../images/hjerte.svg);
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
 }
 
 .mapboxgl-popup {
@@ -501,7 +517,7 @@ img{
 //contakt content
 
 
-  
+
 
 
 
@@ -562,7 +578,7 @@ text-align: center;
     text-align: center;
     margin-top:75px;
     h2 {
-        
+
         margin-bottom: 25px;
     }
 
@@ -573,8 +589,8 @@ text-align: center;
 
 // Contact background
 .contact-background{
-    
-   
+
+
     padding: 40px 0px;
     margin-top: 20px;
     padding-bottom: 100px;
@@ -602,9 +618,8 @@ margin-bottom: 40px;
     justify-content: center;
     margin-left: 75px;
     padding-right: 50px;
-    
-margin-top: 30px;
-    
+    margin-top: 30px;
+
 }
 
 #staff{
@@ -944,21 +959,21 @@ font-weight: bold;
       .billedemap img {
       display: none;
     }
-   
+
     .tekst{
         text-align: center;
         margin-top: 20px;
         display: flex;
 flex-direction: column;
-        
-        
-        
+
+
+
     }
     .mobilmap{
         display: block;
-        
+
     }
-    
+
         .mobilmap img {
         width: 600px;
 height: auto;
@@ -966,14 +981,14 @@ height: auto;
    margin-bottom: 60px;
             margin-top: 50px;
             margin-left: 120px;
-            
-            }
-    
-    .tekstboxcontact {display: flex;
-flex-direction: column;} 
- 
 
-  
+            }
+
+    .tekstboxcontact {display: flex;
+flex-direction: column;}
+
+
+
 
 
 // facilities
@@ -1070,7 +1085,7 @@ display:none;
   }
     //contact//
 
-    
+
 .reakke1 {
         display: flex;
         flex-direction: column;
@@ -1078,7 +1093,7 @@ display:none;
 
 
     }
-    
+
       .reakke2 {
         display: flex;
         flex-direction: column;
@@ -1114,27 +1129,51 @@ display:none;
     .tekst{
         text-align: center;
         margin-right: 50px;
-        
+
 
     }
-   
+
   .mobilmap  {
         display: block;
-      
+
 
     }
 .mobilmap img {
         width: 400px;
 height: auto;
 margin-left: 25%;
-   
-   
+
+
 
     }
     .tekstboxcontact {
     display: flex;
 flex-direction: column;
-       
+
     }
-        
+    .tekstboks {
+      width: 90%;
+
+      padding: 50px 0;
+    }
+
+
+    .facilities-tekst{
+    width: 80%;
+    font-size: 20px;
+    }
+
+    #textbox-margin2 {
+
+      width: 90%;
+
+    }
+
+    #map{
+      height: 100vh;
+      width: 100%;
+      left: 0;
+      right: 0;
+    }
+
 }
