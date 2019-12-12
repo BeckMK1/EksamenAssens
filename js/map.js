@@ -2,18 +2,24 @@
   // Mapbox.org
   mapboxgl.accessToken = 'pk.eyJ1Ijoib3dzaWJvd3NpIiwiYSI6ImNrMjAyOWNqZTAxcm0zbWt4OWRyenlrZnMifQ.4oELFt2O23X8x8A9qGe7iA';
 //her tilføjer vi koodinaterne til punkterne
-var painter = [9.888989,55.267698];
-var engine = [9.889113,55.268186];
-var rigger = [9.889095,55.268307];
-var electrician = [9.889088,55.268412];
-var canteen = [9.889210,55.268643];
-var administration = [9.889280,55.268768];
-var magasin = [9.889079,55.268997];
-var carpenter = [9.888756,55.268763];
-var engineering = [9.888679,55.268993];
-var carpenter2 = [9.887983,55.269288];
-var storage = [9.889853,55.269090];
-var carpenter3 = [9.889905,55.269305];
+var painter = [9.888989, 55.267698];
+var engine = [9.889113, 55.268186];
+var rigger = [9.889095, 55.268307];
+var electrician = [9.889088, 55.268412];
+var canteen = [9.889210, 55.268643];
+var administration = [9.889280, 55.268768];
+var magasin = [9.889139, 55.268994];
+var carpenter = [9.888602, 55.268865];
+var engineering = [9.888679, 55.268993];
+var carpenter2 = [9.887983, 55.269288];
+var storage = [9.889853, 55.269090];
+var carpenter3 = [9.889905, 55.269305];
+var repdock = [9.888033, 55.268758];
+var dock1 = [9.887612, 55.269742];
+var dock2 = [9.888179, 55.269896];
+var dock3 = [9.888814, 55.269396];
+var dock4 = [9.889376, 55.269618];
+var hjertestarter = [9.889041, 55.269044]
 var map = new mapboxgl.Map({
 container: 'map',
 style: 'mapbox://styles/owsibowsi/ck3srgqhy0aqe1cqsdlcekcxm',
@@ -60,6 +66,23 @@ var popup11 = new mapboxgl.Popup({ offset: 25 })
 var popup12 = new mapboxgl.Popup({ offset: 25 })
 .setText('Carpenter Workshop');
 
+var popup13 = new mapboxgl.Popup({ offset: 25 })
+.setText('Reperations Dock - Water depth 7,6 m - Dock length 80 m.');
+
+var popup14 = new mapboxgl.Popup({ offset: 25 })
+.setText('Dock 1 - Water depth 7,6 m - Dock length 140 m.');
+
+var popup15 = new mapboxgl.Popup({ offset: 25 })
+.setText('Dock 2 - Water depth 6 m - Dock length 110 m.');
+
+var popup16 = new mapboxgl.Popup({ offset: 25 })
+.setText('Dock 3 - Water depth 6 m - Dock length 100 m.');
+
+var popup17 = new mapboxgl.Popup({ offset: 25 })
+.setText('Dock 4 - Water depth 5 m - Dock length 63 m.');
+
+var popup18 = new mapboxgl.Popup({ offset: 25 })
+.setText('Defibrillator - Hjertestarter');
 
 // laver DOM element for the marker
 var el = document.createElement('div');
@@ -97,6 +120,24 @@ el11.id = 'marker11';
 
 var el12 = document.createElement('div');
 el12.id = 'marker12';
+
+var el13 = document.createElement('div');
+el13.id = 'marker13';
+
+var el14 = document.createElement('div');
+el14.id = 'marker14';
+
+var el15 = document.createElement('div');
+el15.id = 'marker15';
+
+var el16 = document.createElement('div');
+el16.id = 'marker16';
+
+var el17 = document.createElement('div');
+el17.id = 'marker17';
+
+var el18 = document.createElement('div');
+el18.id = 'marker18';
 
 
 // laver marker
@@ -158,6 +199,36 @@ new mapboxgl.Marker(el11)
 new mapboxgl.Marker(el12)
 .setLngLat(carpenter3)
 .setPopup(popup12) // sets a popup on this marker
+.addTo(map);
+
+new mapboxgl.Marker(el13)
+.setLngLat(repdock)
+.setPopup(popup13) // sets a popup on this marker
+.addTo(map);
+
+new mapboxgl.Marker(el14)
+.setLngLat(dock1)
+.setPopup(popup14) // sets a popup on this marker
+.addTo(map);
+
+new mapboxgl.Marker(el15)
+.setLngLat(dock2)
+.setPopup(popup15) // sets a popup on this marker
+.addTo(map);
+
+new mapboxgl.Marker(el16)
+.setLngLat(dock3)
+.setPopup(popup16) // sets a popup on this marker
+.addTo(map);
+
+new mapboxgl.Marker(el17)
+.setLngLat(dock4)
+.setPopup(popup17) // sets a popup on this marker
+.addTo(map);
+
+new mapboxgl.Marker(el18)
+.setLngLat(hjertestarter)
+.setPopup(popup18) // sets a popup on this marker
 .addTo(map);
 
 // fjerner zoom on scroll på map.
