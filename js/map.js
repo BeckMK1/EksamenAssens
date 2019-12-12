@@ -61,7 +61,7 @@ var popup12 = new mapboxgl.Popup({ offset: 25 })
 .setText('Carpenter Workshop');
 
 
-// create DOM element for the marker
+// laver DOM element for the marker
 var el = document.createElement('div');
 el.id = 'marker';
 
@@ -99,7 +99,7 @@ var el12 = document.createElement('div');
 el12.id = 'marker12';
 
 
-// create the marker
+// laver marker
 new mapboxgl.Marker(el)
 .setLngLat(painter)
 .setPopup(popup) // sets a popup on this marker
@@ -160,7 +160,7 @@ new mapboxgl.Marker(el12)
 .setPopup(popup12) // sets a popup on this marker
 .addTo(map);
 
-// fjerner zoom on scroll
+// fjerner zoom on scroll på map.
 map.scrollZoom.disable();
 
 //tilføjer zoom og rotation. Da jeg har disablet zoom on scroll funktionen
