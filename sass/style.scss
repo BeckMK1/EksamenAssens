@@ -643,7 +643,9 @@ ul li a {
 footer {
   background-color: $dark-blue;
   padding-bottom: 5vh;
-  text-decoration: none;
+  p {
+    text-decoration: none;
+  }
 }
 
 #footer-img {

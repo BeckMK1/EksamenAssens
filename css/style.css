@@ -515,8 +515,9 @@ ul li a {
 
 footer {
   background-color: #163f70;
-  padding-bottom: 5vh;
-  text-decoration: none; }
+  padding-bottom: 5vh; }
+  footer p {
+    text-decoration: none; }
 
 #footer-img {
   width: 100%;
