@@ -607,8 +607,9 @@ ul li a {
 /* line 643, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 footer {
   background-color: #163f70;
-  padding-bottom: 5vh;
-  text-decoration: none; }
+  padding-bottom: 5vh; }
+  footer p {
+    text-decoration: none; }
 
 /* line 649, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 #footer-img {
