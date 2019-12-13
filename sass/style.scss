@@ -450,7 +450,7 @@ max-width: 200px;
 
 }
 
-#textbox-margin{
+.textbox-margin{
   position: relative;
   z-index: 10;
 }
@@ -526,7 +526,12 @@ img{
 
 
 
+#overskriftkontakt {
 
+width: 100%;
+text-align: center;
+  
+}
 
 
 
@@ -552,7 +557,9 @@ align-items: center;
 width: 170px;
 }
 
-
+.box2 {
+   background-color: #E9F6FF; 
+}
 .billederkontakt {
   
   
@@ -565,42 +572,19 @@ flex-direction: column;
   
 }
 
-.textbox-margin5{
-position: relative;
-  z-index: 10;
-width: 300px;
-
- }
-.textbox-margin2{
-position: relative;
-  z-index: 10;
-width: 300px;
-  margin-top: 20px;
- }
 .textbox-margin3{
-position: relative;
-  z-index: 10;
-width: 301px;
- padding-top: 20px;
- }
-.textbox-margin4{
-position: relative;
-  z-index: 10;
-width: 301px;
- padding-top: 20px;
- }
-.textbox-margin5{
-position: relative;
-  z-index: 10;
-width: 301px;
+  position: relative;
+  z-index: -10;
+  width: 100%;
+  height: auto;
+}
 
- }
 
 .box {
   display: flex;
   flex-direction: column;
 align-content: center;
-  background-color: #E9F6FF;
+  
   margin-top: -5px;
     
   
@@ -1101,7 +1085,31 @@ flex-direction: column;
   
 }
 
-
+.textbox-margin3{
+  position: relative;
+  z-index: -10;
+  width: 300px;
+  height: auto;
+    top: 5px;
+  
+}
+    .textbox-margin5{
+  position: relative;
+  z-index: -10;
+  width: 300px;
+  height: auto;
+    top: 5px;
+        margin-left: 1px;
+  
+}
+    .textbox-margin4{
+  position: relative;
+  z-index: -10;
+  width: 300px;
+  height: auto;
+        bottom: 10px;
+  
+}
 .denher{
 display: flex;
 flex-direction: column;
@@ -1250,7 +1258,6 @@ display:none;
 
 
 
-
 }
 
 @media only screen and (max-width: 550px) {
@@ -1268,24 +1275,6 @@ display:none;
 
     }
 
-      .reakke2 {
-        display: flex;
-        flex-direction: column;
-        padding-left: 22%;
-          margin-top: -2px;
-    }
-      .reakke3 {
-        display: flex;
-        flex-direction: column;
-       padding-left: 22%;
-          margin-top: -2px;
-    }
-      .reakke4 {
-        display: flex;
-        flex-direction: column;
-        padding-left: 22%;
-          margin-top: -2px;
-    }
 
 
      .billedemap img {
