@@ -1,7 +1,7 @@
 /*---------------My variables*---------------*/
 /*---------------My variables*---------------*/
 /*---------------My Inheritances-------------*/
-.facilitiestext, .tekstboks, #mapbody img, #repair-bigpicture h1, #repair-box {
+.facilitiestext, .tekstboks, #mapbody img, h1, #repair-box {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -227,7 +227,8 @@ ul li a {
 
 .facilities-tekst {
   width: 60%;
-  font-size: 20px; }
+  font-size: 20px;
+  line-height: 1.5em; }
 
 #textbox-margin2 {
   position: relative;
@@ -349,9 +350,10 @@ ul li a {
   display: flex;
   justify-self: center;
   align-items: center;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  line-height: 1.5em; }
 
-#textbox-margin {
+.textbox-margin {
   position: relative;
   z-index: 10; }
 
@@ -406,42 +408,113 @@ ul li a {
     justify-items: center;
     justify-self: center; }
 
+#overskriftkontakt {
+  width: 100%;
+  text-align: center; }
+
+.call-btn {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 26px;
+  background-color: #CE3233;
+  border-radius: 100px;
+  padding: 5px 20px; }
+
+p {
+  width: 70%; }
+
 .reakke1 {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 50px; }
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-right: 75px; }
 
-.reakke2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 100px; }
+.listen {
+  list-style: none; }
 
-.reakke3 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 100px; }
+.billederkontakt img {
+  height: auto;
+  width: 170px; }
 
-.reakke4 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 100px;
-  margin-bottom: 50px; }
-
-.wherearewe {
-  text-align: center; }
+.box2 {
+  background-color: #E9F6FF; }
 
 .billederkontakt {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px; }
+
+.textbox-margin3 {
+  position: relative;
+  z-index: -10;
+  width: 100%;
+  height: auto; }
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-top: -5px; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+.denher2 {
+  display: flex;
   flex-direction: row;
-  margin-left: 10px; }
-  .billederkontakt img {
-    height: auto;
-    width: 100px;
-    margin-right: 20px; }
+  justify-content: center; }
+
+.denher {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.denher3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.denher4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+li img {
+  height: auto;
+  width: 25px; }
+
+.iconerlist {
+  display: flex;
+  flex-direction: column; }
+
+.mailtel {
+  display: flex;
+  flex-direction: column; }
+
+.boxmail {
+  display: flex;
+  flex-direction: column; }
+
+.jeg {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none; }
+
+.iconmail {
+  margin-top: 10px; }
+
+.icontlf {
+  margin-top: 12px; }
+
+#iconmail {
+  margin-top: 12px; }
+
+.wherearewe {
+  text-align: center; }
 
 .tekstmedbillede {
   display: flex;
@@ -516,19 +589,20 @@ footer {
   grid-gap: 5%;
   grid-template-areas: 'footer-left footer-right' 'footer-left footer-icons';
   justify-content: center;
-  color: #FAFAFA;
-  text-decoration: none; }
-  .footer-grid div {
-    justify-self: flex-start; }
+  color: #FAFAFA; }
   .footer-grid .footer-certificates img {
     width: 32%;
     max-width: 100px;
     height: auto; }
   .footer-grid .footer-icons {
-    grid-area: footer-icons; }
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    grid-area: footer-icons;
+    align-items: center; }
     .footer-grid .footer-icons img {
-      margin: 10px 5px 0 0;
-      width: 15%; }
+      margin: 10px 5px 0px 0px;
+      width: 50px; }
 
 .footer-right {
   text-align: center;
@@ -626,11 +700,12 @@ footer {
   width: 1920px;
   background: url("../images/service-big.jpg");
   background-repeat: no-repeat; }
-  #repair-bigpicture h1 {
-    position: relative;
-    color: white;
-    font-size: 80px;
-    top: 300px; }
+
+h1 {
+  position: relative;
+  color: white;
+  font-size: 80px;
+  top: 300px; }
 
 #repair-box {
   position: relative;
@@ -718,31 +793,41 @@ footer {
   .frontpage-help {
     grid-template-columns: 100%;
     grid-template-areas: 'help-text' 'help-img'; }
-  .reakke1 {
+  .denher2 {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; }
-    .reakke1 img {
-      margin-bottom: 15px; }
-  .reakke2 {
+    flex-direction: column;
+    justify-content: center; }
+  .textbox-margin3 {
+    position: relative;
+    z-index: -10;
+    width: 300px;
+    height: auto;
+    top: 5px; }
+  .textbox-margin5 {
+    position: relative;
+    z-index: -10;
+    width: 300px;
+    height: auto;
+    top: 5px;
+    margin-left: 1px; }
+  .textbox-margin4 {
+    position: relative;
+    z-index: -10;
+    width: 300px;
+    height: auto;
+    bottom: 10px; }
+  .denher {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; }
-    .reakke2 img {
-      margin-bottom: 15px;
-      margin-top: 0; }
-  .reakke3 {
+    flex-direction: column;
+    justify-content: center; }
+  .denher3 {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; }
-    .reakke3 img {
-      margin-bottom: 15px; }
-  .reakke4 {
+    flex-direction: column;
+    justify-content: center; }
+  .denher4 {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; }
-    .reakke4 img {
-      margin-bottom: 15px; }
+    flex-direction: column;
+    justify-content: center; }
   .billedemap img {
     display: none; }
   .tekst {
@@ -750,133 +835,192 @@ footer {
     margin-top: 20px;
     display: flex;
     flex-direction: column; }
-  .mobilmap {
-    display: block; }
-  .mobilmap img {
-    width: 600px;
-    height: auto;
-    margin-bottom: 60px;
-    margin-top: 50px;
-    margin-left: 120px; }
-  .tekstboxcontact {
-    display: flex;
-    flex-direction: column; }
-  .mainpic {
-    display: none; }
-  #service {
-    width: 100%;
-    max-width: 768px; }
-  .ser-textbox {
-    width: 100%;
-    height: 100%; }
-  #con-box,
-  #new-box,
-  #re-box {
-    position: relative;
-    width: 100%;
-    max-width: 768px;
-    height: 500px;
-    display: block;
-    float: none;
-    top: 0;
-    margin: 0; }
-  .ser-text {
-    text-align: center; }
-  .ser-title {
-    text-align: center; }
-  .mostwanted {
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin-right: 35%;
-    margin-left: 35%; }
-  #conversion,
-  #newbuilding,
-  #repair {
-    width: 100%;
-    max-width: 768px;
-    height: 500px; }
-  .big-phone {
-    display: block; }
-  #repair {
-    background: url("../images/service-repair-small.jpg"); }
-  #newbuilding {
-    background: url("../images/service-newbuildings-small.jpg"); }
-  #conversion {
-    background: url("../images/service-conersion-small.jpg"); }
-  .popup-gallery {
-    margin-left: 30px; }
-  .footer-grid {
-    font-size: 12px; }
-  .footer-icons {
-    margin-left: 20%; }
-  .footer-grid {
-    display: grid;
-    grid-template-areas: 'footer-left footer-right' 'footer-icons footer-right'; }
-    .footer-grid .footer-certificates img {
-      width: 50%; } }
-
-@media only screen and (min-width: 769px) {
-  .burger-btn,
-  .burgerbar {
-    display: none; } }
-
-@media only screen and (max-width: 550px) {
-  .logo {
-    width: 250px;
-    margin-top: 45px; }
-  .reakke1 {
-    display: flex;
-    flex-direction: column;
-    padding-left: 22%; }
   .reakke2 {
     display: flex;
-    flex-direction: column;
-    padding-left: 22%;
-    margin-top: -2px; }
-  .reakke3 {
-    display: flex;
-    flex-direction: column;
-    padding-left: 22%;
-    margin-top: -2px; }
-  .reakke4 {
-    display: flex;
-    flex-direction: column;
-    padding-left: 22%;
-    margin-top: -2px; }
-  .billedemap img {
-    display: none; }
-  .tekstbox {
-    height: 0;
-    width: 100%; }
-  .tekst {
-    text-align: center;
-    margin-right: 50px; }
-  .mobilmap {
-    display: block; }
-  .mobilmap img {
-    width: 100%;
-    max-width: 550px;
-    height: auto;
-    margin-left: 25%; }
-  .tekstboxcontact {
-    display: flex;
-    flex-direction: column; }
-  .tekstboks {
-    width: 90%;
-    padding: 50px 0; }
-  .facilitiesheader {
-    margin-top: 60px; }
-  .facilities-tekst {
-    width: 80%;
-    font-size: 20px; }
-  #textbox-margin2 {
-    width: 90%; }
-  #map {
-    height: 80vh;
-    width: 100%;
-    left: 0;
-    right: 0; }
-  #service {
-    width: 100%;
-    max-width: 550px; } }
+    flex-direction: row;
+    flex-wrap: wrap; }
+  img {
+    margin-bottom: 15px;
+    margin-top: 0; } }
+
+.reakke3 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .reakke3 img {
+    margin-bottom: 15px; }
+
+.reakke4 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .reakke4 img {
+    margin-bottom: 15px; }
+
+.billedemap img {
+  display: none; }
+
+.tekst {
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column; }
+
+.mobilmap {
+  display: block; }
+
+.mobilmap img {
+  width: 600px;
+  height: auto;
+  margin-bottom: 60px;
+  margin-top: 50px;
+  margin-left: 120px; }
+
+.tekstboxcontact {
+  display: flex;
+  flex-direction: column; }
+
+.mainpic {
+  display: none; }
+
+#service {
+  width: 100%;
+  max-width: 768px; }
+
+.ser-textbox {
+  width: 100%;
+  height: 100%; }
+
+#con-box,
+#new-box,
+#re-box {
+  position: relative;
+  width: 100%;
+  max-width: 768px;
+  height: 500px;
+  display: block;
+  float: none;
+  top: 0;
+  margin: 0; }
+
+.ser-text {
+  text-align: center; }
+
+.ser-title {
+  text-align: center; }
+
+.mostwanted {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-right: 35%;
+  margin-left: 35%; }
+
+#conversion,
+#newbuilding,
+#repair {
+  width: 100%;
+  max-width: 768px;
+  height: 500px; }
+
+.big-phone {
+  display: block; }
+
+#repair {
+  background: url(../images/service-repair-small.jpg); }
+
+#newbuilding {
+  background: url(../images/service-newbuildings-small.jpg); }
+
+#conversion {
+  background: url(../images/service-conersion-small.jpg); }
+
+.footer-grid {
+  font-size: 12px;
+  display: grid;
+  grid-template-areas: 'footer-left footer-right' 'footer-icons footer-right'; }
+  .footer-grid .footer-certificates img {
+    width: 50%; }
+  .footer-grid .footer-certificates #newbuilding {
+    background: url("../images/service-newbuildings-small.jpg"); }
+  .footer-grid .footer-certificates #conversion {
+    background: url("../images/service-conersion-small.jpg"); }
+  .footer-grid .footer-certificates .popup-gallery {
+    margin-left: 30px; }
+  .footer-grid .footer-certificates .footer-grid {
+    font-size: 12px; }
+  .footer-grid .footer-certificates .footer-icons {
+    margin-left: 20%; }
+  .footer-grid .footer-certificates .footer-grid {
+    display: grid;
+    grid-template-areas: 'footer-left footer-right' 'footer-icons footer-right'; }
+    .footer-grid .footer-certificates .footer-grid .footer-certificates img {
+      width: 50%; }
+  @media only screen and (min-width: 769px) {
+    .footer-grid .burger-btn,
+    .footer-grid .burgerbar {
+      display: none; } }
+  @media only screen and (max-width: 550px) {
+    .footer-grid .logo {
+      width: 250px;
+      margin-top: 45px; }
+    .footer-grid .reakke1 {
+      display: flex;
+      flex-direction: column;
+      padding-left: 22%; }
+    .footer-grid .billedemap img {
+      display: none; }
+    .footer-grid .tekstbox {
+      height: 00px;
+      width: 100%; }
+    .footer-grid .reakke2 {
+      display: flex;
+      flex-direction: column;
+      padding-left: 22%;
+      margin-top: -2px; }
+    .footer-grid .reakke3 {
+      display: flex;
+      flex-direction: column;
+      padding-left: 22%;
+      margin-top: -2px; }
+    .footer-grid .reakke4 {
+      display: flex;
+      flex-direction: column;
+      padding-left: 22%;
+      margin-top: -2px; }
+    .footer-grid .billedemap img {
+      display: none; }
+    .footer-grid .tekstbox {
+      height: 0;
+      width: 100%; }
+    .footer-grid .tekst {
+      text-align: center;
+      margin-right: 50px; }
+    .footer-grid .mobilmap {
+      display: block; }
+    .footer-grid .mobilmap img {
+      width: 100%;
+      max-width: 550px;
+      height: auto;
+      margin-left: 25%; }
+    .footer-grid .tekstboxcontact {
+      display: flex;
+      flex-direction: column; }
+    .footer-grid .tekstboks {
+      width: 90%;
+      padding: 50px 0; }
+    .footer-grid .facilitiesheader {
+      margin-top: 60px; }
+    .footer-grid .facilities-tekst {
+      width: 80%;
+      font-size: 20px; }
+    .footer-grid #textbox-margin2 {
+      width: 90%; }
+    .footer-grid #map {
+      height: 80vh;
+      width: 100%;
+      left: 0;
+      right: 0; }
+    .footer-grid #service {
+      width: 100%;
+      max-width: 550px; } }

@@ -284,9 +284,11 @@ ul li a {
   padding: 50px 0;
 }
 
-.facilities-tekst {
-  width: 60%;
-  font-size: 20px;
+
+.facilities-tekst{
+width: 60%;
+font-size: 20px;
+line-height: 1.5em;
 }
 
 #textbox-margin2 {
@@ -433,9 +435,11 @@ ul li a {
   justify-self: center;
   align-items: center;
   margin-bottom: 40px;
+  line-height: 1.5em;
+
 }
 
-#textbox-margin {
+.textbox-margin{
   position: relative;
   z-index: 10;
 }
@@ -482,9 +486,42 @@ ul li a {
   justify-content: center;
   align-items: center;
 
-  h1 {
-    font-size: 30px;
-  }
+h1{
+  font-size: 30px;
+}
+.call-btn{
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 26px;
+  background-color: $red;
+  border-radius: 100px;
+  padding: 5px 20px;
+}
+p{
+  width: 70%;
+}
+img{
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+}
+}
+
+
+//contakt content
+
+
+
+
+
+
+
+#overskriftkontakt {
+
+width: 100%;
+text-align: center;
+
+}
 
   .call-btn {
     text-decoration: none;
@@ -499,62 +536,133 @@ ul li a {
     width: 70%;
   }
 
-  img {
-    justify-content: center;
-    justify-items: center;
-    justify-self: center;
-  }
-}
-//contakt content
-.reakke1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 50px;
-}
+.reakke1{
 
-.reakke2 {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 100px;
-}
-
-.reakke3 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 100px;
-}
-
-.reakke4 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 100px;
-  margin-bottom: 50px;
-}
-
-.wherearewe {
+flex-direction: column;
   text-align: center;
+align-items: center;
+  margin-right: 75px;
+
+
 }
 
+.listen{
+  list-style: none;
+
+}
+
+.billederkontakt img {
+
+  height: auto;
+width: 170px;
+}
+
+.box2 {
+   background-color: #E9F6FF;
+}
 .billederkontakt {
-  display: flex;
-  flex-direction: row;
-  margin-left: 10px;
 
-  img {
-    height: auto;
-    width: 100px;
-    margin-right: 20px;
-  }
+
+  display: flex;
+flex-direction: column;
+  align-items: center;
+
+  width: 300px;
+
+
 }
 
-.tekstmedbillede {
+.textbox-margin3{
+  position: relative;
+  z-index: -10;
+  width: 100%;
+  height: auto;
+}
+
+
+.box {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+align-content: center;
+
+  margin-top: -5px;
+
+
+}
+
+a{text-decoration: none;
+  color: black;
+}
+
+.denher2{
+display: flex;
+flex-direction: row;;
+  justify-content: center;
+
+}
+
+
+.denher{
+display: flex;
+flex-direction: row;;
+  justify-content: center;
+
+
+}
+
+.denher3{
+display: flex;
+flex-direction: row;;
+  justify-content: center;
+
+}
+
+.denher4{
+display: flex;
+flex-direction: row;;
+  justify-content: center;
+
+}
+
+li img {height: auto;
+width: 25px;
+}
+
+
+
+
+.iconerlist {display: flex;
+flex-direction: column;
+}
+.mailtel{
+  display: flex;
+flex-direction: column;
+}
+
+.boxmail{
+  display: flex;
+flex-direction: column;
+}
+
+
+.jeg{
+  display: flex;
+flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+
+.iconmail {margin-top: 10px;}
+.icontlf{margin-top: 12px;}
+#iconmail{margin-top: 12px;}
+.wherearewe{
   text-align: center;
+}
+.tekstmedbillede{
+    display: flex;
+flex-direction: row;
+text-align: center;
 }
 
 .tekstboxcontact {
@@ -645,27 +753,28 @@ footer {
   grid-template-areas: 'footer-left footer-right' 'footer-left footer-icons';
   justify-content: center;
   color: $white;
-  text-decoration: none;;
-  div {
-    justify-self: flex-start;
-  }
 
-  .footer-certificates {
-    img {
-      width: 32%;
-      max-width: 100px;
-      height: auto;
-    }
-  }
 
-  .footer-icons {
+  .footer-certificates{
+    img{
+    width: 32%;
+    max-width: 100px;
+    height: auto;
+  }
+  }
+  .footer-icons{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     grid-area: footer-icons;
-
-    img {
-      margin: 10px 5px 0 0;
-      width: 15%;
+    align-items: center;
+    img{
+      margin: 10px 5px 0px 0px;
+      width: 50px;
     }
   }
+
+
 }
 
 .footer-right {
@@ -783,6 +892,7 @@ footer {
   width: 1920px;
   background: url("../images/service-big.jpg");
   background-repeat: no-repeat;
+  }
 
   h1 {
     position: relative;
@@ -791,7 +901,7 @@ footer {
     @extend %center;
     top: 300px;
   }
-}
+
 // Repair content
 
 #repair-box {
@@ -916,22 +1026,78 @@ footer {
     grid-template-columns: 100%;
     grid-template-areas: 'help-text' 'help-img';
   }
-  //contact content//
+//contact content//
 
-  .reakke1 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.denher2{
+display: flex;
+flex-direction: column;
+  justify-content: center;
 
-    img {
-      margin-bottom: 15px;
+}
+
+.textbox-margin3{
+  position: relative;
+  z-index: -10;
+  width: 300px;
+  height: auto;
+    top: 5px;
+
+}
+    .textbox-margin5{
+  position: relative;
+  z-index: -10;
+  width: 300px;
+  height: auto;
+    top: 5px;
+        margin-left: 1px;
+
+}
+    .textbox-margin4{
+  position: relative;
+  z-index: -10;
+  width: 300px;
+  height: auto;
+        bottom: 10px;
+
+}
+.denher{
+display: flex;
+flex-direction: column;
+  justify-content: center;
+
+}
+
+.denher3{
+display: flex;
+flex-direction:column;
+  justify-content: center;
+
+}
+
+.denher4{
+display: flex;
+flex-direction: column;
+  justify-content: center;
+
+}
+
+
+      .billedemap img {
+      display: none;
     }
-  }
+
+    .tekst{
+        text-align: center;
+        margin-top: 20px;
+        display: flex;
+flex-direction: column;
+}
 
   .reakke2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    }
 
     img {
       margin-bottom: 15px;
@@ -1037,14 +1203,31 @@ footer {
     width: 100%;
     max-width: 768px;
     height: 500px;
-  }
+    }
+    .big-phone{
+    display:block;
+    }
+    #repair{
+    background: url(../images/service-repair-small.jpg);
+    }
+    #newbuilding {
+      background: url(../images/service-newbuildings-small.jpg);
+    }
+      #conversion {
+        background: url(../images/service-conersion-small.jpg);
+      }
+// Footer
 
-  .big-phone {
-    display: block;
-  }
 
-  #repair {
-    background: url("../images/service-repair-small.jpg");
+.footer-grid{
+  font-size: 12px;
+  display: grid;
+  grid-template-areas:
+  'footer-left footer-right'
+  'footer-icons footer-right';
+  .footer-certificates{
+    img{
+    width: 50%;
   }
 
   #newbuilding {
@@ -1091,12 +1274,25 @@ footer {
     width: 250px;
     margin-top: 45px;
   }
-  //contact//
-  .reakke1 {
-    display: flex;
-    flex-direction: column;
-    padding-left: 22%;
-  }
+    //contact//
+
+.reakke1 {
+        display: flex;
+        flex-direction: column;
+         padding-left: 22%;
+    }
+
+
+
+     .billedemap img {
+         display: none;
+    }
+
+    .tekstbox {
+        height: 00px;
+        width: 100%;
+        }
+
 
   .reakke2 {
     display: flex;
@@ -1178,5 +1374,5 @@ footer {
     width: 100%;
     max-width: 550px;
   }
-
+}
 }
