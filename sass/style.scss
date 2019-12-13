@@ -533,7 +533,7 @@ flex-direction: column;
   text-align: center;
 align-items: center;
   margin-right: 75px;
-  margin-top: 3px;
+  
   
 }
 
@@ -561,11 +561,11 @@ flex-direction: column;
   
 }
 
-.textbox-margin{
+.textbox-margin5{
 position: relative;
   z-index: 10;
 width: 300px;
-  margin-top: 20px;
+
  }
 .textbox-margin2{
 position: relative;
@@ -584,6 +584,12 @@ position: relative;
   z-index: 10;
 width: 301px;
  padding-top: 20px;
+ }
+.textbox-margin5{
+position: relative;
+  z-index: 10;
+width: 301px;
+
  }
 
 .box {
