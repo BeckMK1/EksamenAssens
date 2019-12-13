@@ -4,8 +4,11 @@ $white: #FAFAFA;
 $light-blue: #E9F6FF;
 $dark-blue: #163f70;
 $black: #000000;
+
 /*---------------My variables*---------------*/
+
 /*---------------My Inheritances-------------*/
+
 %center {
   display: flex;
   align-items: center;
@@ -13,34 +16,43 @@ $black: #000000;
 }
 
 %shadow {
-  -webkit-box-shadow: -6px 3px 6px 0 rgba(0, 0, 0, 0.16);
-  -moz-box-shadow: -6px 3px 6px 0 rgba(0, 0, 0, 0.16);
-  box-shadow: -6px 3px 6px 0 rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: -6px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: -6px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: -6px 3px 6px 0px rgba(0, 0, 0, 0.16);
 }
+
+
+
 /*---------------My Inheritances-------------*/
+
+
 * {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
 }
 
+
 body {
   background-color: $white;
   overflow-x: hidden;
 }
+
+
 // Vores menu på store skærme
-header {
+
+header{
   z-index: 20;
 }
-
-.logo {
+.logo{
   margin-top: 30px;
   height: auto;
   width: 400px;
   align-items: flex-end;
 }
 
-.navbox {
+
+.navbox{
   position: sticky;
   top: 0;
   display: flex;
@@ -53,14 +65,16 @@ header {
   font-weight: bold;
   z-index: 10000;
   position: fixed;
+
   border-bottom: 1.5vh solid transparent;
-  border-image-source: url("../images/logo-border.svg");
+  border-image-source: url(../images/logo-border.svg);
   border-image-slice: 100;
   border-image-repeat: repeat;
 }
 
 .navbox a {
   text-decoration: none;
+
 }
 
 .navbar {
@@ -90,8 +104,8 @@ header {
   border-radius: 100px;
   background-color: $red;
 }
-//Burgermenu til mobile
 
+//Burgermenu til mobile
 .burgerbar {
   position: fixed;
   top: 0;
@@ -99,9 +113,9 @@ header {
   background: #fafafa;
   width: 230px;
   height: 100%;
-  transition: 0.4s;
+  transition: .4s;
   @extend %shadow;
-  z-index: 10000;
+  z-index: 10000
 }
 
 .active {
@@ -125,8 +139,8 @@ ul li a {
   text-decoration: none;
   border-bottom: 1px solid rgba(0, 0, 0, .2);
 }
-// her laver vi den fysise burgerknap
 
+// her laver vi den fysise burgerknap
 .burger-btn {
   position: fixed;
   top: 10px;
@@ -137,7 +151,7 @@ ul li a {
   border: none;
   outline: none;
   background: transparent;
-  z-index: 10001;
+  z-index: 10001
 }
 
 .burger-btn span {
@@ -146,16 +160,16 @@ ul li a {
   height: 3px;
   background: #252525;
   position: absolute;
-  transition: 0.4s;
+  transition: .4s;
   border-radius: 3px;
 }
+
 // Her koder vi så burgeren bliver til et kryds
 // til at lukke for menuen igen.
 // dette gør vi ved at animere vores Span elementer
 // vi har 4 streger i alt. 2 ovenpå hinanden
 // de to ydre strejer forsvinder med opacity 0 transition
 // krydset kommer af det 2 streger i midten roterer.
-
 .burger-btn span:nth-child(1) {
   top: 10px;
   -webkit-transform-origin: left center;
@@ -166,10 +180,12 @@ ul li a {
 
 .burger-btn span:nth-child(2) {
   top: 20px;
+
 }
 
 .burger-btn span:nth-child(3) {
   top: 20px;
+
 }
 
 .burger-btn span:nth-child(4) {
@@ -185,6 +201,7 @@ ul li a {
 }
 
 .burger-btn.open span:nth-child(2) {
+
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
@@ -192,6 +209,7 @@ ul li a {
 }
 
 .burger-btn.open span:nth-child(3) {
+
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
@@ -201,11 +219,11 @@ ul li a {
 .burger-btn.open span:nth-child(4) {
   opacity: 0;
 }
-//   Facilities content
 
+//   Facilities content
 .facilitiesheader {
   overflow: hidden;
-  //tilføjer overflow hidden for at billedet ikke zoomer ud af kassen ved hover, og bliver i sin kasse.
+  //tilføjer overflow hidden for at det ikke zoomer ud af kassen ved hover.
   width: 100%;
   height: 400px;
   display: flex;
@@ -219,14 +237,18 @@ ul li a {
   }
 }
 
-.mainpic {
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
+.mainpic{
+
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+
 }
 
 .facilitiesheader {
+
+
   width: 100%;
   height: 400px;
   display: flex;
@@ -243,6 +265,7 @@ ul li a {
   position: relative;
   z-index: -1;
 }
+
 
 .textblock {
   position: absolute;
@@ -262,14 +285,18 @@ ul li a {
 }
 //tiføjer zoom ved hover på billedet
 
+
 .transition {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
 }
+
 //facilities textboks
-.facilitiestext {
+
+
+.facilitiestext{
   position: relative;
   margin: 100px 0;
   width: 100%;
@@ -298,17 +325,16 @@ line-height: 1.5em;
   height: auto;
 }
 
-#mapbody {
-  margin-bottom: 100px;
 
+#mapbody{
+  margin-bottom: 100px;
   img {
     position: relative;
     @extend %center;
     z-index: 9;
   }
 }
-
-#map {
+#map{
   position: relative;
   height: 650px;
   width: 80%;
@@ -316,39 +342,23 @@ line-height: 1.5em;
   right: 10%;
 }
 
-#marker,
-#marker10,
-#marker11,
-#marker12,
-#marker2,
-#marker3,
-#marker4,
-#marker5,
-#marker6,
-#marker7,
-#marker8,
-#marker9 {
-  background-image: url("../images/logo-small.svg");
+#marker, #marker2, #marker3, #marker4, #marker5, #marker6, #marker7, #marker8, #marker9, #marker10, #marker11, #marker12 {
+background-image: url(../images/logo-small.svg);
+background-size: cover;
+width: 30px;
+height: 30px;
+cursor: pointer;
+}
+#marker13, #marker14, #marker15, #marker16, #marker17{
+  background-image: url(../images/logo-hvid.svg);
   background-size: cover;
   width: 30px;
   height: 30px;
   cursor: pointer;
 }
 
-#marker13,
-#marker14,
-#marker15,
-#marker16,
-#marker17 {
-  background-image: url("../images/logo-hvid.svg");
-  background-size: cover;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-}
-
-#marker18 {
-  background-image: url("../images/hjerte.svg");
+#marker18{
+  background-image: url(../images/hjerte.svg);
   background-size: cover;
   width: 30px;
   height: 30px;
@@ -356,10 +366,10 @@ line-height: 1.5em;
 }
 
 .mapboxgl-popup {
-  max-width: 200px;
+max-width: 200px;
 }
 
-.mapwrap {
+.mapwrap{
   position: relative;
   margin: 200px 0;
 }
@@ -369,12 +379,13 @@ line-height: 1.5em;
   height: 500px;
 }
 
-#frontpage-hero-img {
+#frontpage-hero-img{
   width: 100%;
   height: auto;
 }
 
-.most-wanted-btns {
+
+.most-wanted-btns{
   width: 100%;
   height: 300px;
   display: grid;
@@ -382,9 +393,9 @@ line-height: 1.5em;
   grid-gap: 5%;
   justify-content: center;
   align-self: center;
-  margin: 100px 0;
 
-  a {
+  margin: 100px 0;
+  a{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -392,44 +403,43 @@ line-height: 1.5em;
     color: $white;
     width: 100%;
     height: 300px;
-
-    h1 {
+    h1{
       font-size: 32px;
     }
   }
 }
-
-.most-wanted-btns a:nth-child(1) {
-  background-image: url("../images/repair-btn.jpg");
+.most-wanted-btns a:nth-child(1){
+  background-image:url(../images/repair-btn.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 75% 50%;
   width: 100%;
-}
 
-.most-wanted-btns a:nth-child(2) {
-  background-image: url("../images/conversion-btn.jpg");
+
+}
+.most-wanted-btns a:nth-child(2){
+  background-image:url(../images/conversion-btn.jpg);
   background-repeat: no-repeat;
   background-position: 75% 50%;
   background-size: cover;
   width: 100%;
 }
-
-.most-wanted-btns a:nth-child(3) {
-  background-image: url("../images/newbuilding-btn.jpg");
+.most-wanted-btns a:nth-child(3){
+  background-image:url(../images/newbuilding-btn.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 75% 50%;
   height: 300px;
+
 }
 
-#intro-video {
+#intro-video{
   grid-area: intro-video;
   width: 100%;
   margin-bottom: 5vh;
 }
 
-#about-text {
+#about-text{
   grid-area: about-text;
   display: flex;
   justify-self: center;
@@ -443,26 +453,24 @@ line-height: 1.5em;
   position: relative;
   z-index: 10;
 }
-
-.frontpage-about {
+.frontpage-about{
   background-color: $light-blue;
   margin-top: -10px;
 
-  h1 {
-    padding: 10px 0;
+    h1{
+    padding: 10px 0px;
     text-align: center;
-  }
+    }
 }
-
-.about-grid {
+.about-grid{
   display: grid;
-  margin: 0 7.5%;
+  margin: 0px 7.5%;
   grid-template-columns: 47.5% 47.5%;
   grid-gap: 5%;
   grid-template-areas: 'about-text intro-video';
 }
 
-.frontpage-help {
+.frontpage-help{
   display: grid;
   margin: 40px 7.5%;
   grid-template-columns: 40% 40%;
@@ -472,13 +480,13 @@ line-height: 1.5em;
   justify-content: center;
 }
 
-#help-img {
+#help-img{
   grid-area: help-img;
   width: 80%;
   justify-self: center;
 }
 
-#help-text {
+#help-text{
   text-align: center;
   grid-area: help-text;
   display: flex;
@@ -515,92 +523,20 @@ img{
 
 
 
+.reakke1 {display: flex;
+flex-direction: row;
+justify-content: center;
+    margin-top: 50px;
 
-#overskriftkontakt {
 
-width: 100%;
-text-align: center;
 
-}
-
-  .call-btn {
-    text-decoration: none;
-    color: #FFFFFF;
-    font-size: 26px;
-    background-color: $red;
-    border-radius: 100px;
-    padding: 5px 20px;
-  }
-
-  p {
-    width: 70%;
-  }
-
-.reakke1{
-
-  display: flex;
-flex-direction: column;
-  text-align: center;
-align-items: center;
-  margin-right: 75px;
 
 
 }
-
-.listen{
-  list-style: none;
-
-}
-
-.billederkontakt img {
-
-  height: auto;
-width: 170px;
-}
-
-.box2 {
-   background-color: #E9F6FF;
-}
-.billederkontakt {
-
-
-  display: flex;
-flex-direction: column;
-  align-items: center;
-
-  width: 300px;
-
-
-}
-
-.textbox-margin3{
-  position: relative;
-  z-index: -10;
-  width: 100%;
-  height: auto;
-}
-
-
-.box {
-  display: flex;
-  flex-direction: column;
-align-content: center;
-
-  margin-top: -5px;
-
-
-}
-
-a{text-decoration: none;
-  color: black;
-}
-
-.denher2{
-display: flex;
-flex-direction: row;;
-  justify-content: center;
-
-}
+.reakke2 {display: flex;
+flex-direction: row;
+justify-content: center;
+    margin-top: 100px;
 
 
 .denher{
@@ -624,116 +560,110 @@ flex-direction: row;;
   justify-content: center;
 
 }
-
-li img {height: auto;
-width: 25px;
-}
-
-
-
-
-.iconerlist {display: flex;
-flex-direction: column;
-}
-.mailtel{
-  display: flex;
-flex-direction: column;
-}
-
-.boxmail{
-  display: flex;
-flex-direction: column;
-}
-
-
-.jeg{
-  display: flex;
+.reakke4 {display: flex;
 flex-direction: row;
-    justify-content: center;
-    list-style: none;
+justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+
 }
 
-.iconmail {margin-top: 10px;}
-.icontlf{margin-top: 12px;}
-#iconmail{margin-top: 12px;}
 .wherearewe{
-  text-align: center;
+   text-align: center;
 }
+.billederkontakt {
+    display: flex;
+flex-direction: row;
+    margin-left: 10px;
+
+
+    img {height: auto;
+    width: 100px;
+    margin-right: 20px;}
+}
+
 .tekstmedbillede{
     display: flex;
 flex-direction: row;
 text-align: center;
 }
-
 .tekstboxcontact {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: space-between;
-  text-align: center;
-  margin-top: 75px;
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+    align-content: space-between;
+    text-align: center;
+    margin-top:75px;
+    h2 {
 
-  h2 {
-    margin-bottom: 25px;
-  }
+        margin-bottom: 25px;
+    }
+
+
+
 }
+
+
 // Contact background
+.contact-background{
 
-.contact-background {
-  padding: 40px 0;
-  margin-top: 20px;
-  padding-bottom: 100px;
 
-  h2 {
-    text-align: center;
-    margin-bottom: 40px;
-  }
+    padding: 40px 0px;
+    margin-top: 20px;
+    padding-bottom: 100px;
+
+    h2{
+        text-align: center;
+margin-bottom: 40px;
+    }
+
+
+}
+.protrat{
+    background-color: $light-blue;
+    margin-top: -30px;
+    h2{text-align: center;}
+    margin-bottom: -50px;
 }
 
-.protrat {
-  background-color: $light-blue;
-  margin-top: -30px;
 
-  h2 {
-    text-align: center;
-  }
-  margin-bottom: -50px;
+.kontaktpolysninger{
+    margin-top: 60px;
 }
 
-.kontaktpolysninger {
-  margin-top: 60px;
+.tekst{
+    justify-content: center;
+    margin-left: 75px;
+    padding-right: 50px;
+    margin-top: 30px;
+
 }
 
-.tekst {
-  justify-content: center;
-  margin-left: 75px;
-  padding-right: 50px;
-  margin-top: 30px;
-}
-
-#staff {
+#staff{
   margin-top: 20px;
   text-align: center;
   padding-top: 20px;
 }
 
 .billedemap img {
-  height: 400px;
-  width: auto;
-  margin-top: 10px;
+    height: 400px;
+        width: auto;
+margin-top: 10px;
 }
 
-.listen {
-  list-style: none;
-  padding-top: 30px;
-  width: 200px;
+
+.listen { list-style: none;
+padding-top: 30px;
+width: 200px;
 }
 
-.mobilmap {
-  display: none;
-}
+.mobilmap{
+
+        display: none;
+    }
+
+
 //footer
-
 footer {
   background-color: $dark-blue;
   padding-bottom: 5vh;
@@ -745,16 +675,19 @@ footer {
   margin-top: 10vh;
 }
 
-.footer-grid {
+.footer-grid{
   padding-top: 50px;
   display: grid;
   grid-template-columns: 45% 37%;
   grid-gap: 5%;
-  grid-template-areas: 'footer-left footer-right' 'footer-left footer-icons';
+  grid-template-areas:
+  'footer-left footer-right'
+  'footer-left footer-icons';
   justify-content: center;
   color: $white;
-
-
+  div{
+    justify-self: flex-start;
+  }
   .footer-certificates{
     img{
     width: 32%;
@@ -763,46 +696,43 @@ footer {
   }
   }
   .footer-icons{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
     grid-area: footer-icons;
-    align-items: center;
     img{
       margin: 10px 5px 0px 0px;
-      width: 50px;
+      width: 15%;
     }
+
   }
 
 
 }
 
-.footer-right {
+.footer-right{
   text-align: center;
   grid-area: footer-right;
-}
 
-.footer-left {
+}
+.footer-left{
   margin-left: 20%;
   grid-area: footer-left;
+
 }
+
 // SERVICE page
-
-#service {
-  width: 100%;
-  max-width: 1920px;
+#service{
+width: 100%;
+max-width: 1920px;
+}
+.big-phone{
+display: none;
 }
 
-.big-phone {
-  display: none;
-}
 // SERVICE content
-
 #repair {
   position: relative;
   height: 500px;
   width: 100%;
-  background: url("../images/service-conersion.jpg");
+  background: url(../images/service-conersion.jpg);
   margin-top: 20px;
 }
 
@@ -812,7 +742,7 @@ footer {
   flex-direction: column;
   height: 500px;
   width: 100%;
-  background: url("../images/service-repair.jpg");
+  background: url(../images/service-repair.jpg);
   margin-bottom: 20px;
   margin-top: 20px;
 }
@@ -821,12 +751,10 @@ footer {
   position: relative;
   height: 500px;
   width: 100%;
-  background: url("../images/service-newbuildings.jpg");
+  background: url(../images/service-newbuildings.jpg);
 }
 
-#con-box,
-#new-box,
-#re-box {
+#re-box,#con-box,#new-box {
   position: relative;
   float: right;
   height: 300px;
@@ -834,8 +762,7 @@ footer {
   top: 100px;
 }
 
-#new-box,
-#re-box {
+#re-box,#new-box {
   margin-right: 50px;
 }
 
@@ -860,40 +787,37 @@ footer {
   margin-right: 10px;
 }
 
-.mostwanted {
+.mostwanted{
   background: $red;
   border: solid $red;
   border-radius: 20px;
   font-size: 20px;
-  padding-left: 20px;
+  padding-left:20px;
   padding-right: 20px;
   text-decoration: none;
 }
 
+.ser-title,
 .mostwanted,
-.ser-text,
-.ser-title {
+.ser-text {
   color: white;
   position: relative;
   bottom: 280px;
   margin-left: 10px;
   font-size: 22px;
 }
-
-.ser-title {
+.ser-title{
   font-size: 30px;
   font-weight: bold;
 }
-//REPAIR page
 
-#repair-bigpicture {
+//REPAIR page
+#repair-bigpicture{
   position: relative;
   height: 700px;
   width: 1920px;
-  background: url("../images/service-big.jpg");
+  background: url(../images/service-big.jpg);
   background-repeat: no-repeat;
-  }
-
   h1 {
     position: relative;
     color: white;
@@ -904,24 +828,22 @@ footer {
 
 // Repair content
 
-#repair-box {
-  position: relative;
-  @extend %center;
-  top: 300px;
-  background: url("../images/tb.svg");
-  height: 600px;
-  width: 1920px;
-  color: black;
-  text-align: center;
+#repair-box{
+position: relative;
+@extend %center;
+top:300px;
+background:url(../images/tb.svg);
+height: 600px;
+width: 1920px;
+color:black;
+text-align: center;
 }
-
-.gallery-text {
-  margin-bottom: 20px;
-  font-size: 24px;
-  font-weight: bold;
+.gallery-text{
+margin-bottom: 20px;
+font-size: 24px;
+font-weight: bold;
 }
-
-.most-wanted-btns-jobs {
+.most-wanted-btns-jobs{
   width: 100%;
   height: 300px;
   display: grid;
@@ -929,8 +851,9 @@ footer {
   grid-gap: 5%;
   justify-content: center;
   align-self: center;
+
   margin: 100px 0;
-  a {
+  a{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -938,150 +861,126 @@ footer {
     color: $white;
     width: 100%;
     height: 300px;
-
-    h1 {
+    h1{
       font-size: 32px;
     }
   }
 }
-
-.most-wanted-btns-jobs a:nth-child(1) {
-  background-image: url("../images/repair-btn.jpg");
+.most-wanted-btns-jobs a:nth-child(1){
+  background-image:url(../images/repair-btn.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 75% 50%;
   width: 100%;
-}
 
-.most-wanted-btns-jobs a:nth-child(2) {
-  background-image: url("../images/newbuilding-btn.jpg");
+
+}
+.most-wanted-btns-jobs a:nth-child(2){
+  background-image:url(../images/newbuilding-btn.jpg);
   background-repeat: no-repeat;
   background-position: 75% 50%;
   background-size: cover;
   width: 100%;
 }
-
-.most-wanted-btns-jobs a:nth-child(3) {
-  background-image: url("../images/accountant-btns.jpg");
+.most-wanted-btns-jobs a:nth-child(3){
+  background-image:url(../images/accountant-btns.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 75% 50%;
   height: 300px;
+
 }
-@media only screen and (max-width: 768px) {
-  .most-wanted-btns {
+@media only screen and (max-width: 768px){
+
+
+  .most-wanted-btns{
     height: 150px;
   }
-
-  .most-wanted-btns a:nth-child(1) {
+  .most-wanted-btns a:nth-child(1){
     height: 150px;
   }
-
-  .most-wanted-btns a:nth-child(2) {
+  .most-wanted-btns a:nth-child(2){
     height: 150px;
   }
-
-  .most-wanted-btns a:nth-child(3) {
+  .most-wanted-btns a:nth-child(3){
     height: 150px;
   }
-
-  .most-wanted-btns a h1 {
-    font-size: 18px;
+  .most-wanted-btns a h1{
+    font-size: 18px
   }
   // for job page
-  .most-wanted-btns-jobs {
+  .most-wanted-btns-jobs{
     height: 150px;
   }
-
-  .most-wanted-btns-jobs a:nth-child(1) {
+  .most-wanted-btns-jobs a:nth-child(1){
     height: 150px;
   }
-
-  .most-wanted-btns-jobs a:nth-child(2) {
+  .most-wanted-btns-jobs a:nth-child(2){
     height: 150px;
   }
-
-  .most-wanted-btns-jobs a:nth-child(3) {
+  .most-wanted-btns-jobs a:nth-child(3){
     height: 150px;
   }
-
-  .most-wanted-btns-jobs a h1 {
-    font-size: 18px;
+  .most-wanted-btns-jobs a h1{
+    font-size: 18px
   }
-
-  .menubox {
+  .menubox{
     display: none;
   }
 
   .contactbox {
     display: none;
   }
-
-  .about-grid {
+  .about-grid{
     grid-template-columns: 100%;
-    grid-template-areas: 'intro-video' 'about-text';
+    grid-template-areas:
+    'intro-video'
+    'about-text' ;
   }
 
-  .frontpage-help {
+  .frontpage-help{
     grid-template-columns: 100%;
-    grid-template-areas: 'help-text' 'help-img';
+    grid-template-areas:
+    'help-text'
+    'help-img';
   }
 //contact content//
 
-.denher2{
-display: flex;
-flex-direction: column;
-  justify-content: center;
 
-}
+ .reakke1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+         img {
+              margin-bottom: 15px;
+          }
+    }
 
-.textbox-margin3{
-  position: relative;
-  z-index: -10;
-  width: 300px;
-  height: auto;
-    top: 5px;
-
-}
-    .textbox-margin5{
-  position: relative;
-  z-index: -10;
-  width: 300px;
-  height: auto;
-    top: 5px;
-        margin-left: 1px;
-
-}
-    .textbox-margin4{
-  position: relative;
-  z-index: -10;
-  width: 300px;
-  height: auto;
-        bottom: 10px;
-
-}
-.denher{
-display: flex;
-flex-direction: column;
-  justify-content: center;
-
-}
-
-.denher3{
-display: flex;
-flex-direction:column;
-  justify-content: center;
-
-}
-
-.denher4{
-display: flex;
-flex-direction: column;
-  justify-content: center;
-
-}
-
-
+      .reakke2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+          img {
+              margin-bottom: 15px;
+              margin-top: 0;
+          }
+    }
+      .reakke3 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+           img {
+              margin-bottom: 15px;
+          }
+    }
+      .reakke4 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+           img {
+              margin-bottom: 15px;
+          }
+    }
       .billedemap img {
       display: none;
     }
@@ -1091,117 +990,75 @@ flex-direction: column;
         margin-top: 20px;
         display: flex;
 flex-direction: column;
+
+
+    }
+    .mobilmap{
+        display: block;
+
+    }
+
+        .mobilmap img {
+        width: 600px;
+height: auto;
+
+   margin-bottom: 60px;
+            margin-top: 50px;
+            margin-left: 120px;
+
+            }
+
+    .tekstboxcontact {display: flex;
+flex-direction: column;}
+
+
+
+
+
+// facilities
+.mainpic{
+display:none;
 }
-
-  .reakke2 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    }
-
-    img {
-      margin-bottom: 15px;
-      margin-top: 0;
-    }
-  }
-
-  .reakke3 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    img {
-      margin-bottom: 15px;
-    }
-  }
-
-  .reakke4 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    img {
-      margin-bottom: 15px;
-    }
-  }
-
-  .billedemap img {
-    display: none;
-  }
-
-  .tekst {
-    text-align: center;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .mobilmap {
-    display: block;
-  }
-
-  .mobilmap img {
-    width: 600px;
-    height: auto;
-    margin-bottom: 60px;
-    margin-top: 50px;
-    margin-left: 120px;
-  }
-
-  .tekstboxcontact {
-    display: flex;
-    flex-direction: column;
-  }
-  // facilities
-
-  .mainpic {
-    display: none;
-  }
-  // SERVICE page
-  #service {
-    width: 100%;
+    // SERVICE page
+    #service{
+      width: 100%;
     max-width: 768px;
-  }
+    }
 
-  .ser-textbox {
+    .ser-textbox{
     width: 100%;
     height: 100%;
-  }
 
-  #con-box,
-  #new-box,
-  #re-box {
+    }
+
+
+    #re-box,#con-box,#new-box{
     position: relative;
     width: 100%;
     max-width: 768px;
     height: 500px;
     display: block;
     float: none;
-    top: 0;
-    margin: 0;
-  }
-
-  .ser-text {
+    top: 0px;
+    margin: 0 0;
+    }
+    .ser-text{
     text-align: center;
-  }
-
-  .ser-title {
+    }
+    .ser-title{
     text-align: center;
-  }
-
-  .mostwanted {
+    }
+    .mostwanted{
     display: flex;
     justify-content: center;
-    padding: 0;
+    padding:0;
     margin-right: 35%;
     margin-left: 35%;
-  }
-
-  #conversion,
-  #newbuilding,
-  #repair {
-    width: 100%;
+    }
+    #conversion,#repair,#newbuilding{
+      width: 100%;
     max-width: 768px;
+
     height: 500px;
     }
     .big-phone{
@@ -1216,11 +1073,20 @@ flex-direction: column;
       #conversion {
         background: url(../images/service-conersion-small.jpg);
       }
+      .popup-gallery{
+      margin-left:30px;
+      }
 // Footer
-
 
 .footer-grid{
   font-size: 12px;
+}
+
+.footer-icons{
+  margin-left: 20%;
+}
+
+.footer-grid{
   display: grid;
   grid-template-areas:
   'footer-left footer-right'
@@ -1230,43 +1096,20 @@ flex-direction: column;
     width: 50%;
   }
 
-  #newbuilding {
-    background: url("../images/service-newbuildings-small.jpg");
-  }
-
-  #conversion {
-    background: url("../images/service-conersion-small.jpg");
-  }
-
-  .popup-gallery {
-    margin-left: 30px;
-  }
-  // Footer
-
-  .footer-grid {
-    font-size: 12px;
-  }
-
-  .footer-icons {
-    margin-left: 20%;
-  }
-
-  .footer-grid {
-    display: grid;
-    grid-template-areas: 'footer-left footer-right' 'footer-icons footer-right';
-
-    .footer-certificates {
-      img {
-        width: 50%;
-      }
-    }
   }
 }
+}
+
 @media only screen and (min-width: 769px) {
-  .burger-btn,
-  .burgerbar {
+
+  .burgerbar,
+  .burger-btn {
     display: none;
-  }
+   }
+
+
+
+
 }
 
 @media only screen and (max-width: 550px) {
@@ -1280,99 +1123,95 @@ flex-direction: column;
         display: flex;
         flex-direction: column;
          padding-left: 22%;
+
+
     }
 
+      .reakke2 {
+        display: flex;
+        flex-direction: column;
+        padding-left: 22%;
+          margin-top: -2px;
+    }
+      .reakke3 {
+        display: flex;
+        flex-direction: column;
+       padding-left: 22%;
+          margin-top: -2px;
+    }
+      .reakke4 {
+        display: flex;
+        flex-direction: column;
+        padding-left: 22%;
+          margin-top: -2px;
+    }
 
 
      .billedemap img {
          display: none;
-    }
 
+
+
+    }
     .tekstbox {
         height: 00px;
         width: 100%;
-        }
 
 
-  .reakke2 {
+    }
+    .tekst{
+        text-align: center;
+        margin-right: 50px;
+
+
+    }
+
+  .mobilmap  {
+        display: block;
+
+
+    }
+.mobilmap img {
+        width: 400px;
+height: auto;
+margin-left: 25%;
+
+
+
+    }
+    .tekstboxcontact {
     display: flex;
-    flex-direction: column;
-    padding-left: 22%;
-    margin-top: -2px;
-  }
+flex-direction: column;
 
-  .reakke3 {
-    display: flex;
-    flex-direction: column;
-    padding-left: 22%;
-    margin-top: -2px;
-  }
+    }
+    .tekstboks {
+      width: 90%;
 
-  .reakke4 {
-    display: flex;
-    flex-direction: column;
-    padding-left: 22%;
-    margin-top: -2px;
-  }
+      padding: 50px 0;
+    }
 
-  .billedemap img {
-    display: none;
-  }
 
-  .tekstbox {
-    height: 0;
-    width: 100%;
-  }
-
-  .tekst {
-    text-align: center;
-    margin-right: 50px;
-  }
-
-  .mobilmap {
-    display: block;
-  }
-
-  .mobilmap img {
-    width: 100%;
-    max-width: 550px;
-    height: auto;
-    margin-left: 25%;
-  }
-
-  .tekstboxcontact {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .tekstboks {
-    width: 90%;
-    padding: 50px 0;
-  }
-
-  .facilitiesheader{
-    margin-top: 60px;
-  }
-
-  .facilities-tekst {
+    .facilities-tekst{
     width: 80%;
     font-size: 20px;
-  }
-  //facilities
-  #textbox-margin2 {
-    width: 90%;
-  }
+    }
 
-  #map {
-    height: 80vh;
-    width: 100%;
-    left: 0;
-    right: 0;
-  }
+    #textbox-margin2 {
 
-  #service {
-    width: 100%;
+      width: 90%;
+
+    }
+
+    #map{
+      height: 100vh;
+      width: 100%;
+      left: 0;
+      right: 0;
+    }
+
+    #service{
+      width: 100%;
     max-width: 550px;
-  }
-}
+    }
+
 }
