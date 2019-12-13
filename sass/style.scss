@@ -523,50 +523,155 @@ img{
 
 
 
-.reakke1 {display: flex;
-flex-direction: row;
-justify-content: center;
-    margin-top: 50px;
 
 
 
 
 
-}
-.reakke2 {display: flex;
-flex-direction: row;
-justify-content: center;
-    margin-top: 100px;
-
-}
-
-.reakke3 {display: flex;
-flex-direction: row;
-justify-content: center;
-    margin-top: 100px;
-}
-.reakke4 {display: flex;
-flex-direction: row;
-justify-content: center;
-    margin-top: 100px;
-    margin-bottom: 50px;
-
+.reakke1{
+    
+  display: flex;
+flex-direction: column;
+  text-align: center;
+align-items: center;
+  margin-right: 75px;
+  
+  
 }
 
-.wherearewe{
-   text-align: center;
+.listen{
+  list-style: none;
+  
 }
+
+.billederkontakt img {
+  
+  height: auto;
+width: 170px;
+}
+
+
 .billederkontakt {
-    display: flex;
-flex-direction: row;
-    margin-left: 10px;
-
-
-    img {height: auto;
-    width: 100px;
-    margin-right: 20px;}
+  
+  
+  display: flex;
+flex-direction: column;
+  align-items: center;
+   
+  width: 300px;
+  
+  
 }
 
+.textbox-margin5{
+position: relative;
+  z-index: 10;
+width: 300px;
+
+ }
+.textbox-margin2{
+position: relative;
+  z-index: 10;
+width: 300px;
+  margin-top: 20px;
+ }
+.textbox-margin3{
+position: relative;
+  z-index: 10;
+width: 301px;
+ padding-top: 20px;
+ }
+.textbox-margin4{
+position: relative;
+  z-index: 10;
+width: 301px;
+ padding-top: 20px;
+ }
+.textbox-margin5{
+position: relative;
+  z-index: 10;
+width: 301px;
+
+ }
+
+.box {
+  display: flex;
+  flex-direction: column;
+align-content: center;
+  background-color: #E9F6FF;
+  margin-top: -5px;
+    
+  
+}
+
+a{text-decoration: none;
+  color: black;
+}
+
+.denher2{
+display: flex;
+flex-direction: row;;
+  justify-content: center;
+  
+}
+
+
+.denher{
+display: flex;
+flex-direction: row;;
+  justify-content: center;
+ 
+  
+}
+
+.denher3{
+display: flex;
+flex-direction: row;;
+  justify-content: center;
+  
+}
+
+.denher4{
+display: flex;
+flex-direction: row;;
+  justify-content: center;
+  
+}
+
+li img {height: auto;
+width: 25px;
+}
+
+
+
+
+.iconerlist {display: flex;
+flex-direction: column;
+}
+.mailtel{
+  display: flex;
+flex-direction: column;
+}
+
+.boxmail{
+  display: flex;
+flex-direction: column;
+}
+
+
+.jeg{
+  display: flex;
+flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+
+.iconmail {margin-top: 10px;}
+.icontlf{margin-top: 12px;}
+#iconmail{margin-top: 12px;}
+.wherearewe{
+  text-align: center;
+}
 .tekstmedbillede{
     display: flex;
 flex-direction: row;
@@ -590,26 +695,8 @@ text-align: center;
 
 
 // Contact background
-.contact-background{
 
 
-    padding: 40px 0px;
-    margin-top: 20px;
-    padding-bottom: 100px;
-
-    h2{
-        text-align: center;
-margin-bottom: 40px;
-    }
-
-
-}
-.protrat{
-    background-color: $light-blue;
-    margin-top: -30px;
-    h2{text-align: center;}
-    margin-bottom: -50px;
-}
 
 
 .kontaktpolysninger{
@@ -637,10 +724,7 @@ margin-top: 10px;
 }
 
 
-.listen { list-style: none;
-padding-top: 30px;
-width: 200px;
-}
+
 
 .mobilmap{
 
@@ -707,7 +791,8 @@ footer {
 
 // SERVICE page
 #service{
-width: 1920px;
+width: 100%;
+max-width: 1920px;
 }
 .big-phone{
 display: none;
@@ -718,7 +803,7 @@ display: none;
   position: relative;
   height: 500px;
   width: 100%;
-  background: url(../images/service-repair.jpg);
+  background: url(../images/service-conersion.jpg);
   margin-top: 20px;
 }
 
@@ -728,7 +813,7 @@ display: none;
   flex-direction: column;
   height: 500px;
   width: 100%;
-  background: url(../images/service-conersion.jpg);
+  background: url(../images/service-repair.jpg);
   margin-bottom: 20px;
   margin-top: 20px;
 }
@@ -764,7 +849,7 @@ display: none;
 }
 
 .ser-title {
-  font-size: 30px;
+  font-size: 1px;
   margin-bottom: 10px;
 }
 
@@ -790,6 +875,11 @@ display: none;
   position: relative;
   bottom: 280px;
   margin-left: 10px;
+  font-size: 22px;
+}
+.ser-title{
+  font-size: 30px;
+  font-weight: bold;
 }
 
 //REPAIR page
@@ -927,41 +1017,38 @@ font-weight: bold;
   }
 //contact content//
 
+.denher2{
+display: flex;
+flex-direction: column;
+  justify-content: center;
+  
+}
 
- .reakke1 {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-         img {
-              margin-bottom: 15px;
-          }
-    }
 
-      .reakke2 {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-          img {
-              margin-bottom: 15px;
-              margin-top: 0;
-          }
-    }
-      .reakke3 {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-           img {
-              margin-bottom: 15px;
-          }
-    }
-      .reakke4 {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-           img {
-              margin-bottom: 15px;
-          }
-    }
+.denher{
+display: flex;
+flex-direction: column;
+  justify-content: center;
+    
+ 
+  
+}
+
+.denher3{
+display: flex;
+flex-direction:column;
+  justify-content: center;
+  
+}
+
+.denher4{
+display: flex;
+flex-direction: column;
+  justify-content: center;
+  
+}
+  
+    
       .billedemap img {
       display: none;
     }
@@ -971,7 +1058,6 @@ font-weight: bold;
         margin-top: 20px;
         display: flex;
 flex-direction: column;
-
 
 
     }
@@ -1003,22 +1089,26 @@ display:none;
 }
     // SERVICE page
     #service{
-    width: 768px;
+      width: 100%;
+    max-width: 768px;
     }
 
     .ser-textbox{
     width: 100%;
     height: 100%;
+
     }
+
+
     #re-box,#con-box,#new-box{
     position: relative;
-    width: 768px;
+    width: 100%;
+    max-width: 768px;
     height: 500px;
     display: block;
     float: none;
-    top:0;
-    margin-left: 0;
-    margin-right: 0;
+    top: 0px;
+    margin: 0 0;
     }
     .ser-text{
     text-align: center;
@@ -1030,11 +1120,13 @@ display:none;
     display: flex;
     justify-content: center;
     padding:0;
-    margin-right: 340px;
-    margin-left: 340px;
+    margin-right: 35%;
+    margin-left: 35%;
     }
     #conversion,#repair,#newbuilding{
-    width: 768px;
+      width: 100%;
+    max-width: 768px;
+
     height: 500px;
     }
     .big-phone{
@@ -1087,9 +1179,9 @@ display:none;
 @media only screen and (max-width: 550px) {
   .logo {
     width: 250px;
+    margin-top: 45px;
   }
     //contact//
-
 
 .reakke1 {
         display: flex;
@@ -1179,6 +1271,11 @@ flex-direction: column;
       width: 100%;
       left: 0;
       right: 0;
+    }
+
+    #service{
+      width: 100%;
+    max-width: 550px;
     }
 
 }
