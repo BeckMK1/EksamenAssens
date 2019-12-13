@@ -7,9 +7,9 @@
   justify-content: center; }
 
 .burgerbar {
-  -webkit-box-shadow: -6px 3px 6px 0px rgba(0, 0, 0, 0.16);
-  -moz-box-shadow: -6px 3px 6px 0px rgba(0, 0, 0, 0.16);
-  box-shadow: -6px 3px 6px 0px rgba(0, 0, 0, 0.16); }
+  -webkit-box-shadow: -6px 3px 6px 0 rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: -6px 3px 6px 0 rgba(0, 0, 0, 0.16);
+  box-shadow: -6px 3px 6px 0 rgba(0, 0, 0, 0.16); }
 
 /*---------------My Inheritances-------------*/
 * {
@@ -44,7 +44,7 @@ header {
   z-index: 10000;
   position: fixed;
   border-bottom: 1.5vh solid transparent;
-  border-image-source: url(../images/logo-border.svg);
+  border-image-source: url("../images/logo-border.svg");
   border-image-slice: 100;
   border-image-repeat: repeat; }
 
@@ -81,7 +81,7 @@ header {
   background: #fafafa;
   width: 230px;
   height: 100%;
-  transition: .4s;
+  transition: 0.4s;
   z-index: 10000; }
 
 .active {
@@ -120,7 +120,7 @@ ul li a {
   height: 3px;
   background: #252525;
   position: absolute;
-  transition: .4s;
+  transition: 0.4s;
   border-radius: 3px; }
 
 .burger-btn span:nth-child(1) {
@@ -174,10 +174,10 @@ ul li a {
     background-size: contain; }
 
 .mainpic {
-  -webkit-transition: all .4s ease-in-out;
-  -moz-transition: all .4s ease-in-out;
-  -o-transition: all .4s ease-in-out;
-  -ms-transition: all .4s ease-in-out; }
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out; }
 
 .facilitiesheader {
   width: 100%;
@@ -248,22 +248,37 @@ ul li a {
   left: 10%;
   right: 10%; }
 
-#marker, #marker2, #marker3, #marker4, #marker5, #marker6, #marker7, #marker8, #marker9, #marker10, #marker11, #marker12 {
-  background-image: url(../images/logo-small.svg);
+#marker,
+#marker10,
+#marker11,
+#marker12,
+#marker2,
+#marker3,
+#marker4,
+#marker5,
+#marker6,
+#marker7,
+#marker8,
+#marker9 {
+  background-image: url("../images/logo-small.svg");
   background-size: cover;
   width: 30px;
   height: 30px;
   cursor: pointer; }
 
-#marker13, #marker14, #marker15, #marker16, #marker17 {
-  background-image: url(../images/logo-hvid.svg);
+#marker13,
+#marker14,
+#marker15,
+#marker16,
+#marker17 {
+  background-image: url("../images/logo-hvid.svg");
   background-size: cover;
   width: 30px;
   height: 30px;
   cursor: pointer; }
 
 #marker18 {
-  background-image: url(../images/hjerte.svg);
+  background-image: url("../images/hjerte.svg");
   background-size: cover;
   width: 30px;
   height: 30px;
@@ -304,21 +319,21 @@ ul li a {
       font-size: 32px; }
 
 .most-wanted-btns a:nth-child(1) {
-  background-image: url(../images/repair-btn.jpg);
+  background-image: url("../images/repair-btn.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 75% 50%;
   width: 100%; }
 
 .most-wanted-btns a:nth-child(2) {
-  background-image: url(../images/conversion-btn.jpg);
+  background-image: url("../images/conversion-btn.jpg");
   background-repeat: no-repeat;
   background-position: 75% 50%;
   background-size: cover;
   width: 100%; }
 
 .most-wanted-btns a:nth-child(3) {
-  background-image: url(../images/newbuilding-btn.jpg);
+  background-image: url("../images/newbuilding-btn.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 75% 50%;
@@ -344,12 +359,12 @@ ul li a {
   background-color: #E9F6FF;
   margin-top: -10px; }
   .frontpage-about h1 {
-    padding: 10px 0px;
+    padding: 10px 0;
     text-align: center; }
 
 .about-grid {
   display: grid;
-  margin: 0px 7.5%;
+  margin: 0 7.5%;
   grid-template-columns: 47.5% 47.5%;
   grid-gap: 5%;
   grid-template-areas: 'about-text intro-video'; }
@@ -444,7 +459,7 @@ ul li a {
     margin-bottom: 25px; }
 
 .contact-background {
-  padding: 40px 0px;
+  padding: 40px 0;
   margin-top: 20px;
   padding-bottom: 100px; }
   .contact-background h2 {
@@ -499,9 +514,10 @@ footer {
   display: grid;
   grid-template-columns: 45% 37%;
   grid-gap: 5%;
-  grid-template-areas: 'footer-left footer-right' 'footer-left footer-icons';
+  grid-template-areas: 'footer-left footer-right' 'footer-left footer-icons';
   justify-content: center;
-  color: #FAFAFA; }
+  color: #FAFAFA;
+  text-decoration: none; }
   .footer-grid div {
     justify-self: flex-start; }
   .footer-grid .footer-certificates img {
@@ -511,7 +527,7 @@ footer {
   .footer-grid .footer-icons {
     grid-area: footer-icons; }
     .footer-grid .footer-icons img {
-      margin: 10px 5px 0px 0px;
+      margin: 10px 5px 0 0;
       width: 15%; }
 
 .footer-right {
@@ -533,7 +549,7 @@ footer {
   position: relative;
   height: 500px;
   width: 100%;
-  background: url(../images/service-conersion.jpg);
+  background: url("../images/service-conersion.jpg");
   margin-top: 20px; }
 
 #conversion {
@@ -542,7 +558,7 @@ footer {
   flex-direction: column;
   height: 500px;
   width: 100%;
-  background: url(../images/service-repair.jpg);
+  background: url("../images/service-repair.jpg");
   margin-bottom: 20px;
   margin-top: 20px; }
 
@@ -550,16 +566,19 @@ footer {
   position: relative;
   height: 500px;
   width: 100%;
-  background: url(../images/service-newbuildings.jpg); }
+  background: url("../images/service-newbuildings.jpg"); }
 
-#re-box, #con-box, #new-box {
+#con-box,
+#new-box,
+#re-box {
   position: relative;
   float: right;
   height: 300px;
   width: 600px;
   top: 100px; }
 
-#re-box, #new-box {
+#new-box,
+#re-box {
   margin-right: 50px; }
 
 #con-box {
@@ -588,9 +607,9 @@ footer {
   padding-right: 20px;
   text-decoration: none; }
 
-.ser-title,
 .mostwanted,
-.ser-text {
+.ser-text,
+.ser-title {
   color: white;
   position: relative;
   bottom: 280px;
@@ -605,7 +624,7 @@ footer {
   position: relative;
   height: 700px;
   width: 1920px;
-  background: url(../images/service-big.jpg);
+  background: url("../images/service-big.jpg");
   background-repeat: no-repeat; }
   #repair-bigpicture h1 {
     position: relative;
@@ -616,7 +635,7 @@ footer {
 #repair-box {
   position: relative;
   top: 300px;
-  background: url(../images/tb.svg);
+  background: url("../images/tb.svg");
   height: 600px;
   width: 1920px;
   color: black;
@@ -648,21 +667,21 @@ footer {
       font-size: 32px; }
 
 .most-wanted-btns-jobs a:nth-child(1) {
-  background-image: url(../images/repair-btn.jpg);
+  background-image: url("../images/repair-btn.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 75% 50%;
   width: 100%; }
 
 .most-wanted-btns-jobs a:nth-child(2) {
-  background-image: url(../images/newbuilding-btn.jpg);
+  background-image: url("../images/newbuilding-btn.jpg");
   background-repeat: no-repeat;
   background-position: 75% 50%;
   background-size: cover;
   width: 100%; }
 
 .most-wanted-btns-jobs a:nth-child(3) {
-  background-image: url(../images/accountant-btns.jpg);
+  background-image: url("../images/accountant-btns.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 75% 50%;
@@ -695,10 +714,10 @@ footer {
     display: none; }
   .about-grid {
     grid-template-columns: 100%;
-    grid-template-areas: 'intro-video' 'about-text'; }
+    grid-template-areas: 'intro-video' 'about-text'; }
   .frontpage-help {
     grid-template-columns: 100%;
-    grid-template-areas: 'help-text' 'help-img'; }
+    grid-template-areas: 'help-text' 'help-img'; }
   .reakke1 {
     display: flex;
     flex-direction: row;
@@ -750,15 +769,17 @@ footer {
   .ser-textbox {
     width: 100%;
     height: 100%; }
-  #re-box, #con-box, #new-box {
+  #con-box,
+  #new-box,
+  #re-box {
     position: relative;
     width: 100%;
     max-width: 768px;
     height: 500px;
     display: block;
     float: none;
-    top: 0px;
-    margin: 0 0; }
+    top: 0;
+    margin: 0; }
   .ser-text {
     text-align: center; }
   .ser-title {
@@ -769,18 +790,20 @@ footer {
     padding: 0;
     margin-right: 35%;
     margin-left: 35%; }
-  #conversion, #repair, #newbuilding {
+  #conversion,
+  #newbuilding,
+  #repair {
     width: 100%;
     max-width: 768px;
     height: 500px; }
   .big-phone {
     display: block; }
   #repair {
-    background: url(../images/service-repair-small.jpg); }
+    background: url("../images/service-repair-small.jpg"); }
   #newbuilding {
-    background: url(../images/service-newbuildings-small.jpg); }
+    background: url("../images/service-newbuildings-small.jpg"); }
   #conversion {
-    background: url(../images/service-conersion-small.jpg); }
+    background: url("../images/service-conersion-small.jpg"); }
   .popup-gallery {
     margin-left: 30px; }
   .footer-grid {
@@ -789,13 +812,13 @@ footer {
     margin-left: 20%; }
   .footer-grid {
     display: grid;
-    grid-template-areas: 'footer-left footer-right' 'footer-icons footer-right'; }
+    grid-template-areas: 'footer-left footer-right' 'footer-icons footer-right'; }
     .footer-grid .footer-certificates img {
       width: 50%; } }
 
 @media only screen and (min-width: 769px) {
-  .burgerbar,
-  .burger-btn {
+  .burger-btn,
+  .burgerbar {
     display: none; } }
 
 @media only screen and (max-width: 550px) {
@@ -824,7 +847,7 @@ footer {
   .billedemap img {
     display: none; }
   .tekstbox {
-    height: 00px;
+    height: 0;
     width: 100%; }
   .tekst {
     text-align: center;
@@ -832,7 +855,8 @@ footer {
   .mobilmap {
     display: block; }
   .mobilmap img {
-    width: 400px;
+    width: 100%;
+    max-width: 550px;
     height: auto;
     margin-left: 25%; }
   .tekstboxcontact {
@@ -841,13 +865,15 @@ footer {
   .tekstboks {
     width: 90%;
     padding: 50px 0; }
+  .facilitiesheader {
+    margin-top: 60px; }
   .facilities-tekst {
     width: 80%;
     font-size: 20px; }
   #textbox-margin2 {
     width: 90%; }
   #map {
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     left: 0;
     right: 0; }

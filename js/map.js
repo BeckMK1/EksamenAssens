@@ -1,7 +1,8 @@
 
   // Mapbox.org
+  // her anvender vi en nøgle til kortet.
   mapboxgl.accessToken = 'pk.eyJ1Ijoib3dzaWJvd3NpIiwiYSI6ImNrMjAyOWNqZTAxcm0zbWt4OWRyenlrZnMifQ.4oELFt2O23X8x8A9qGe7iA';
-//her tilføjer vi koodinaterne til punkterne
+//her tilføjer vi koodinaterne til punkterne på kortet
 var painter = [9.888989, 55.267698];
 var engine = [9.889113, 55.268186];
 var rigger = [9.889095, 55.268307];
