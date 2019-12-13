@@ -515,7 +515,8 @@ ul li a {
 
 footer {
   background-color: #163f70;
-  padding-bottom: 5vh; }
+  padding-bottom: 5vh;
+  text-decoration: none; }
 
 #footer-img {
   width: 100%;
@@ -615,81 +616,6 @@ footer {
 
 .big-phone {
   display: none; }
-
-#repair {
-  position: relative;
-  height: 500px;
-  width: 100%;
-  background: url("../images/service-conersion.jpg");
-  margin-top: 20px; }
-
-#conversion {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  height: 500px;
-  width: 100%;
-  background: url("../images/service-repair.jpg");
-  margin-bottom: 20px;
-  margin-top: 20px; }
-
-#newbuilding {
-  position: relative;
-  height: 500px;
-  width: 100%;
-  background: url("../images/service-newbuildings.jpg"); }
-
-#con-box,
-#new-box,
-#re-box {
-  position: relative;
-  float: right;
-  height: 300px;
-  width: 600px;
-  top: 100px; }
-
-#new-box,
-#re-box {
-  margin-right: 50px; }
-
-#con-box {
-  margin-left: 50px; }
-
-.ser-textbox {
-  background-color: black;
-  height: 300px;
-  width: 600px;
-  opacity: 70%; }
-
-.ser-title {
-  font-size: 1px;
-  margin-bottom: 10px; }
-
-.ser-text {
-  margin-bottom: 10px;
-  margin-right: 10px; }
-
-.mostwanted {
-  background: #CE3233;
-  border: solid #CE3233;
-  border-radius: 20px;
-  font-size: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  text-decoration: none; }
-
-.mostwanted,
-.ser-text,
-.ser-title {
-  color: white;
-  position: relative;
-  bottom: 280px;
-  margin-left: 10px;
-  font-size: 22px; }
-
-.ser-title {
-  font-size: 30px;
-  font-weight: bold; }
 
 #repair-bigpicture {
   position: relative;
@@ -836,47 +762,8 @@ footer {
     flex-direction: column; }
   .mainpic {
     display: none; }
-  #service {
-    width: 100%;
-    max-width: 768px; }
-  .ser-textbox {
-    width: 100%;
-    height: 100%; }
-  #con-box,
-  #new-box,
-  #re-box {
-    position: relative;
-    width: 100%;
-    max-width: 768px;
-    height: 500px;
-    display: block;
-    float: none;
-    top: 0;
-    margin: 0; }
-  .ser-text {
-    text-align: center; }
-  .ser-title {
-    text-align: center; }
-  .mostwanted {
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin-right: 35%;
-    margin-left: 35%; }
-  #conversion,
-  #newbuilding,
-  #repair {
-    width: 100%;
-    max-width: 768px;
-    height: 500px; }
   .big-phone {
     display: block; }
-  #repair {
-    background: url("../images/service-repair-small.jpg"); }
-  #newbuilding {
-    background: url("../images/service-newbuildings-small.jpg"); }
-  #conversion {
-    background: url("../images/service-conersion-small.jpg"); }
   .popup-gallery {
     margin-left: 30px; }
   .footer-grid {
@@ -943,7 +830,7 @@ footer {
   #textbox-margin2 {
     width: 90%; }
   #map {
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     left: 0;
     right: 0; }
