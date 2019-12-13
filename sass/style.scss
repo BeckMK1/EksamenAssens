@@ -701,7 +701,8 @@ footer {
 
 // SERVICE page
 #service{
-width: 1920px;
+width: 100%;
+max-width: 1920px;
 }
 .big-phone{
 display: none;
@@ -712,7 +713,7 @@ display: none;
   position: relative;
   height: 500px;
   width: 100%;
-  background: url(../images/service-repair.jpg);
+  background: url(../images/service-conersion.jpg);
   margin-top: 20px;
 }
 
@@ -722,7 +723,7 @@ display: none;
   flex-direction: column;
   height: 500px;
   width: 100%;
-  background: url(../images/service-conersion.jpg);
+  background: url(../images/service-repair.jpg);
   margin-bottom: 20px;
   margin-top: 20px;
 }
@@ -758,7 +759,7 @@ display: none;
 }
 
 .ser-title {
-  font-size: 30px;
+  font-size: 1px;
   margin-bottom: 10px;
 }
 
@@ -784,6 +785,11 @@ display: none;
   position: relative;
   bottom: 280px;
   margin-left: 10px;
+  font-size: 22px;
+}
+.ser-title{
+  font-size: 30px;
+  font-weight: bold;
 }
 
 //REPAIR page
@@ -967,7 +973,6 @@ font-weight: bold;
 flex-direction: column;
 
 
-
     }
     .mobilmap{
         display: block;
@@ -997,22 +1002,26 @@ display:none;
 }
     // SERVICE page
     #service{
-    width: 768px;
+      width: 100%;
+    max-width: 768px;
     }
 
     .ser-textbox{
     width: 100%;
     height: 100%;
+
     }
+
+
     #re-box,#con-box,#new-box{
     position: relative;
-    width: 768px;
+    width: 100%;
+    max-width: 768px;
     height: 500px;
     display: block;
     float: none;
-    top:0;
-    margin-left: 0;
-    margin-right: 0;
+    top: 0px;
+    margin: 0 0;
     }
     .ser-text{
     text-align: center;
@@ -1024,11 +1033,13 @@ display:none;
     display: flex;
     justify-content: center;
     padding:0;
-    margin-right: 340px;
-    margin-left: 340px;
+    margin-right: 35%;
+    margin-left: 35%;
     }
     #conversion,#repair,#newbuilding{
-    width: 768px;
+      width: 100%;
+    max-width: 768px;
+
     height: 500px;
     }
     .big-phone{
@@ -1085,9 +1096,9 @@ display:none;
 @media only screen and (max-width: 550px) {
   .logo {
     width: 250px;
+    margin-top: 45px;
   }
     //contact//
-
 
 .reakke1 {
         display: flex;
@@ -1177,6 +1188,11 @@ flex-direction: column;
       width: 100%;
       left: 0;
       right: 0;
+    }
+
+    #service{
+      width: 100%;
+    max-width: 550px;
     }
 
 }

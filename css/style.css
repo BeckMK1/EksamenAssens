@@ -523,7 +523,8 @@ footer {
   grid-area: footer-left; }
 
 #service {
-  width: 1920px; }
+  width: 100%;
+  max-width: 1920px; }
 
 .big-phone {
   display: none; }
@@ -532,7 +533,7 @@ footer {
   position: relative;
   height: 500px;
   width: 100%;
-  background: url(../images/service-repair.jpg);
+  background: url(../images/service-conersion.jpg);
   margin-top: 20px; }
 
 #conversion {
@@ -541,7 +542,7 @@ footer {
   flex-direction: column;
   height: 500px;
   width: 100%;
-  background: url(../images/service-conersion.jpg);
+  background: url(../images/service-repair.jpg);
   margin-bottom: 20px;
   margin-top: 20px; }
 
@@ -571,7 +572,7 @@ footer {
   opacity: 70%; }
 
 .ser-title {
-  font-size: 30px;
+  font-size: 1px;
   margin-bottom: 10px; }
 
 .ser-text {
@@ -593,7 +594,12 @@ footer {
   color: white;
   position: relative;
   bottom: 280px;
-  margin-left: 10px; }
+  margin-left: 10px;
+  font-size: 22px; }
+
+.ser-title {
+  font-size: 30px;
+  font-weight: bold; }
 
 #repair-bigpicture {
   position: relative;
@@ -739,19 +745,20 @@ footer {
   .mainpic {
     display: none; }
   #service {
-    width: 768px; }
+    width: 100%;
+    max-width: 768px; }
   .ser-textbox {
     width: 100%;
     height: 100%; }
   #re-box, #con-box, #new-box {
     position: relative;
-    width: 768px;
+    width: 100%;
+    max-width: 768px;
     height: 500px;
     display: block;
     float: none;
-    top: 0;
-    margin-left: 0;
-    margin-right: 0; }
+    top: 0px;
+    margin: 0 0; }
   .ser-text {
     text-align: center; }
   .ser-title {
@@ -760,10 +767,11 @@ footer {
     display: flex;
     justify-content: center;
     padding: 0;
-    margin-right: 340px;
-    margin-left: 340px; }
+    margin-right: 35%;
+    margin-left: 35%; }
   #conversion, #repair, #newbuilding {
-    width: 768px;
+    width: 100%;
+    max-width: 768px;
     height: 500px; }
   .big-phone {
     display: block; }
@@ -792,7 +800,8 @@ footer {
 
 @media only screen and (max-width: 550px) {
   .logo {
-    width: 250px; }
+    width: 250px;
+    margin-top: 45px; }
   .reakke1 {
     display: flex;
     flex-direction: column;
@@ -841,4 +850,7 @@ footer {
     height: 100vh;
     width: 100%;
     left: 0;
-    right: 0; } }
+    right: 0; }
+  #service {
+    width: 100%;
+    max-width: 550px; } }
