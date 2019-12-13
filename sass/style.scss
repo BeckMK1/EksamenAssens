@@ -243,6 +243,7 @@ ul li a {
     -moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
     -ms-transition: all .4s ease-in-out;
+
 }
 
 .facilitiesheader {
@@ -346,6 +347,21 @@ background-size: cover;
 width: 30px;
 height: 30px;
 cursor: pointer;
+}
+#marker13, #marker14, #marker15, #marker16, #marker17{
+  background-image: url(../images/logo-hvid.svg);
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+#marker18{
+  background-image: url(../images/hjerte.svg);
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
 }
 
 .mapboxgl-popup {
@@ -501,54 +517,139 @@ img{
 //contakt content
 
 
+
+
+
+
+
+
+
+
+
+.reakke1{
+    
+  display: flex;
+flex-direction: column;
+  text-align: center;
+align-items: center;
+  margin-right: 75px;
+  margin-top: 3px;
   
-
-
-
-.reakke1 {display: flex;
-flex-direction: row;
-justify-content: center;
-    margin-top: 50px;
-
-
-
-
-
-}
-.reakke2 {display: flex;
-flex-direction: row;
-justify-content: center;
-    margin-top: 100px;
-
 }
 
-.reakke3 {display: flex;
-flex-direction: row;
-justify-content: center;
-    margin-top: 100px;
-}
-.reakke4 {display: flex;
-flex-direction: row;
-justify-content: center;
-    margin-top: 100px;
-    margin-bottom: 50px;
-
+.listen{
+  list-style: none;
+  text-align: center;
 }
 
-.wherearewe{
-   text-align: center;
+.billederkontakt img {
+  
+  height: auto;
+width: 170px;
 }
+
+
 .billederkontakt {
-    display: flex;
-flex-direction: row;
-    margin-left: 10px;
-
-
-    img {height: auto;
-    width: 100px;
-    margin-right: 20px;}
+  
+  
+  display: flex;
+flex-direction: column;
+  align-items: center;
+  width: 300px;
+  
+  
 }
 
+.textbox-margin{
+position: relative;
+  z-index: 10;
+width: 300px;
+  margin-top: 20px;
+ }
+.textbox-margin2{
+position: relative;
+  z-index: 10;
+width: 300px;
+  margin-top: 20px;
+ }
+.textbox-margin3{
+position: relative;
+  z-index: 10;
+width: 301px;
+ padding-top: 20px;
+ }
+
+.box {
+  display: flex;
+  flex-direction: column;
+align-content: center;
+  background-color: #E9F6FF;
+  margin-top: -5px;
+  
+}
+
+a{text-decoration: none;
+  color: black;
+}
+
+.denher2{
+display: flex;
+flex-direction: row;;
+  justify-content: center;
+  
+}
+
+
+.denher{
+display: flex;
+flex-direction: row;;
+  justify-content: center;
+ 
+  
+}
+
+.denher3{
+display: flex;
+flex-direction: row;;
+  justify-content: center;
+  
+}
+
+.denher4{
+display: flex;
+flex-direction: row;;
+  justify-content: center;
+  
+}
+
+li img {height: auto;
+width: 25px;
+}
+
+
+
+
+.iconerlist {display: flex;
+flex-direction: column;
+}
+.mailtel{
+  display: flex;
+flex-direction: column;
+}
+
+.boxmail{
+  display: flex;
+flex-direction: column;
+}
+ul{list-style: none;}
+
+.jeg{
+  display: flex;
+flex-direction: row;
+}
+.wherearewe{
+  text-align: center;
+}
 .tekstmedbillede{
     display: flex;
 flex-direction: row;
@@ -562,7 +663,7 @@ text-align: center;
     text-align: center;
     margin-top:75px;
     h2 {
-        
+
         margin-bottom: 25px;
     }
 
@@ -573,8 +674,8 @@ text-align: center;
 
 // Contact background
 .contact-background{
-    
-   
+
+
     padding: 40px 0px;
     margin-top: 20px;
     padding-bottom: 100px;
@@ -602,9 +703,8 @@ margin-bottom: 40px;
     justify-content: center;
     margin-left: 75px;
     padding-right: 50px;
-    
-margin-top: 30px;
-    
+    margin-top: 30px;
+
 }
 
 #staff{
@@ -686,7 +786,8 @@ footer {
 
 // SERVICE page
 #service{
-width: 1920px;
+width: 100%;
+max-width: 1920px;
 }
 .big-phone{
 display: none;
@@ -697,7 +798,7 @@ display: none;
   position: relative;
   height: 500px;
   width: 100%;
-  background: url(../images/service-repair.jpg);
+  background: url(../images/service-conersion.jpg);
   margin-top: 20px;
 }
 
@@ -707,7 +808,7 @@ display: none;
   flex-direction: column;
   height: 500px;
   width: 100%;
-  background: url(../images/service-conersion.jpg);
+  background: url(../images/service-repair.jpg);
   margin-bottom: 20px;
   margin-top: 20px;
 }
@@ -743,7 +844,7 @@ display: none;
 }
 
 .ser-title {
-  font-size: 30px;
+  font-size: 1px;
   margin-bottom: 10px;
 }
 
@@ -769,6 +870,11 @@ display: none;
   position: relative;
   bottom: 280px;
   margin-left: 10px;
+  font-size: 22px;
+}
+.ser-title{
+  font-size: 30px;
+  font-weight: bold;
 }
 
 //REPAIR page
@@ -803,6 +909,53 @@ margin-bottom: 20px;
 font-size: 24px;
 font-weight: bold;
 }
+.most-wanted-btns-jobs{
+  width: 100%;
+  height: 300px;
+  display: grid;
+  grid-template-columns: 22% 22% 22%;
+  grid-gap: 5%;
+  justify-content: center;
+  align-self: center;
+
+  margin: 100px 0;
+  a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: $white;
+    width: 100%;
+    height: 300px;
+    h1{
+      font-size: 32px;
+    }
+  }
+}
+.most-wanted-btns-jobs a:nth-child(1){
+  background-image:url(../images/repair-btn.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 75% 50%;
+  width: 100%;
+
+
+}
+.most-wanted-btns-jobs a:nth-child(2){
+  background-image:url(../images/newbuilding-btn.jpg);
+  background-repeat: no-repeat;
+  background-position: 75% 50%;
+  background-size: cover;
+  width: 100%;
+}
+.most-wanted-btns-jobs a:nth-child(3){
+  background-image:url(../images/accountant-btns.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 75% 50%;
+  height: 300px;
+
+}
 @media only screen and (max-width: 768px){
 
 
@@ -819,6 +972,22 @@ font-weight: bold;
     height: 150px;
   }
   .most-wanted-btns a h1{
+    font-size: 18px
+  }
+  // for job page
+  .most-wanted-btns-jobs{
+    height: 150px;
+  }
+  .most-wanted-btns-jobs a:nth-child(1){
+    height: 150px;
+  }
+  .most-wanted-btns-jobs a:nth-child(2){
+    height: 150px;
+  }
+  .most-wanted-btns-jobs a:nth-child(3){
+    height: 150px;
+  }
+  .most-wanted-btns-jobs a h1{
     font-size: 18px
   }
   .menubox{
@@ -881,21 +1050,20 @@ font-weight: bold;
       .billedemap img {
       display: none;
     }
-   
+
     .tekst{
         text-align: center;
         margin-top: 20px;
         display: flex;
 flex-direction: column;
-        
-        
-        
+
+
     }
     .mobilmap{
         display: block;
-        
+
     }
-    
+
         .mobilmap img {
         width: 600px;
 height: auto;
@@ -903,14 +1071,14 @@ height: auto;
    margin-bottom: 60px;
             margin-top: 50px;
             margin-left: 120px;
-            
-            }
-    
-    .tekstboxcontact {display: flex;
-flex-direction: column;} 
- 
 
-  
+            }
+
+    .tekstboxcontact {display: flex;
+flex-direction: column;}
+
+
+
 
 
 // facilities
@@ -919,22 +1087,26 @@ display:none;
 }
     // SERVICE page
     #service{
-    width: 768px;
+      width: 100%;
+    max-width: 768px;
     }
 
     .ser-textbox{
     width: 100%;
     height: 100%;
+
     }
+
+
     #re-box,#con-box,#new-box{
     position: relative;
-    width: 768px;
+    width: 100%;
+    max-width: 768px;
     height: 500px;
     display: block;
     float: none;
-    top:0;
-    margin-left: 0;
-    margin-right: 0;
+    top: 0px;
+    margin: 0 0;
     }
     .ser-text{
     text-align: center;
@@ -946,11 +1118,13 @@ display:none;
     display: flex;
     justify-content: center;
     padding:0;
-    margin-right: 340px;
-    margin-left: 340px;
+    margin-right: 35%;
+    margin-left: 35%;
     }
     #conversion,#repair,#newbuilding{
-    width: 768px;
+      width: 100%;
+    max-width: 768px;
+
     height: 500px;
     }
     .big-phone{
@@ -964,6 +1138,9 @@ display:none;
     }
       #conversion {
         background: url(../images/service-conersion-small.jpg);
+      }
+      .popup-gallery{
+      margin-left:30px;
       }
 // Footer
 
@@ -1004,10 +1181,10 @@ display:none;
 @media only screen and (max-width: 550px) {
   .logo {
     width: 250px;
+    margin-top: 45px;
   }
     //contact//
 
-    
 .reakke1 {
         display: flex;
         flex-direction: column;
@@ -1015,7 +1192,7 @@ display:none;
 
 
     }
-    
+
       .reakke2 {
         display: flex;
         flex-direction: column;
@@ -1051,27 +1228,56 @@ display:none;
     .tekst{
         text-align: center;
         margin-right: 50px;
-        
+
 
     }
-   
+
   .mobilmap  {
         display: block;
-      
+
 
     }
 .mobilmap img {
         width: 400px;
 height: auto;
 margin-left: 25%;
-   
-   
+
+
 
     }
     .tekstboxcontact {
     display: flex;
 flex-direction: column;
-       
+
     }
-        
+    .tekstboks {
+      width: 90%;
+
+      padding: 50px 0;
+    }
+
+
+    .facilities-tekst{
+    width: 80%;
+    font-size: 20px;
+    }
+
+    #textbox-margin2 {
+
+      width: 90%;
+
+    }
+
+    #map{
+      height: 100vh;
+      width: 100%;
+      left: 0;
+      right: 0;
+    }
+
+    #service{
+      width: 100%;
+    max-width: 550px;
+    }
+
 }
