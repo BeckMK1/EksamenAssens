@@ -539,7 +539,7 @@ align-items: center;
 
 .listen{
   list-style: none;
-  text-align: center;
+  
 }
 
 .billederkontakt img {
@@ -555,6 +555,7 @@ width: 170px;
   display: flex;
 flex-direction: column;
   align-items: center;
+   
   width: 300px;
   
   
@@ -578,6 +579,12 @@ position: relative;
 width: 301px;
  padding-top: 20px;
  }
+.textbox-margin4{
+position: relative;
+  z-index: 10;
+width: 301px;
+ padding-top: 20px;
+ }
 
 .box {
   display: flex;
@@ -585,6 +592,7 @@ width: 301px;
 align-content: center;
   background-color: #E9F6FF;
   margin-top: -5px;
+    
   
 }
 
@@ -641,12 +649,18 @@ flex-direction: column;
   display: flex;
 flex-direction: column;
 }
-ul{list-style: none;}
+
 
 .jeg{
   display: flex;
 flex-direction: row;
+    justify-content: center;
+    list-style: none;
 }
+
+.iconmail {margin-top: 10px;}
+.icontlf{margin-top: 12px;}
+#iconmail{margin-top: 12px;}
 .wherearewe{
   text-align: center;
 }
@@ -673,26 +687,8 @@ text-align: center;
 
 
 // Contact background
-.contact-background{
 
 
-    padding: 40px 0px;
-    margin-top: 20px;
-    padding-bottom: 100px;
-
-    h2{
-        text-align: center;
-margin-bottom: 40px;
-    }
-
-
-}
-.protrat{
-    background-color: $light-blue;
-    margin-top: -30px;
-    h2{text-align: center;}
-    margin-bottom: -50px;
-}
 
 
 .kontaktpolysninger{
@@ -720,10 +716,7 @@ margin-top: 10px;
 }
 
 
-.listen { list-style: none;
-padding-top: 30px;
-width: 200px;
-}
+
 
 .mobilmap{
 
@@ -1012,41 +1005,38 @@ font-weight: bold;
   }
 //contact content//
 
+.denher2{
+display: flex;
+flex-direction: column;
+  justify-content: center;
+  
+}
 
- .reakke1 {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-         img {
-              margin-bottom: 15px;
-          }
-    }
 
-      .reakke2 {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-          img {
-              margin-bottom: 15px;
-              margin-top: 0;
-          }
-    }
-      .reakke3 {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-           img {
-              margin-bottom: 15px;
-          }
-    }
-      .reakke4 {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-           img {
-              margin-bottom: 15px;
-          }
-    }
+.denher{
+display: flex;
+flex-direction: column;
+  justify-content: center;
+    
+ 
+  
+}
+
+.denher3{
+display: flex;
+flex-direction:column;
+  justify-content: center;
+  
+}
+
+.denher4{
+display: flex;
+flex-direction: column;
+  justify-content: center;
+  
+}
+  
+    
       .billedemap img {
       display: none;
     }
