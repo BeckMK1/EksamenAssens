@@ -487,35 +487,30 @@ ul li a {
 /* line 564, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .textbox-margin5 {
   position: relative;
-  z-index: 10;
-  width: 300px; }
+  z-index: 10; }
 
 /* line 570, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .textbox-margin2 {
   position: relative;
   z-index: 10;
-  width: 300px;
   margin-top: 20px; }
 
 /* line 576, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .textbox-margin3 {
   position: relative;
   z-index: 10;
-  width: 301px;
   padding-top: 20px; }
 
 /* line 582, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .textbox-margin4 {
   position: relative;
   z-index: 10;
-  width: 301px;
   padding-top: 20px; }
 
 /* line 588, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .textbox-margin5 {
   position: relative;
-  z-index: 10;
-  width: 301px; }
+  z-index: 10; }
 
 /* line 595, ../../../../../Documents/GitHub/EksamenAssens/sass/style.scss */
 .box {
