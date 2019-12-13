@@ -801,6 +801,19 @@ footer {
   background: url("../images/service-newbuildings.jpg");
 }
 
+.ref-section{
+  h2{
+    text-align: center;
+  }
+}
+.referencelist{
+  display: flex;
+  justify-content: center;
+  p{
+    margin: 20px 40px
+  }
+}
+
 #con-box,
 #new-box,
 #re-box {
