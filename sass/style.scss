@@ -550,7 +550,9 @@ align-items: center;
 width: 170px;
 }
 
-
+.box2 {
+   background-color: #E9F6FF; 
+}
 .billederkontakt {
   
   
@@ -575,7 +577,7 @@ flex-direction: column;
   display: flex;
   flex-direction: column;
 align-content: center;
-  background-color: #E9F6FF;
+  
   margin-top: -5px;
     
   
@@ -1004,9 +1006,18 @@ flex-direction: column;
 .textbox-margin3{
   position: relative;
   z-index: -10;
+  width: 100%;
+  height: auto;
+    top: 5px;
+  
+}
+    .textbox-margin5{
+  position: relative;
+  z-index: -10;
   width: 95%;
   height: auto;
     top: 5px;
+        margin-left: 1px;
   
 }
     .textbox-margin4{
