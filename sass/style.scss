@@ -504,7 +504,7 @@ ul li a {
 
 
 
-.contactbox{
+.contactboxwrap{
 
     display: flex;
 flex-direction: column;
@@ -1142,12 +1142,19 @@ flex-direction: column;
     margin-top: 45px;
   }
   //contact//
-  .contactbox {
+  .contactboxwrap {
     display: flex;
     flex-direction: column;
     padding-left: 22%;
   }
 
+  .menubox {
+    display: none;
+  }
+
+  .contactbox {
+    display: none;
+  }
 
   .billedemap img {
     display: none;

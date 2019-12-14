@@ -401,7 +401,7 @@ ul li a {
   border-radius: 100px;
   padding: 5px 20px; }
 
-.contactbox {
+.contactboxwrap {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -860,10 +860,14 @@ footer {
   .logo {
     width: 250px;
     margin-top: 45px; }
-  .contactbox {
+  .contactboxwrap {
     display: flex;
     flex-direction: column;
     padding-left: 22%; }
+  .menubox {
+    display: none; }
+  .contactbox {
+    display: none; }
   .billedemap img {
     display: none; }
   .tekstbox {
