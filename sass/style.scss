@@ -509,61 +509,164 @@ ul li a {
   padding: 5px 20px;
 }
 //contakt content
-.reakke1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 50px;
+
+
+
+
+
+
+
+
+.contactbox{
+    
+    display: flex;
+flex-direction: column;
+    text-align: center;
+align-items: center;
+    margin-right: 75px;
+    margin-top: 3px;
+    
 }
 
-.reakke2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 100px;
+.listen{
+   display: flex;
+flex-direction: column;
+justify-content: center;
 }
 
-.denher {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.billederkontakt img {
+    
+    height: auto;
+width: 170px;
 }
 
-.denher3 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+
+.billederkontakt {
+    
+    
+    display: flex;
+flex-direction: column;
+    align-items: center;
+    width: 300px;
+    
+    
 }
 
-.denher4 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.textbox-margin{
+  position: relative;
+    z-index: 10;
+width: 300px;
+    margin-top: 20px;
+   }
+.textbox-margin2{
+  position: relative;
+    z-index: 10;
+width: 300px;
+    margin-top: 20px;
+   }
+.textbox-margin3{
+  position: relative;
+    z-index: 10;
+width: 301px;
+   ;
+   }
+
+.box {
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+    background-color: #E9F6FF;
+    width: 300px;
+    
 }
 
-.reakke4 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 100px;
-  margin-bottom: 50px;
+a{text-decoration: none;
+    color: black;
 }
+
+.rakke2kontakt{
+display: flex;
+flex-direction: row;;
+   justify-content: center;
+    
+}
+
+
+.rakke1kontakt{
+display: flex;
+flex-direction: row;;
+    justify-content: center;
+   
+    
+    
+}
+
+.rakke3kontakt{
+display: flex;
+flex-direction: row;;
+    justify-content: center;
+    
+}
+
+.rakke4kontakt{
+display: flex;
+flex-direction: row;;
+    justify-content: center;
+    
+}
+
+li img {height: auto;
+width: 25px;
+}
+.box{display: flex;
+flex-direction: column;
+justify-content: center;}
+
+.box2{
+display: flex;
+flex-direction: column;
+align-items: center;}
+
+.textbox-margin3{
+  position: relative;
+    z-index: 10;
+width: 300px;
+    
+   }
+
+.iconerlist {display: flex;
+flex-direction: column;
+}
+.boxmail{margin-top: 12px;}
+
+.icontlf{
+margin-top: 12px;}
+
+.iconmail{
+    margin-top: 2px;
+}
+#iconmail{
+    margin-top: 12px;
+}
+
+.mailtel{
+    display: flex;
+flex-direction: column;
+}
+
+.boxmail{
+    display: flex;
+flex-direction: column;
+}
+ul{list-style: none;}
+
+
 
 .wherearewe {
   text-align: center;
 }
 
-.billederkontakt {
-  display: flex;
-  flex-direction: row;
-  margin-left: 10px;
 
-  img {
-    height: auto;
-    width: 100px;
-    margin-right: 20px;
-  }
-}
 
 .tekstmedbillede {
   display: flex;
@@ -585,16 +688,6 @@ ul li a {
 }
 // Contact background
 
-.contact-background {
-  padding: 40px 0;
-  margin-top: 20px;
-  padding-bottom: 100px;
-
-  h2 {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-}
 
 .protrat {
   background-color: $light-blue;
@@ -617,6 +710,11 @@ ul li a {
   margin-top: 30px;
 }
 
+
+#overskriftkontakt{
+    width: 100%;
+text-align: center;
+}
 #staff {
   margin-top: 20px;
   text-align: center;
@@ -634,6 +732,8 @@ ul li a {
   padding-top: 30px;
   width: 200px;
 }
+
+.listen3 {top: 22px;}
 
 .mobilmap {
   display: none;
@@ -924,45 +1024,52 @@ footer {
 
   .reakke1 {
     display: flex;
-    flex-direction: row;
+    flex-direction:column;
     flex-wrap: wrap;
 
-    img {
-      margin-bottom: 15px;
     }
-  }
+    .rakke2kontakt{
+display: flex;
+flex-direction: row;;
+   justify-content: center;
+    
+}
 
-  .reakke2 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 
-    img {
-      margin-bottom: 15px;
-      margin-top: 0;
-    }
-  }
+.rakke1kontakt{
+display: flex;
+flex-direction: column;
+    justify-content: center;
+   
+    
+}
 
-  .reakke3 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.rakke3kontakt{
+display: flex;
+flex-direction: column;
+    justify-content: center;
+    
+}
 
-    img {
-      margin-bottom: 15px;
-    }
-  }
+.rakke4kontakt{
+display: flex;
+flex-direction: column;
+    justify-content: center;
+    
+}
+    
+    .textbox-margin3{
+        width: 300px;
 
-  .reakke4 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+}
+    .textbox-margin4{
+        width: 300px;
 
-    img {
-      margin-bottom: 15px;
-    }
-  }
+}
+    .textbox-margin5{
+        width: 300px;
 
+}
   .billedemap img {
     display: none;
   }
@@ -1039,33 +1146,13 @@ footer {
     margin-top: 45px;
   }
   //contact//
-  .reakke1 {
+  .contactbox {
     display: flex;
     flex-direction: column;
     padding-left: 22%;
   }
 
-  .reakke2 {
-    display: flex;
-    flex-direction: column;
-    padding-left: 22%;
-    margin-top: -2px;
-  }
-
-  .reakke3 {
-    display: flex;
-    flex-direction: column;
-    padding-left: 22%;
-    margin-top: -2px;
-  }
-
-  .reakke4 {
-    display: flex;
-    flex-direction: column;
-    padding-left: 22%;
-    margin-top: -2px;
-  }
-
+  
   .billedemap img {
     display: none;
   }
