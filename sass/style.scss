@@ -756,9 +756,6 @@ footer {
   justify-content: center;
   color: $white;
 
-  div {
-    justify-self: flex-start;
-  }
 
   .footer-certificates {
     img {
@@ -768,13 +765,17 @@ footer {
     }
   }
 
-  .footer-icons {
-    grid-area: footer-icons;
+}
 
-    img {
-      margin: 10px 5px 0 0;
-      width: 15%;
-    }
+.footer-icons {
+  grid-area: footer-icons;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    margin: 10px 5px 0 0;
   }
 }
 
@@ -1110,15 +1111,15 @@ flex-direction: column;
   }
   // Footer
 
-  .footer-grid {
-    font-size: 12px;
-  }
 
   .footer-icons {
     margin-left: 20%;
+    display: flex;
+    align-items: flex-start;
   }
 
   .footer-grid {
+    font-size: 12px;
     display: grid;
     grid-template-areas: 'footer-left footer-right' 'footer-icons footer-right';
 
