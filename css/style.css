@@ -1,7 +1,7 @@
 /*---------------My variables*---------------*/
 /*---------------My variables*---------------*/
 /*---------------My Inheritances-------------*/
-.facilitiestext, .tekstboks, #mapbody img, #repair-bigpicture h1, #repair-box {
+.facilitiestext, .tekstboks, #mapbody img, .ref-section, #repair-bigpicture h1, #repair-box {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -196,7 +196,7 @@ ul li a {
   align-items: center;
   justify-content: center; }
 
-.facilitiesh1 {
+.facilitiesh1 h1 {
   font-size: 50px; }
 
 .transition {
@@ -221,13 +221,13 @@ ul li a {
   font-size: 20px;
   line-height: 1.5em; }
 
-#textbox-margin2 {
+.textbox-margin2 {
   position: relative;
   z-index: -10;
   width: 70%;
   height: auto; }
 
-#textbox-margin6 {
+.textbox-margin6 {
   position: relative;
   z-index: -10;
   width: 70%;
@@ -289,6 +289,14 @@ ul li a {
   position: relative;
   margin: 200px 0; }
 
+.ref-section {
+  flex-direction: column; }
+
+.referencelist {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row; }
+
 .forside {
   height: 500px; }
 
@@ -341,7 +349,8 @@ ul li a {
 #intro-video {
   grid-area: intro-video;
   width: 100%;
-  margin-bottom: 5vh; }
+  margin-bottom: 5vh;
+  height: 315px; }
 
 #about-text {
   grid-area: about-text;
@@ -358,7 +367,7 @@ ul li a {
 .frontpage-about {
   background-color: #E9F6FF;
   margin-top: -10px; }
-  .frontpage-about h1 {
+  .frontpage-about h2 {
     padding: 10px 0;
     text-align: center; }
 
@@ -760,6 +769,8 @@ footer {
   height: 300px; }
 
 @media only screen and (max-width: 768px) {
+  .referencelist {
+    flex-direction: column; }
   .most-wanted-btns {
     margin: 50px 0; }
   .most-wanted-btns {
@@ -893,9 +904,9 @@ footer {
   .facilities-tekst {
     width: 80%;
     font-size: 20px; }
-  #textbox-margin2 {
+  .textbox-margin2 {
     width: 90%; }
-  #textbox-margin6 {
+  .textbox-margin6 {
     width: 90%; }
   #map {
     height: 80vh;

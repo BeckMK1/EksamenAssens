@@ -244,7 +244,7 @@ ul li a {
   justify-content: center;
 }
 
-.facilitiesh1 {
+.facilitiesh1 h1{
   font-size: 50px;
 }
 //tiføjer zoom ved hover på billedet
@@ -277,13 +277,13 @@ ul li a {
   line-height: 1.5em;
 }
 
-#textbox-margin2 {
+.textbox-margin2 {
   position: relative;
   z-index: -10;
   width: 70%;
   height: auto;
 }
-#textbox-margin6 {
+.textbox-margin6 {
   position: relative;
   z-index: -10;
   width: 70%;
@@ -355,6 +355,15 @@ ul li a {
   position: relative;
   margin: 200px 0;
 }
+.ref-section{
+  @extend %center;
+  flex-direction: column;
+}
+.referencelist{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+}
 //   FORSIDE content
 
 .forside {
@@ -420,6 +429,7 @@ ul li a {
   grid-area: intro-video;
   width: 100%;
   margin-bottom: 5vh;
+  height: 315px;
 }
 
 #about-text {
@@ -440,7 +450,7 @@ ul li a {
   background-color: $light-blue;
   margin-top: -10px;
 
-  h1 {
+  h2 {
     padding: 10px 0;
     text-align: center;
   }
@@ -959,6 +969,11 @@ footer {
   height: 300px;
 }
 @media only screen and (max-width: 768px) {
+
+.referencelist{
+  flex-direction: column;
+}
+
   .most-wanted-btns {
     margin: 50px 0;
   }
@@ -1199,12 +1214,14 @@ flex-direction: column;
     font-size: 20px;
   }
 
-  #textbox-margin2 {
+  .textbox-margin2 {
     width: 90%;
   }
-  #textbox-margin6 {
+
+  .textbox-margin6 {
     width: 90%;
   }
+
 
   #map {
     height: 80vh;
