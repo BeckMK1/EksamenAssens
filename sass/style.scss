@@ -359,9 +359,21 @@ ul li a {
   @extend %center;
   flex-direction: column;
 }
+
+.ref-btn{
+  padding: 8px 100px;
+  background-color: $red;
+  cursor: pointer;
+  border-radius: 100px;
+  color: white;
+}
+.ref-btn:hover{
+  background-color: red;
+  cursor: pointer;
+}
 .referencelist{
   margin-top: 30px;
-  display: flex;
+  display: none;
   flex-direction: row;
 }
 //   FORSIDE content
@@ -429,7 +441,7 @@ ul li a {
   grid-area: intro-video;
   width: 100%;
   margin-bottom: 5vh;
-  height: 315px;
+  height: 30vh;
 }
 
 #about-text {
@@ -518,7 +530,9 @@ ul li a {
 
 
 
-
+.google-maps{
+  margin-top: 80px;
+}
 
 
 
@@ -968,6 +982,13 @@ footer {
   background-position: 75% 50%;
   height: 300px;
 }
+
+
+.ref-section p{
+  margin: 0px 20px;
+
+}
+
 @media only screen and (max-width: 768px) {
 
 .referencelist{
@@ -1270,5 +1291,9 @@ flex-direction: column;
 
   .grid-conversion {
     grid-area: cell2;
+  }
+
+  .referencelist p{
+    font-size: 12px;
   }
 }
