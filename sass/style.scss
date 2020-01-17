@@ -86,9 +86,13 @@ header {
 
 #contact-btn {
   color: #FAFAFA;
-  border: 7px solid $red;
+  padding: 5px 9px;
   border-radius: 100px;
   background-color: $red;
+}
+
+#contact-btn:hover{
+  background-color: rgb(233, 0, 0);
 }
 //Burgermenu til mobile
 
@@ -370,7 +374,7 @@ ul li a {
   color: white;
 }
 .ref-btn:hover{
-  background-color: red;
+  background-color: rgb(233, 0, 0);
   cursor: pointer;
 }
 .referencelist{
@@ -443,7 +447,7 @@ ul li a {
   grid-area: intro-video;
   width: 100%;
   margin-bottom: 5vh;
-  height: 30vh;
+  height: 400px;
 }
 
 #about-text {
@@ -527,6 +531,10 @@ ul li a {
   img{
     height: 22px;
   }
+}
+
+.call-btn:hover{
+  background-color: rgb(233, 0, 0);
 }
 //contakt content
 
@@ -906,6 +914,10 @@ footer {
   padding: 5px 20px;
   max-width: 70px;
 }
+.more-btn:hover{
+  background-color: rgb(233, 0, 0);
+}
+
 
 .service-grid1 {
   display: grid;
