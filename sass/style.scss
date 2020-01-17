@@ -246,7 +246,7 @@ ul li a {
   justify-content: center;
 }
 
-.facilitiesh1 {
+.facilitiesh1 h1{
   font-size: 50px;
 }
 //tiføjer zoom ved hover på billedet
@@ -279,7 +279,13 @@ ul li a {
   line-height: 1.5em;
 }
 
-#textbox-margin2 {
+.textbox-margin2 {
+  position: relative;
+  z-index: -10;
+  width: 70%;
+  height: auto;
+}
+.textbox-margin6 {
   position: relative;
   z-index: -10;
   width: 70%;
@@ -351,6 +357,27 @@ ul li a {
   position: relative;
   margin: 200px 0;
 }
+.ref-section{
+  @extend %center;
+  flex-direction: column;
+}
+
+.ref-btn{
+  padding: 8px 100px;
+  background-color: $red;
+  cursor: pointer;
+  border-radius: 100px;
+  color: white;
+}
+.ref-btn:hover{
+  background-color: red;
+  cursor: pointer;
+}
+.referencelist{
+  margin-top: 30px;
+  display: none;
+  flex-direction: row;
+}
 //   FORSIDE content
 
 .forside {
@@ -416,6 +443,7 @@ ul li a {
   grid-area: intro-video;
   width: 100%;
   margin-bottom: 5vh;
+  height: 30vh;
 }
 
 #about-text {
@@ -436,7 +464,7 @@ ul li a {
   background-color: $light-blue;
   margin-top: -10px;
 
-  h1 {
+  h2 {
     padding: 10px 0;
     text-align: center;
   }
@@ -496,12 +524,17 @@ ul li a {
   background-color: $red;
   border-radius: 100px;
   padding: 5px 20px;
+  img{
+    height: 22px;
+  }
 }
 //contakt content
 
 
 
-
+.google-maps{
+  margin-top: 80px;
+}
 
 
 
@@ -548,17 +581,12 @@ flex-direction: column;
 width: 300px;
     margin-top: 20px;
    }
-.textbox-margin2{
-  position: relative;
-    z-index: 10;
-width: 300px;
-    margin-top: 20px;
-   }
+
+
 .textbox-margin3{
   position: relative;
     z-index: 10;
 width: 301px;
-   ;
    }
 
 .box {
@@ -1033,7 +1061,19 @@ footer {
   background-position: 75% 50%;
   height: 300px;
 }
+
+
+.ref-section p{
+  margin: 0px 20px;
+
+}
+
 @media only screen and (max-width: 768px) {
+
+.referencelist{
+  flex-direction: column;
+}
+
   .most-wanted-btns {
     margin: 50px 0;
   }
@@ -1292,9 +1332,14 @@ height: 300px;}
     font-size: 20px;
   }
 
-  #textbox-margin2 {
+  .textbox-margin2 {
     width: 90%;
   }
+
+  .textbox-margin6 {
+    width: 90%;
+  }
+
 
   #map {
     height: 80vh;
@@ -1343,5 +1388,9 @@ height: 300px;}
 
   .grid-conversion {
     grid-area: cell2;
+  }
+
+  .referencelist p{
+    font-size: 12px;
   }
 }
