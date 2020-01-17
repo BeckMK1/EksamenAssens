@@ -219,6 +219,8 @@ ul li a {
   }
 }
 
+
+
 .mainpic {
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
@@ -543,7 +545,8 @@ ul li a {
 flex-direction: column;
     text-align: center;
 align-items: center;
-    margin-right: 75px;
+    margin-right: 38px;
+margin-left: 38px;
     margin-top: 3px;
 
 }
@@ -686,6 +689,80 @@ ul{list-style: none;}
 
 
 
+//gallery-rapir-conversion-newbulding
+
+.gallerycontainer{width: 540px;
+margin: 2% auto;
+overflow: auto;}
+
+.slider-inder{
+    width: 400px;
+height: 250px;
+position: relative;
+overflow: hidden;
+float: left;
+padding: 3px;
+border: #163f70 solid 5px;
+}
+
+.slider-inder img {display:none;width: 400px;
+height: 250px;}
+
+.slider-inder img.active{
+    display: inline-block;
+}
+
+.prev, .next{
+    float: left;
+margin-top: 105px;
+    cursor: pointer;
+
+}
+
+.prev{position: relative;
+    margin-right: -45px;
+z-index: 100;
+}
+
+.next{position: relative;
+    margin-left: -45px;
+z-index: 100;
+}
+
+
+
+
+.container-felx{
+  text-align: center;
+    display: flex;
+flex-direction: row-reverse;
+
+
+
+}
+.container-flex{
+  text-align: center;
+    display: flex;
+flex-direction: column;
+
+
+
+}
+
+.galleryflex{
+display: flex;
+flex-direction: row;
+justify-content:space-around;}
+
+.textcontainer{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+
+
+
 .tekstmedbillede {
   display: flex;
   flex-direction: row;
@@ -722,6 +799,7 @@ ul{list-style: none;}
 
 .kontaktpolysninger {
   margin-top: 60px;
+
 }
 
 .tekst {
@@ -735,6 +813,7 @@ ul{list-style: none;}
 #overskriftkontakt{
     width: 100%;
 text-align: center;
+margin-right: 40px;
 }
 #staff {
   margin-top: 20px;
@@ -1177,6 +1256,24 @@ flex-direction: column;
   }
 }
 @media only screen and (max-width: 550px) {
+    
+    .gallerycontainer{width: 540px;
+margin: 1% auto;
+overflow: auto;
+    margin-left: 5px;}
+    
+    .slider-inder{
+    width: 450px;
+height: 300px;
+position: relative;
+overflow: hidden;
+float: left;
+padding: 3px;
+border: #163f70 solid 5px;
+}
+
+.slider-inder img {display:none;width: 450px;
+height: 300px;}
   .logo {
     width: 250px;
     margin-top: 45px;
@@ -1217,7 +1314,7 @@ flex-direction: column;
   .mobilmap img {
     width: 90%;
     height: auto;
-    margin-left: 0;
+    margin-left: 0px;
   }
 
   .tekstboxcontact {
