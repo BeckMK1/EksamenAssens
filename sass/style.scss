@@ -89,9 +89,13 @@ header {
 
 #contact-btn {
   color: #FAFAFA;
-  border: 7px solid $red;
+  padding: 5px 9px;
   border-radius: 100px;
   background-color: $red;
+}
+
+#contact-btn:hover{
+  background-color: rgb(233, 0, 0);
 }
 //Burgermenu til mobile
 
@@ -373,7 +377,7 @@ ul li a {
   color: white;
 }
 .ref-btn:hover{
-  background-color: red;
+  background-color: rgb(233, 0, 0);
   cursor: pointer;
 }
 .referencelist{
@@ -446,7 +450,7 @@ ul li a {
   grid-area: intro-video;
   width: 100%;
   margin-bottom: 5vh;
-  height: 30vh;
+  height: 400px;
 }
 
 #about-text {
@@ -530,6 +534,10 @@ ul li a {
   img{
     height: 22px;
   }
+}
+
+.call-btn:hover{
+  background-color: rgb(233, 0, 0);
 }
 //contakt content
 
@@ -696,7 +704,8 @@ ul{list-style: none;}
 
 .gallerycontainer{width: 540px;
 margin: 2% auto;
-overflow: auto;}
+overflow: auto;
+margin-right: 30px;}
 
 .slider-inder{
     width: 400px;
@@ -704,11 +713,13 @@ height: 250px;
 position: relative;
 overflow: hidden;
 float: left;
-padding: 3px;
-border: #163f70 solid 5px;
+
+    
+
 }
 
-.slider-inder img {display:none;width: 400px;
+.slider-inder img {display:none;
+width: 400px;
 height: 250px;}
 
 .slider-inder img.active{
@@ -723,13 +734,18 @@ margin-top: 105px;
 }
 
 .prev{position: relative;
-    margin-right: -45px;
+    margin-right: 2px;
 z-index: 100;
+    height: 50px;
+width: auto;
 }
 
 .next{position: relative;
-    margin-left: -45px;
+    margin-left: -5px;
 z-index: 100;
+height: 50px;
+width: auto;
+    
 }
 
 
@@ -743,19 +759,17 @@ flex-direction: row-reverse;
 
 
 }
-.container-flex{
-  text-align: center;
-    display: flex;
-flex-direction: column;
 
 
 
-}
+
+
 
 .galleryflex{
 display: flex;
 flex-direction: row;
-justify-content:space-around;}
+justify-content:space-around;
+}
 
 .textcontainer{
     display: flex;
@@ -1023,6 +1037,10 @@ footer {
   padding: 5px 20px;
   max-width: 70px;
 }
+.more-btn:hover{
+  background-color: rgb(233, 0, 0);
+}
+
 
 .service-grid1 {
   display: grid;
@@ -1368,7 +1386,33 @@ flex-direction: column;
 
 }
 
+.gallerycontainer{width: 340px;
+margin: 2% auto;
+overflow: auto;
+    margin-left: -5%;
+}
 
+.slider-inder{
+    width: 350px;
+height: 175px;
+position: relative;
+overflow: hidden;
+
+padding: 3px;
+
+}
+
+.slider-inder img {display:none;
+width: 380px;
+height: 185px;}
+
+   .prev, .next{
+    float: left;
+margin-top: 75px;
+    cursor: pointer;
+
+}
+    
 .rakke1kontakt{
 display: flex;
 flex-direction: column;
@@ -1454,7 +1498,26 @@ flex-direction: column;
     display: flex;
     align-items: flex-start;
   }
+    
+    .container-felx{
+  text-align: center;
+    display: flex;
+flex-direction: column;
+text-align: center;
 
+
+}
+    
+    .galleryflex{
+display: flex;
+flex-direction: column;
+align-content: center;
+}
+    .gallerycontainer{
+display: flex;
+justify-content: center;
+    
+}
   .footer-grid {
     font-size: 12px;
     display: grid;
@@ -1475,23 +1538,7 @@ flex-direction: column;
 }
 @media only screen and (max-width: 550px) {
     
-    .gallerycontainer{width: 540px;
-margin: 1% auto;
-overflow: auto;
-    margin-left: 5px;}
     
-    .slider-inder{
-    width: 450px;
-height: 300px;
-position: relative;
-overflow: hidden;
-float: left;
-padding: 3px;
-border: #163f70 solid 5px;
-}
-
-.slider-inder img {display:none;width: 450px;
-height: 300px;}
   .logo {
     width: 250px;
     margin-top: 45px;
@@ -1581,7 +1628,32 @@ height: 300px;}
     justify-self: center;
     text-align: center;
   }
+.gallerycontainer{width: 540px;
+margin: 2% auto;
+overflow: auto;
+    margin-left: -5%;
+}
 
+.slider-inder{
+    width: 350px;
+height: 175px;
+position: relative;
+overflow: hidden;
+
+padding: 3px;
+
+}
+
+.slider-inder img {display:none;
+width: 380px;
+height: 185px;}
+
+   .prev, .next{
+    float: left;
+margin-top: 75px;
+    cursor: pointer;
+
+}
   .service-grid2 {
     display: grid;
     grid-template-columns: 100%;

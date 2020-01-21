@@ -24,31 +24,6 @@ $(document).ready(function(){
     
 });
 
-$(document).ready(function(){
- 
- $('.nexts').on('click', function(){
-    var currentImg = $('.actives');
-      var nextsImg = currentImg.nexts();
-      
-      if(nextsImg.length){
-          currentImg.removeClass('actives').css('z-index',-10);
-          nextsImg.addClass('actives').css('z-index',10);
-      }
-  });
-   $('.prevs').on('click', function(){
-    var currentImg = $('.actives');
-      var prevsImg = currentImg.prevs();
-      
-      if(prevsImg.length){
-          currentImg.removeClass('actives').css('z-index',-10);
-          prevImg.addClass('actives').css('z-index',10);
-      }
-  });    
-    
-  
-    
-    
-});
 
 
 
